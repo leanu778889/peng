@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>个人简历</title>
+<!--<link href="__APP__/Public/css/pub.css" rel="stylesheet" type="text/css" />
+<link href="__APP__/Public/css/main.css" rel="stylesheet" type="text/css" />
+<link href="__APP__/Public/css/input.css" rel="stylesheet" type="text/css" />-->
+<link href="__APP__/Public/css/stype.css" rel="stylesheet" type="text/css" />
+<link href="__APP__/Public/css/common.css" rel="stylesheet" type="text/css" />
+<link href="__APP__/Public/css/header_footer.css" rel="stylesheet" type="text/css" />
+<script src="__APP__/Public/js/jquery-1.8.2.min.js"></script>
+<script src="__APP__/Public/js/common.js"></script>        
+<link href="__APP__/Public/css/Resume.css" rel="stylesheet" type="text/css" />
+<link href="__APP__/Public/css/jquery-webox.css" rel="stylesheet" type="text/css">
+<link href="__APP__/Public/css/style111(1).css" rel="stylesheet" type="text/css" />
+<script src="__APP__/Public/js/jquery-webox.js"></script>
+	</head>
+	
+	<style>
+.w_100{width:100px;}
+</style>
+<body background="__APP__/Public/images/background.jpg">
+<div style="margin-left:150px;" style="p">
+	<div class="nak_pubCon nak_resume" >
+    	<div class="res_userInfo">
+            <div id="res_userImg" class="res_userImg" style="float: right;">
+			 <tr id="slider">
+			 <td><img src="__APP__/Public/uploads/{$arr['path']}" width="245" height="303" title="形象照片"  ></td>
+			 </tr>
+		 	  <tr >
+			 <input type="button" value="发送邀请" />
+			 </tr>
+			</div>
+      </div>
+  </div>
+	  <div class="clear" style="margin-bottom:30px;" align="center">
+	  <h2 class="fl nak_resumeTit" >艺人：{$arr['truename']}</h2>
+	  </div>
+      <div class="res_means" style="padding-bottom:52px;">
+      	<div ><h2>基本资料</h2></div>
+        <table class="meas_info">
+        		<tr>
+            	<td >艺&nbsp;&nbsp;&nbsp;&nbsp;名：{$arr['truename']}</td>
+            	<td width="445">签约公司：{$arr['truename']}</td>
+            </tr>
+			  	<tr>
+            	<td>性&nbsp;&nbsp;&nbsp;&nbsp;别：<if condition="$arr.sex eq 2">女<else/>男</if></td>
+                <td >出生日期：{$arr['birth']|date="Y-m-d",###}</td>
+            </tr>
+                        <tr>
+            	<td>身&nbsp;&nbsp;&nbsp;&nbsp;高：{$arr['high']}cm</td>
+                <td>体&nbsp;&nbsp;&nbsp;&nbsp;重：{$arr['weight']}kg</td>
+            </tr>
+        	<tr>
+            	<td>签约公司：北京影彩</td>
+                <td>经&nbsp;纪&nbsp;人：黄晓妮</td>
+            </tr>
+            <tr>
+               <td>特&nbsp;&nbsp;&nbsp;&nbsp;长：{$arr['special']}</td>
+            </tr>
+            <tr>
+               <td>描&nbsp;&nbsp;述&nbsp;：{$arr['description']}</td>
+            </tr>
+        </table>
+      </div>
+	  
+	  	  
+	        <div class="nak_pubList res_self">
+			  <p>&nbsp;</p>
+			  <hr class="GreenBorderLine"/>
+			<th>居&nbsp;住&nbsp;地：</th><td>{$arr['live_place']}</td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<th>工作所在地：</th><td>{$arr['work_place']}</td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<th>状态：</th><td>忙碌</td>
+			<th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;电&nbsp;&nbsp;话：</th><td>{$arr['tel']}</td>
+  </div>
+			<hr class="GreenBorderLine"/>
+           <div class="clearfix"> <h2 class="pubTit">自我介绍：</h2> </div>
+           <p class="self_text">{$arr['description']}</p>
+		  
+       <hr class="GreenBorderLine"/>
+	    <div  class="clearfix"><h2 class="pubTit">从艺经历:</h2> 
+		<table width="1001" height="162">
+		<tr bgcolor="#FF9966">
+		<td width="53" height="34"> 时&nbsp;&nbsp;&nbsp;间</td>
+		<td width="173">剧&nbsp;&nbsp;&nbsp;名</td>
+		<td width="107">扮演角色</td>
+		<td width="68">导&nbsp;&nbsp;&nbsp;演</td>
+		<td width="135">主演演员</td>
+		<td width="109">备注</td>
+		{$arr['show_experience']}
+		</tr>
+		<tr>
+		<td height="120"> 1993年</td>
+		<td>被风吹过的夏天</td><td>夏夏</td><td>胡歌</td><td>龚超、胥通达</td><td>这是一部古代历史剧 </td>
+		</tr>
+	  </table>
+	   
+
+	        <div class="nak_pubList res_advert">
+			 <hr class="GreenBorderLine"/>
+            <div class="clearfix"><h2 class="pubTit">类型标签</h2></div>
+            <ul class="pt_pic clearfix">
+		  		<div class="plab_div">
+				<p class="plab_user">
+					<span class="plab_text">文静</span>
+				</p>
+			   </div>
+				<div class="plab_div">
+				<p class="plab_user">
+					<span class="plab_text">阳光</span>
+				</p>
+			    </div>
+				<div class="plab_div">
+				<p class="plab_user">
+					<span class="plab_text">俊俏</span>
+				</p>
+			    </div>
+				<div class="plab_div">
+				<p class="plab_user">
+					<span class="plab_text">性感</span>
+				</p>
+			    </div>
+				<div class="plab_div">
+				<p class="plab_user">
+					<span class="plab_text">滑稽</span>
+				</p>
+		 	    </div>
+		    </ul>
+		 </div>
+		    
+	        <div class="nak_pubList res_pic">
+			 <hr class="GreenBorderLine"/>
+             <div class="clearfix">
+			 <h2 class="pubTit">相册资料</h2> </div>
+             <ul class="pt_pic clearfix">
+                <li>
+					<p><a href="#" target="_blank">生活照相册({$leng})</a></p>
+					<div>
+					<volist name="array_image" id="img">
+					<a href="#" target="_blank"><img src="__APP__/Public/uploads/{$img}" height="80" width="70"/></a>&nbsp;&nbsp;&nbsp;
+					</volist>
+					</div>
+				</li>
+              </ul>
+      </div>
+	   <hr class="GreenBorderLine"/>
+		<div class="clearfix"><h2 class="pubTit">视频连接</h2> </div>
+		 <a href="{$arr['video']}" target="blank"><p class="self_text">{$arr['video']}</p></a>
+    </div>
+	<div class="pt_footer_box">
+    <script type="text/javascript" src="__APP__/Public/js/backtop.js"></script>
+</div>
+</div>
+
+</body>
+</html>

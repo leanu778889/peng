@@ -1,0 +1,162 @@
+@charset "utf-8";
+/* CSS Document */
+/* CSS Document */
+
+/* 此处是简历模板的样式表
+ * 可以直接添加到其他样式的后面用于控制“简历模板.html”样式
+ * 建议与“登录页.html” 的样式表分开使用，因为body样式会影响“登录页.html”
+*/
+body{background:#f0f0f0;}
+.ml_81{margin-left:81px;}
+.va_m{vertical-align:middle;}
+.c_c1{color:#c1c1c1;}
+/* 简历模板公用 */
+.nak_pubList{border-top:solid 1px #dedede;width:916px;padding-top:10px;margin-left:28px;font-size:14px;color:#5c5c5c;}
+.nak_pubList .pubTit{display:inline-block;width:80px;height:20px;}
+.nak_pubList .pub_list{line-height:25px;margin:20px 0 15px 0;margin-left:35px;}
+.nak_pubList .pubTit_link{float:right;display:inline;margin-top:1px;font-size:12px;}
+.nak_resume a{color:#aaabab;}
+.nak_resume .a_red{color:#ff007f;text-decoration:underline;}
+.nak_pubTap{
+	color:#357372;width:86px;height:26px;line-height:26px;text-align:center;background:#fff;display:block; margin:0 2px 2px 0; cursor:pointer; 
+	border:#dbdbdb 1px solid; float:left;
+}
+.nak_pubTap_on{
+	color:#357372;width:86px;height:26px;line-height:26px;text-align:center;background:#cae2e4;display:block; margin:0 2px 2px 0; cursor:pointer; 
+	border:#7e9e99 1px solid; float:left;
+}
+.clearb{clear:both}
+
+
+/* 简历模板 */
+.nak_resume{padding:8px 0 80px 0;position:relative;}
+.nak_pubCon{width:980px;margin:14px auto 20px auto;background:#fff;}
+.nak_resumeTit{background:url(../images/resume_bg01.gif) no-repeat right center; height:59px;color:#fff;line-height:51px;font-size:20px;padding:0 45px 0 20px;}
+.res_topLink{margin-top:12px; color:#ff61ae; font-size:20px; font-weight:bold; font-family:"宋体"}
+.res_topLink a{margin-left:15px;}
+
+.res_userInfo{position:absolute;right:38px;top:5px;width:221px;}
+.res_userId{
+	background:url(../images/resume_bg02.gif) no-repeat left center;padding-left:60px; padding-top:28px;color:#ff007f;font:bold 30px/1em Arial, Helvetica, sans-serif;
+	width:160px; height:32px; overflow:hidden; display:block; border:1px solid #DDDDDD;
+}
+.res_userImg{padding:5px;border:solid 1px #ddd;background:#fff;margin-top:5px; overflow:hidden; width:210px; height:280px;position:relative;}
+.res_userName{font-size:18px;margin-top:5px;font-weight:bold;}
+
+.res_means{width:672px;margin-left:28px;padding-bottom:8px;}
+.res_means h2{background:url(../images/resume_bg04.gif);width:80px;height:20px;text-align:right;}
+.res_finish{margin-left:8px;font-weight:bold;font-size:14px;color:#ff61b0;}
+.meas_info,.major_info{margin-top:5px;}
+.meas_info th,.meas_info td,.major_info td,.major_info th{font-size:14px;height:38px;}
+.meas_info th,.major_info th{color:#5c5c5c;font-weight:normal;word-spacing:7px;}
+.meas_info td,.major_info td{color:#797979;}
+.meas_info th.t_red,.meas_info td.t_red{color:#FF007F;}
+
+.res_major{width:916px;padding:10px 0;margin:0 0 0 28px;}
+.res_major h2{width:80px;height:20px;background:url(../images/resume_bg05.gif);}
+.res_major .res_alter{margin-right:243px;}
+
+.res_self{padding-bottom:8px;}
+.res_self h2{background:url(../images/resume_bg06.gif);}
+.self_text{text-indent:2em;line-height:24px;margin:12px 0;}
+
+.res_prize h2{background:url(../images/resume_bg07.gif);}
+
+.res_films h2{background:url(../images/resume_bg08.gif);}
+/*表格数据*/
+/*.films_table{width:914px;border:solid 1px #d0d0d0;margin:12px 0 20px 0;}
+.films_table th{height:35px;background:#cbe2e4;color:#367373;}
+.films_table td{height:40px;text-align:center;border:solid 1px #cbe2e4;}*/
+/*---------*/
+.res_advert h2{background:url(../images/resume_bg09.gif);}
+
+.res_variety h2{background:url(../images/resume_bg10.gif);}
+
+.res_remarks h2{background:url(../images/resume_bg11.gif);}
+
+.res_pic h2{background:url(../images/resume_bg12.gif);}
+
+.res_video h2{background:url(../images/resume_bg15.gif);}
+
+.media_list{margin-top:15px;}
+.media_list li,.interfix_list li{float:left;display:inline;margin:0 24px 15px 0;text-align:center;}
+.media_list a,.interfix_list a{display:inline-block;background:url(../images/resume_bg13.gif);width:205px;height:275px;}
+.media_list img{margin:5px;}
+
+.video_list a{background:url(../images/resume_bg18.gif);height:205px;}
+.video_list img{margin:6px;}
+
+.media_divLink{background:url(../images/resume_bg16.gif);width:11px;height:13px;display:inline-block;margin:3px 20px 0 0;}
+.media_nextLink{background:url(../images/resume_bg17.gif);}
+
+.res_interfix h2{background:url(../images/resume_bg27.gif);}
+
+.interfix_list{margin:15px 0 70px 0;}
+.interfix_list a{background:url(../images/resume_bg24.gif);width:94px;height:94px;}
+.interfix_list img{margin-top:6px;}
+
+.like_link{display:inline-block;background:url(../images/resume_bg25.gif) center center no-repeat;margin:0 0 0 335px;width:61px;height:21px;padding:7px 91px;border:solid 1px #ff007f;}
+
+
+/* 基本资料 */
+.nak_basic_box{background:#f6f6f6;width:100%;overflow:hidden;}
+.nak_basic{width:982px;margin:60px auto 70px auto;background:#fff;}
+.basic_top{border-bottom:solid 8px #367373;padding:35px 0 11px 0;}
+.basic_tit{background:url(../images/aoka2_bg16.gif);width:103px;height:24px;margin:8px 0 0 67px;}
+.basic_crew{background:url(../images/aoka2_bg17.gif);width:128px;height:18px;display:block;margin:12px 0 0 366px;}
+.basic_top_nav{background:url(../images/aoka2_bg15.gif);width:140px;height:43px;margin-right:55px;}
+.basic_tish{color:#ed2d69;margin-top:15px;}
+
+.basic_tab{margin:24px 0 0 67px;font:bold 14px \5b8b\4f53;color:#98999b;}
+.basic_tab td{padding:16px 10px 16px 0;}
+.basic_tab em{color:#ed2d69;font-size:12px;margin-right:2px;font-weight:normal;}
+.basic_tab input{height:26px;line-height:26px;color:#98999b;}
+.basic_tab .w_300{border:solid 1px #d0d0d0;width:294px;padding-left:6px;}
+
+
+.pt_pub_data{margin:0 40px;position:relative;padding-left:20px;margin-top:15px;color:#98999b;font-size:14px;font-weight:bold;}
+.pt_pub_data em{color:#ed2d69;margin-right:10px;font-size:12px;font-weight:normal;}
+
+.pt_content{color:#98999b;font-size:14px;font-weight:bold;border-bottom:dashed 1px #ccc;padding:20px 0 22px 60px;}
+.pt_content em,.pt_info em{color:#ed2d69;margin-right:10px;font-size:12px;font-weight:normal;}
+.pt_content input,.pt_info input,.pt_info select{width:300px;}
+.pt_info select{width:304px;padding-left:0;}
+.pt_content input.pt_text,.pt_info input.pt_text{border:solid 1px #d3d3d3;}
+
+.pt_pic{margin:10px 0;}
+.pt_pic li{float:left;display:inline;margin:10px 12px 10px 0;overflow:hidden;background:url(../images/ca_bg.gif) no-repeat;width:188px;height:217px; padding:10px;}
+.pt_pic li div a{width:59px; height:59px; overflow:hidden;display:block; float:left; margin-right:3px; margin-bottom:3px;}
+.pt_pic a{display:inline-block;overflow:hidden;}
+.pt_pic p{color:#797979;font-weight:blod; margin-bottom:5px;}
+.video_pic_hr{border-top:solid 1px #dedede;margin-left:-34px;margin-bottom:28px;}
+
+
+.pt_video{margin-top:0px;}
+.pt_video li{float:left;display:inline;margin:10px 12px 10px 0;overflow:hidden;background:url(../images/pt_bg15.gif) no-repeat;width:198px; padding:5px; overflow:hidden}
+.pt_video a{display:inline-block; width:188px; height:115px; overflow:hidden}
+
+.pt_video_submit{margin:124px 0 0 124px;padding-bottom:140px;}
+.pt_video_submit a{display:inline-block;width:244px;height:32px;margin-right:8px;color:#8d8d8d;font-size:18px;font-weight:bold;text-align:center;line-height:32px;}
+.pt_video_submit a:hover{text-decoration:none;}
+.pt_sh{border:solid 1px #d5d5d5;}
+.pt_video_submit a.pt_submit{background:#ff0080;color:#fff;border:solid 1px #ff0080;}
+
+.video_top_nav{background:url(../images/photo_bg02.gif);}
+
+.pt_uploadImg{width:107px;height:32px;display:inline-block;border:solid 1px #ed2b68;color:#ed2b68;text-align:center;line-height:32px;}
+.c_98999B{color:#98999B;}
+
+.pt_photo_info{padding:0 10px;}
+.pt_photo_info a{color:#787878;}
+.pt_photo_info a.ts{color:#ff3189;margin-right:10px;text-decoration:underline;}
+.pt_photo_info a.ts01{color:#c9c9c9;text-decoration:underline;}
+
+.bomb_createPhoto{background:url(../images/bomb_bg01.png);width:785px;height:274px;position:absolute;left:0;top:0;}
+.cp_con{margin:90px 0 0 70px;}
+.cp_con input{width:428px;margin-right:10px;}
+.cp_button{margin:35px 0 0 488px;}
+.cp_button a{width:111px;height:35px;display:inline-block;margin-left:12px;}
+.cp_y{background:url(../images/bomb_bg03.gif);}
+.cp_submit{background:url(../images/bomb_bg04.gif);}
+.cp_close{display:inline-block;background:url(../images/bomb_bg02.gif);width:21px;height:21px;right:36px;top:24px;position:absolute;}
+

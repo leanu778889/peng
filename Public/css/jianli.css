@@ -1,0 +1,11 @@
+/* CSS Document */
+body{ background:url(../images/bg.jpg);}
+.content{ width:950px; height:1050px; margin:0px auto; background:#FFF; margin-top:25px;}
+.title{ width:950px; height:55px; background:#999; font-size:28px; color:#F00; text-align:center;}
+.con{ margin-top:15px;}
+.one{ margin-left:15px; height:100px;}
+.one_con{ float:left;}
+.img{ float:right; margin-right:15px;}
+.two{ margin-top:15px;}
+.three{ margin-top:15px;}
+.tit{ background:#CCC; height:35px;}

@@ -1,0 +1,1478 @@
+[ 2013-12-03T10:35:53+08:00 ] 127.0.0.1 /actor/admin.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003486s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003697s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.052942s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053172s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002265s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002641s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002534s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002456s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010378s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002922s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003080s ]
+
+[ 2013-12-03T10:35:56+08:00 ] 127.0.0.1 /actor/admin.php?m=Login&a=login
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002183s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002497s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\3365804034a278792511366f216e0502.php 第 8 行.
+NOTIC: [8] Use of undefined constant BACK_JS - assumed 'BACK_JS' D:\WWW\actor\admin\Runtime\Cache\3365804034a278792511366f216e0502.php 第 60 行.
+NOTIC: [8] Use of undefined constant BACK_JS - assumed 'BACK_JS' D:\WWW\actor\admin\Runtime\Cache\3365804034a278792511366f216e0502.php 第 61 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.037345s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037546s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001003s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001070s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000668s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001266s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004560s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001725s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001881s ]
+
+[ 2013-12-03T10:35:57+08:00 ] 127.0.0.1 /actor/admin.php?m=Login&a=verify
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002759s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002964s ]
+
+[ 2013-12-03T10:36:07+08:00 ] 127.0.0.1 /actor/admin.php?m=Login&a=login
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003215s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003427s ]
+SQL: SHOW COLUMNS FROM `act_users` [ RunTime:0.066207s ]
+SQL: SELECT `usgp_id`,`user_name` FROM `act_users` WHERE ( `user_name` = 'gbcadmin' ) AND ( `user_password` = '85101222181144812521881824225e121e810487' )  [ RunTime:0.001089s ]
+SQL: SHOW COLUMNS FROM `act_users_group` [ RunTime:0.008598s ]
+SQL: SELECT `usgp_state` FROM `act_users_group` WHERE ( `usgp_state` = 1 ) AND ( `usgp_id` = 1 ) LIMIT 1   [ RunTime:0.002442s ]
+SQL: SHOW COLUMNS FROM `act_login_log` [ RunTime:0.058281s ]
+SQL: INSERT INTO `act_login_log` (`lnlg_username`,`lnlg_time`,`lnlg_ip`,`usgp_id`) VALUES ('gbcadmin',1386038166,'127.0.0.1',1) [ RunTime:0.058449s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.046634s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046858s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002471s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002323s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002011s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002476s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009780s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002985s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003143s ]
+
+[ 2013-12-03T10:36:08+08:00 ] 127.0.0.1 /actor/admin.php?m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001577s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001776s ]
+SQL: SHOW COLUMNS FROM `act_users_group` [ RunTime:0.007159s ]
+SQL: SELECT `usgp_name` FROM `act_users_group` WHERE ( `usgp_id` = 1 ) LIMIT 1   [ RunTime:0.002915s ]
+SQL: SHOW COLUMNS FROM `act_menus_power` [ RunTime:0.009133s ]
+SQL: SHOW COLUMNS FROM `act_menus` [ RunTime:0.012012s ]
+SQL: SELECT `menu_id`,`menu_name` FROM `act_menus` WHERE ( `menu_pid`=0 AND `menu_rank`=1 AND `menu_state`=1  ) ORDER BY menu_sort  [ RunTime:0.003046s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\8259e3d0bf36d64289355928982ce624.php 第 5 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\8259e3d0bf36d64289355928982ce624.php 第 23 行.
+NOTIC: [8] Use of undefined constant IMAGES_PATH_ADMIN - assumed 'IMAGES_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\8259e3d0bf36d64289355928982ce624.php 第 30 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\8259e3d0bf36d64289355928982ce624.php 第 35 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\8259e3d0bf36d64289355928982ce624.php 第 36 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\8259e3d0bf36d64289355928982ce624.php 第 469 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.032214s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032411s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001603s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001023s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000673s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001296s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005047s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.005213s ]
+INFO: [ view_end ] --END-- [ RunTime:0.005435s ]
+
+[ 2013-12-03T10:36:08+08:00 ] 127.0.0.1 /actor/admin.php?m=Index&a=welcome
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001706s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001928s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\52fef3a85d4cd0cd415aabd330836914.php 第 4 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\52fef3a85d4cd0cd415aabd330836914.php 第 69 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.030874s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031071s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001106s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000699s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001564s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004818s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001664s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001822s ]
+
+[ 2013-12-03T10:36:08+08:00 ] 127.0.0.1 /actor/admin.php?m=Index&a=ajax_menu&pid=1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002582s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002835s ]
+SQL: SHOW COLUMNS FROM `act_menus` [ RunTime:0.010663s ]
+SQL: SHOW COLUMNS FROM `act_menus_power` [ RunTime:0.010942s ]
+SQL: SELECT * FROM `act_menus` WHERE ( `menu_pid`=1 AND `menu_rank`=2 AND `menu_state`=1  ) ORDER BY menu_sort  [ RunTime:0.008625s ]
+
+[ 2013-12-03T10:41:05+08:00 ] 127.0.0.1 /actor/admin.php?m=Index&a=ajax_menu&pid=1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002884s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003082s ]
+SQL: SHOW COLUMNS FROM `act_menus` [ RunTime:0.008979s ]
+SQL: SHOW COLUMNS FROM `act_menus_power` [ RunTime:0.010545s ]
+SQL: SELECT * FROM `act_menus` WHERE ( `menu_pid`=1 AND `menu_rank`=2 AND `menu_state`=1  ) ORDER BY menu_sort  [ RunTime:0.002258s ]
+
+[ 2013-12-03T10:41:06+08:00 ] 127.0.0.1 /actor/admin.php?m=Index&a=ajax_menu&pid=3
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002893s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003087s ]
+SQL: SHOW COLUMNS FROM `act_menus` [ RunTime:0.008324s ]
+SQL: SHOW COLUMNS FROM `act_menus_power` [ RunTime:0.011286s ]
+SQL: SELECT * FROM `act_menus` WHERE ( `menu_pid`=3 AND `menu_rank`=2 AND `menu_state`=1  ) ORDER BY menu_sort  [ RunTime:0.002530s ]
+
+[ 2013-12-03T10:41:07+08:00 ] 127.0.0.1 /actor/admin.php?m=Index&a=ajax_menu&pid=15
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001708s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001907s ]
+SQL: SHOW COLUMNS FROM `act_menus` [ RunTime:0.011386s ]
+SQL: SHOW COLUMNS FROM `act_menus_power` [ RunTime:0.007039s ]
+SQL: SELECT * FROM `act_menus` WHERE ( `menu_pid`=15 AND `menu_rank`=2 AND `menu_state`=1  ) ORDER BY menu_sort  [ RunTime:0.002579s ]
+
+[ 2013-12-03T10:41:15+08:00 ] 127.0.0.1 /actor/admin.php?m=Index&a=ajax_menu&pid=3
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002762s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002960s ]
+SQL: SHOW COLUMNS FROM `act_menus` [ RunTime:0.007219s ]
+SQL: SHOW COLUMNS FROM `act_menus_power` [ RunTime:0.009008s ]
+SQL: SELECT * FROM `act_menus` WHERE ( `menu_pid`=3 AND `menu_rank`=2 AND `menu_state`=1  ) ORDER BY menu_sort  [ RunTime:0.004334s ]
+
+[ 2013-12-03T10:41:18+08:00 ] 127.0.0.1 /actor/admin.php?m=Index&a=ajax_menu&pid=1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001745s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001926s ]
+SQL: SHOW COLUMNS FROM `act_menus` [ RunTime:0.010125s ]
+SQL: SHOW COLUMNS FROM `act_menus_power` [ RunTime:0.008908s ]
+SQL: SELECT * FROM `act_menus` WHERE ( `menu_pid`=1 AND `menu_rank`=2 AND `menu_state`=1  ) ORDER BY menu_sort  [ RunTime:0.002780s ]
+
+[ 2013-12-03T10:41:20+08:00 ] 127.0.0.1 /actor/admin.php?m=Menu&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001675s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001882s ]
+SQL: SHOW COLUMNS FROM `act_menus` [ RunTime:0.010081s ]
+SQL: SELECT * FROM `act_menus` WHERE ( menu_pid=0 ) ORDER BY menu_sort  [ RunTime:0.002950s ]
+SQL: SELECT * FROM `act_menus` WHERE ( menu_pid=1 )  [ RunTime:0.000498s ]
+SQL: SELECT * FROM `act_menus` WHERE ( menu_pid=3 )  [ RunTime:0.000444s ]
+SQL: SELECT * FROM `act_menus` WHERE ( menu_pid=9 )  [ RunTime:0.000432s ]
+SQL: SELECT * FROM `act_menus` WHERE ( menu_pid=13 )  [ RunTime:0.000437s ]
+SQL: SELECT * FROM `act_menus` WHERE ( menu_pid=15 )  [ RunTime:0.000462s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\a8ee9f35af09121ee1c20130fbd96d68.php 第 7 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\a8ee9f35af09121ee1c20130fbd96d68.php 第 11 行.
+NOTIC: [8] Use of undefined constant IMAGES_PATH_ADMIN - assumed 'IMAGES_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\a8ee9f35af09121ee1c20130fbd96d68.php 第 18 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\a8ee9f35af09121ee1c20130fbd96d68.php 第 23 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\a8ee9f35af09121ee1c20130fbd96d68.php 第 24 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\a8ee9f35af09121ee1c20130fbd96d68.php 第 25 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\a8ee9f35af09121ee1c20130fbd96d68.php 第 26 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\a8ee9f35af09121ee1c20130fbd96d68.php 第 127 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.046160s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046349s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002544s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.020189s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002395s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002538s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.028165s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.004159s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004364s ]
+
+[ 2013-12-03T10:41:23+08:00 ] 127.0.0.1 /actor/admin.php?m=Menu&a=towlevel&pid=15&pname=%E7%94%A8%E6%88%B7%E6%88%90%E5%91%98%E7%AE%A1%E7%90%86
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001579s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001788s ]
+SQL: SHOW COLUMNS FROM `act_menus` [ RunTime:0.007523s ]
+SQL: SELECT * FROM `act_menus` WHERE ( menu_pid=0 )  [ RunTime:0.002742s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\49c42a5ea21cffb9945d6fff3efec2e4.php 第 7 行.
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\49c42a5ea21cffb9945d6fff3efec2e4.php 第 8 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\49c42a5ea21cffb9945d6fff3efec2e4.php 第 12 行.
+NOTIC: [8] Use of undefined constant IMAGES_PATH_ADMIN - assumed 'IMAGES_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\49c42a5ea21cffb9945d6fff3efec2e4.php 第 19 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\49c42a5ea21cffb9945d6fff3efec2e4.php 第 26 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\49c42a5ea21cffb9945d6fff3efec2e4.php 第 28 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\49c42a5ea21cffb9945d6fff3efec2e4.php 第 29 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\49c42a5ea21cffb9945d6fff3efec2e4.php 第 30 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\49c42a5ea21cffb9945d6fff3efec2e4.php 第 31 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\49c42a5ea21cffb9945d6fff3efec2e4.php 第 32 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\49c42a5ea21cffb9945d6fff3efec2e4.php 第 33 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\49c42a5ea21cffb9945d6fff3efec2e4.php 第 34 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\49c42a5ea21cffb9945d6fff3efec2e4.php 第 35 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\49c42a5ea21cffb9945d6fff3efec2e4.php 第 36 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\49c42a5ea21cffb9945d6fff3efec2e4.php 第 146 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.032037s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032230s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001237s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001022s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000712s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001299s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004713s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001843s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002009s ]
+
+[ 2013-12-03T10:41:40+08:00 ] 127.0.0.1 /actor/admin.php?clientid=J_task_name_input&J_task_name_input=%E6%B7%BB%E5%8A%A0%E7%94%A8%E6%88%B7%E8%AF%A6%E7%BB%86%E4%BF%A1%E6%81%AF&m=Menu&a=chknewmenu&_=1386038500387
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003150s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003604s ]
+SQL: SHOW COLUMNS FROM `act_menus` [ RunTime:0.007173s ]
+SQL: SELECT * FROM `act_menus` WHERE ( `menu_name` = '添加用户详细信息' )  [ RunTime:0.001802s ]
+
+[ 2013-12-03T10:42:08+08:00 ] 127.0.0.1 /actor/admin.php?m=Menu&a=towlevel
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002555s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002899s ]
+SQL: SHOW COLUMNS FROM `act_menus` [ RunTime:0.007315s ]
+SQL: INSERT INTO `act_menus` (`menu_name`,`menu_m`,`menu_a`,`menu_rank`,`menu_pid`,`menu_state`,`menu_sort`) VALUES ('添加用户详细信息','Party','addactmess',2,15,1,0) [ RunTime:0.002649s ]
+
+[ 2013-12-03T10:42:09+08:00 ] 127.0.0.1 /actor/admin.php?m=Menu&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001847s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002052s ]
+SQL: SHOW COLUMNS FROM `act_menus` [ RunTime:0.012360s ]
+SQL: SELECT * FROM `act_menus` WHERE ( menu_pid=0 ) ORDER BY menu_sort  [ RunTime:0.005685s ]
+SQL: SELECT * FROM `act_menus` WHERE ( menu_pid=1 )  [ RunTime:0.001191s ]
+SQL: SELECT * FROM `act_menus` WHERE ( menu_pid=3 )  [ RunTime:0.000678s ]
+SQL: SELECT * FROM `act_menus` WHERE ( menu_pid=9 )  [ RunTime:0.000544s ]
+SQL: SELECT * FROM `act_menus` WHERE ( menu_pid=13 )  [ RunTime:0.000505s ]
+SQL: SELECT * FROM `act_menus` WHERE ( menu_pid=15 )  [ RunTime:0.000419s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\a8ee9f35af09121ee1c20130fbd96d68.php 第 7 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\a8ee9f35af09121ee1c20130fbd96d68.php 第 11 行.
+NOTIC: [8] Use of undefined constant IMAGES_PATH_ADMIN - assumed 'IMAGES_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\a8ee9f35af09121ee1c20130fbd96d68.php 第 18 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\a8ee9f35af09121ee1c20130fbd96d68.php 第 23 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\a8ee9f35af09121ee1c20130fbd96d68.php 第 24 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\a8ee9f35af09121ee1c20130fbd96d68.php 第 25 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\a8ee9f35af09121ee1c20130fbd96d68.php 第 26 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\a8ee9f35af09121ee1c20130fbd96d68.php 第 127 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.057003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.057202s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.004170s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002396s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001856s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003121s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012058s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.005869s ]
+INFO: [ view_end ] --END-- [ RunTime:0.006072s ]
+
+[ 2013-12-03T10:42:12+08:00 ] 127.0.0.1 /actor/admin.php?m=Menu&a=towlevel&pid=15&pname=%E7%94%A8%E6%88%B7%E6%88%90%E5%91%98%E7%AE%A1%E7%90%86
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001711s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001919s ]
+SQL: SHOW COLUMNS FROM `act_menus` [ RunTime:0.008851s ]
+SQL: SELECT * FROM `act_menus` WHERE ( menu_pid=0 )  [ RunTime:0.003304s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\49c42a5ea21cffb9945d6fff3efec2e4.php 第 7 行.
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\49c42a5ea21cffb9945d6fff3efec2e4.php 第 8 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\49c42a5ea21cffb9945d6fff3efec2e4.php 第 12 行.
+NOTIC: [8] Use of undefined constant IMAGES_PATH_ADMIN - assumed 'IMAGES_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\49c42a5ea21cffb9945d6fff3efec2e4.php 第 19 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\49c42a5ea21cffb9945d6fff3efec2e4.php 第 26 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\49c42a5ea21cffb9945d6fff3efec2e4.php 第 28 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\49c42a5ea21cffb9945d6fff3efec2e4.php 第 29 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\49c42a5ea21cffb9945d6fff3efec2e4.php 第 30 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\49c42a5ea21cffb9945d6fff3efec2e4.php 第 31 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\49c42a5ea21cffb9945d6fff3efec2e4.php 第 32 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\49c42a5ea21cffb9945d6fff3efec2e4.php 第 33 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\49c42a5ea21cffb9945d6fff3efec2e4.php 第 34 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\49c42a5ea21cffb9945d6fff3efec2e4.php 第 35 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\49c42a5ea21cffb9945d6fff3efec2e4.php 第 36 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\49c42a5ea21cffb9945d6fff3efec2e4.php 第 146 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.033037s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033229s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001262s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001330s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000693s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001343s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005112s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001737s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001913s ]
+
+[ 2013-12-03T10:42:30+08:00 ] 127.0.0.1 /actor/admin.php?clientid=J_task_name_input&J_task_name_input=%E6%B7%BB%E5%8A%A0%E5%89%A7%E7%BB%84%E8%AF%A6%E7%BB%86%E4%BF%A1%E6%81%AF&m=Menu&a=chknewmenu&_=1386038550451
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001567s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001754s ]
+SQL: SHOW COLUMNS FROM `act_menus` [ RunTime:0.007314s ]
+SQL: SELECT * FROM `act_menus` WHERE ( `menu_name` = '添加剧组详细信息' )  [ RunTime:0.002261s ]
+
+[ 2013-12-03T10:42:45+08:00 ] 127.0.0.1 /actor/admin.php?m=Menu&a=towlevel
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002192s ]
+SQL: SHOW COLUMNS FROM `act_menus` [ RunTime:0.007712s ]
+SQL: INSERT INTO `act_menus` (`menu_name`,`menu_m`,`menu_a`,`menu_rank`,`menu_pid`,`menu_state`,`menu_sort`) VALUES ('添加剧组详细信息','Party','addteammess',2,15,1,0) [ RunTime:0.003464s ]
+
+[ 2013-12-03T10:42:46+08:00 ] 127.0.0.1 /actor/admin.php?m=Menu&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001561s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001767s ]
+SQL: SHOW COLUMNS FROM `act_menus` [ RunTime:0.007422s ]
+SQL: SELECT * FROM `act_menus` WHERE ( menu_pid=0 ) ORDER BY menu_sort  [ RunTime:0.002865s ]
+SQL: SELECT * FROM `act_menus` WHERE ( menu_pid=1 )  [ RunTime:0.000703s ]
+SQL: SELECT * FROM `act_menus` WHERE ( menu_pid=3 )  [ RunTime:0.000918s ]
+SQL: SELECT * FROM `act_menus` WHERE ( menu_pid=9 )  [ RunTime:0.000490s ]
+SQL: SELECT * FROM `act_menus` WHERE ( menu_pid=13 )  [ RunTime:0.000419s ]
+SQL: SELECT * FROM `act_menus` WHERE ( menu_pid=15 )  [ RunTime:0.000450s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\a8ee9f35af09121ee1c20130fbd96d68.php 第 7 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\a8ee9f35af09121ee1c20130fbd96d68.php 第 11 行.
+NOTIC: [8] Use of undefined constant IMAGES_PATH_ADMIN - assumed 'IMAGES_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\a8ee9f35af09121ee1c20130fbd96d68.php 第 18 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\a8ee9f35af09121ee1c20130fbd96d68.php 第 23 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\a8ee9f35af09121ee1c20130fbd96d68.php 第 24 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\a8ee9f35af09121ee1c20130fbd96d68.php 第 25 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\a8ee9f35af09121ee1c20130fbd96d68.php 第 26 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\a8ee9f35af09121ee1c20130fbd96d68.php 第 127 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.057529s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.057763s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002851s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002248s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001900s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002470s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010166s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003943s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004151s ]
+
+[ 2013-12-03T10:42:49+08:00 ] 127.0.0.1 /actor/admin.php?m=Index&a=ajax_menu&pid=15
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001526s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001716s ]
+SQL: SHOW COLUMNS FROM `act_menus` [ RunTime:0.007209s ]
+SQL: SHOW COLUMNS FROM `act_menus_power` [ RunTime:0.009217s ]
+SQL: SELECT * FROM `act_menus` WHERE ( `menu_pid`=15 AND `menu_rank`=2 AND `menu_state`=1  ) ORDER BY menu_sort  [ RunTime:0.002634s ]
+
+[ 2013-12-03T10:42:50+08:00 ] 127.0.0.1 /actor/admin.php?m=Party&a=addactmess
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001719s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001936s ]
+ERR: 非法操作:addactmess
+
+[ 2013-12-03T10:42:54+08:00 ] 127.0.0.1 /actor/admin.php?m=Party&a=addteammess
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002072s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002368s ]
+ERR: 非法操作:addteammess
+
+[ 2013-12-03T10:42:56+08:00 ] 127.0.0.1 /actor/admin.php?m=Party&a=party
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001783s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002483s ]
+SQL: SHOW COLUMNS FROM `act_type` [ RunTime:0.007945s ]
+SQL: SELECT * FROM `act_type`  [ RunTime:0.003366s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.028019s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028238s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001053s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000998s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000676s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001248s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004415s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001676s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001834s ]
+
+[ 2013-12-03T10:45:06+08:00 ] 127.0.0.1 /actor/admin.php?m=Index&a=ajax_menu&pid=3
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002725s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002992s ]
+SQL: SHOW COLUMNS FROM `act_menus` [ RunTime:0.007357s ]
+SQL: SHOW COLUMNS FROM `act_menus_power` [ RunTime:0.008969s ]
+SQL: SELECT * FROM `act_menus` WHERE ( `menu_pid`=3 AND `menu_rank`=2 AND `menu_state`=1  ) ORDER BY menu_sort  [ RunTime:0.002860s ]
+
+[ 2013-12-03T10:45:08+08:00 ] 127.0.0.1 /actor/admin.php?m=Index&a=ajax_menu&pid=9
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001525s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001706s ]
+SQL: SHOW COLUMNS FROM `act_menus` [ RunTime:0.007250s ]
+SQL: SHOW COLUMNS FROM `act_menus_power` [ RunTime:0.008709s ]
+SQL: SELECT * FROM `act_menus` WHERE ( `menu_pid`=9 AND `menu_rank`=2 AND `menu_state`=1  ) ORDER BY menu_sort  [ RunTime:0.002515s ]
+
+[ 2013-12-03T10:45:10+08:00 ] 127.0.0.1 /actor/admin.php?m=Newsmanager&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001564s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001763s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\736dbe502234b0020ef915a10d175b98.php 第 7 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\736dbe502234b0020ef915a10d175b98.php 第 11 行.
+NOTIC: [8] Use of undefined constant IMAGES_PATH_ADMIN - assumed 'IMAGES_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\736dbe502234b0020ef915a10d175b98.php 第 18 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\736dbe502234b0020ef915a10d175b98.php 第 23 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\736dbe502234b0020ef915a10d175b98.php 第 24 行.
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\736dbe502234b0020ef915a10d175b98.php 第 25 行.
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\736dbe502234b0020ef915a10d175b98.php 第 26 行.
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\736dbe502234b0020ef915a10d175b98.php 第 27 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\736dbe502234b0020ef915a10d175b98.php 第 28 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\736dbe502234b0020ef915a10d175b98.php 第 29 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\736dbe502234b0020ef915a10d175b98.php 第 30 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\736dbe502234b0020ef915a10d175b98.php 第 31 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\736dbe502234b0020ef915a10d175b98.php 第 32 行.
+NOTIC: [8] Undefined variable: result D:\WWW\actor\admin\Runtime\Cache\736dbe502234b0020ef915a10d175b98.php 第 47 行.
+NOTIC: [8] Undefined variable: result D:\WWW\actor\admin\Runtime\Cache\736dbe502234b0020ef915a10d175b98.php 第 49 行.
+NOTIC: [8] Undefined variable: result D:\WWW\actor\admin\Runtime\Cache\736dbe502234b0020ef915a10d175b98.php 第 77 行.
+NOTIC: [8] Undefined variable: result D:\WWW\actor\admin\Runtime\Cache\736dbe502234b0020ef915a10d175b98.php 第 83 行.
+NOTIC: [8] Undefined variable: result D:\WWW\actor\admin\Runtime\Cache\736dbe502234b0020ef915a10d175b98.php 第 89 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\736dbe502234b0020ef915a10d175b98.php 第 101 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\736dbe502234b0020ef915a10d175b98.php 第 103 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.048130s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048325s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002340s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002318s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002191s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002769s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010077s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002979s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003140s ]
+
+[ 2013-12-03T10:46:05+08:00 ] 127.0.0.1 /actor/admin.php?m=Newsmanager&a=addmessage
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002772s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002957s ]
+SQL: SHOW COLUMNS FROM `act_announ` [ RunTime:0.007521s ]
+SQL: INSERT INTO `act_announ` (`time`,`author`,`title`,`content`,`pub_ip`) VALUES (1386038710,'龚超','孙悟空候选人六小龄童','孙悟空候选人六小龄童孙悟空候选人六小龄童孙悟空候选人六小龄童成功接受邀请出演孙悟空一角色',127) [ RunTime:0.090256s ]
+
+[ 2013-12-03T10:46:07+08:00 ] 127.0.0.1 /actor/admin.php?m=Newsmanager&a=newsmanager
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001566s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001767s ]
+NOTIC: [8] Use of undefined constant announ - assumed 'announ' D:\WWW\actor\admin\Lib\Action\NewsmanagerAction.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `act_announ` [ RunTime:0.008810s ]
+SQL: SELECT * FROM `act_announ`  [ RunTime:0.004743s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\09ab91f7c21213794a85f7cc529f77fa.php 第 7 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\09ab91f7c21213794a85f7cc529f77fa.php 第 12 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\09ab91f7c21213794a85f7cc529f77fa.php 第 13 行.
+NOTIC: [8] Undefined index:  p_id D:\WWW\actor\admin\Runtime\Cache\09ab91f7c21213794a85f7cc529f77fa.php 第 46 行.
+NOTIC: [8] Undefined index:  p_id D:\WWW\actor\admin\Runtime\Cache\09ab91f7c21213794a85f7cc529f77fa.php 第 46 行.
+NOTIC: [8] Undefined index:  p_id D:\WWW\actor\admin\Runtime\Cache\09ab91f7c21213794a85f7cc529f77fa.php 第 46 行.
+NOTIC: [8] Undefined index:  p_id D:\WWW\actor\admin\Runtime\Cache\09ab91f7c21213794a85f7cc529f77fa.php 第 46 行.
+NOTIC: [8] Undefined index:  p_id D:\WWW\actor\admin\Runtime\Cache\09ab91f7c21213794a85f7cc529f77fa.php 第 46 行.
+NOTIC: [8] Undefined index:  p_id D:\WWW\actor\admin\Runtime\Cache\09ab91f7c21213794a85f7cc529f77fa.php 第 46 行.
+NOTIC: [8] Undefined index:  p_id D:\WWW\actor\admin\Runtime\Cache\09ab91f7c21213794a85f7cc529f77fa.php 第 46 行.
+NOTIC: [8] Undefined index:  p_id D:\WWW\actor\admin\Runtime\Cache\09ab91f7c21213794a85f7cc529f77fa.php 第 46 行.
+NOTIC: [8] Undefined index:  p_id D:\WWW\actor\admin\Runtime\Cache\09ab91f7c21213794a85f7cc529f77fa.php 第 46 行.
+NOTIC: [8] Undefined index:  p_id D:\WWW\actor\admin\Runtime\Cache\09ab91f7c21213794a85f7cc529f77fa.php 第 46 行.
+NOTIC: [8] Undefined index:  p_id D:\WWW\actor\admin\Runtime\Cache\09ab91f7c21213794a85f7cc529f77fa.php 第 46 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\09ab91f7c21213794a85f7cc529f77fa.php 第 55 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.173720s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.173908s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002402s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002257s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001879s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002538s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009528s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002951s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003109s ]
+
+[ 2013-12-03T12:52:00+08:00 ] 127.0.0.1 /actor/admin.php?m=Index&a=ajax_menu&pid=3
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002525s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002663s ]
+SQL: SHOW COLUMNS FROM `act_menus` [ RunTime:0.008353s ]
+SQL: SHOW COLUMNS FROM `act_menus_power` [ RunTime:0.010186s ]
+SQL: SELECT * FROM `act_menus` WHERE ( `menu_pid`=3 AND `menu_rank`=2 AND `menu_state`=1  ) ORDER BY menu_sort  [ RunTime:0.002824s ]
+
+[ 2013-12-03T12:52:01+08:00 ] 127.0.0.1 /actor/admin.php?m=Index&a=ajax_menu&pid=15
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001014s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001136s ]
+SQL: SHOW COLUMNS FROM `act_menus` [ RunTime:0.007373s ]
+SQL: SHOW COLUMNS FROM `act_menus_power` [ RunTime:0.006384s ]
+SQL: SELECT * FROM `act_menus` WHERE ( `menu_pid`=15 AND `menu_rank`=2 AND `menu_state`=1  ) ORDER BY menu_sort  [ RunTime:0.001454s ]
+
+[ 2013-12-03T14:49:08+08:00 ] 127.0.0.1 /actor/admin.php?m=Party&a=addparty
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002218s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002575s ]
+SQL: SHOW COLUMNS FROM `act_party` [ RunTime:0.005492s ]
+NOTIC: [8] Undefined variable: typeid D:\WWW\actor\admin\Lib\Action\PartyAction.class.php 第 17 行.
+SQL: INSERT INTO `act_party` (`p_name`,`p_password`,`type`) VALUES ('qqqq','qqqqqq',3) [ RunTime:0.079634s ]
+
+[ 2013-12-03T14:59:30+08:00 ] 127.0.0.1 /actor/admin.php?m=Party&a=party
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001677s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001823s ]
+SQL: SHOW COLUMNS FROM `act_type` [ RunTime:0.005175s ]
+SQL: SELECT * FROM `act_type`  [ RunTime:0.001360s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.020516s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020669s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003062s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001384s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001207s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001769s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007721s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001733s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001819s ]
+
+[ 2013-12-03T14:59:40+08:00 ] 127.0.0.1 /actor/admin.php?m=Party&a=addparty
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.008421s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008663s ]
+SQL: SHOW COLUMNS FROM `act_party` [ RunTime:0.007913s ]
+NOTIC: [8] Undefined variable: typeid D:\WWW\actor\admin\Lib\Action\PartyAction.class.php 第 17 行.
+SQL: INSERT INTO `act_party` (`p_name`,`p_password`,`type`) VALUES ('zhangsan','zhangsan',1) [ RunTime:0.063271s ]
+
+[ 2013-12-03T15:00:30+08:00 ] 127.0.0.1 /actor/admin.php?m=Party&a=party
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001849s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001985s ]
+SQL: SHOW COLUMNS FROM `act_type` [ RunTime:0.007397s ]
+SQL: SELECT * FROM `act_type`  [ RunTime:0.000438s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.023292s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023439s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001682s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001685s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001367s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001892s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006910s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002328s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002437s ]
+
+[ 2013-12-03T15:00:42+08:00 ] 127.0.0.1 /actor/admin.php?m=Party&a=addparty
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001850s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001985s ]
+SQL: SHOW COLUMNS FROM `act_party` [ RunTime:0.005052s ]
+NOTIC: [8] Undefined variable: typeid D:\WWW\actor\admin\Lib\Action\PartyAction.class.php 第 17 行.
+
+[ 2013-12-03T15:01:08+08:00 ] 127.0.0.1 /actor/admin.php?m=Party&a=addparty
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000769s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000877s ]
+SQL: SHOW COLUMNS FROM `act_party` [ RunTime:0.004063s ]
+NOTIC: [8] Undefined index:  info D:\WWW\actor\admin\Lib\Action\PartyAction.class.php 第 13 行.
+NOTIC: [8] Undefined index:  info D:\WWW\actor\admin\Lib\Action\PartyAction.class.php 第 14 行.
+NOTIC: [8] Undefined index:  type D:\WWW\actor\admin\Lib\Action\PartyAction.class.php 第 15 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\WWW\actor\admin\Lib\Action\PartyAction.class.php 第 16 行.
+NOTIC: [8] Undefined variable: typeid D:\WWW\actor\admin\Lib\Action\PartyAction.class.php 第 19 行.
+
+[ 2013-12-03T15:01:11+08:00 ] 127.0.0.1 /actor/admin.php?m=Party&a=party
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.015890s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.016047s ]
+SQL: SHOW COLUMNS FROM `act_type` [ RunTime:0.004096s ]
+SQL: SELECT * FROM `act_type`  [ RunTime:0.003868s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.020712s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020840s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001360s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.004685s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001254s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003509s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011068s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001621s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001698s ]
+
+[ 2013-12-03T15:01:20+08:00 ] 127.0.0.1 /actor/admin.php?m=Party&a=addparty
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000861s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000973s ]
+SQL: SHOW COLUMNS FROM `act_party` [ RunTime:0.004128s ]
+NOTIC: [8] Undefined variable: typeid D:\WWW\actor\admin\Lib\Action\PartyAction.class.php 第 17 行.
+
+[ 2013-12-03T15:03:11+08:00 ] 127.0.0.1 /actor/admin.php?m=Party&a=party
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003848s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+SQL: SHOW COLUMNS FROM `act_type` [ RunTime:0.005083s ]
+SQL: SELECT * FROM `act_type`  [ RunTime:0.002127s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017714s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017863s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000662s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000627s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000430s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000802s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002788s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001091s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001185s ]
+
+[ 2013-12-03T15:03:22+08:00 ] 127.0.0.1 /actor/admin.php?m=Party&a=addparty
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.006795s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009225s ]
+SQL: SHOW COLUMNS FROM `act_party` [ RunTime:0.004911s ]
+NOTIC: [8] Undefined variable: typeid D:\WWW\actor\admin\Lib\Action\PartyAction.class.php 第 17 行.
+SQL: INSERT INTO `act_party` (`p_name`,`p_password`,`type`) VALUES ('zhangsan','zhangsan','1|2|3|4|5|') [ RunTime:0.099831s ]
+
+[ 2013-12-03T15:26:37+08:00 ] 127.0.0.1 /actor/admin.php?m=Index&a=ajax_menu&pid=1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002443s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002605s ]
+SQL: SHOW COLUMNS FROM `act_menus` [ RunTime:0.007902s ]
+SQL: SHOW COLUMNS FROM `act_menus_power` [ RunTime:0.009853s ]
+SQL: SELECT * FROM `act_menus` WHERE ( `menu_pid`=1 AND `menu_rank`=2 AND `menu_state`=1  ) ORDER BY menu_sort  [ RunTime:0.002718s ]
+
+[ 2013-12-03T15:26:45+08:00 ] 127.0.0.1 /actor/admin.php?m=Menu&a=editmenu&menuid=17
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002515s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002740s ]
+SQL: SHOW COLUMNS FROM `act_menus` [ RunTime:0.006548s ]
+SQL: SELECT * FROM `act_menus` WHERE ( menu_pid=0 )  [ RunTime:0.004363s ]
+SQL: SELECT * FROM `act_menus` WHERE ( menu_id=17 )  [ RunTime:0.000400s ]
+SQL: SELECT * FROM `act_menus` WHERE ( `menu_rank` = 2 ) AND ( `menu_id` = 17 )  [ RunTime:0.000346s ]
+SQL: SELECT * FROM `act_menus` WHERE ( `menu_rank` = 1 ) AND ( `menu_id` = 17 )  [ RunTime:0.000309s ]
+SQL: SELECT * FROM `act_menus` WHERE ( menu_pid=17 )  [ RunTime:0.000325s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\bb4ba01bc0e8404dc41ba20b2496e39d.php 第 7 行.
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\bb4ba01bc0e8404dc41ba20b2496e39d.php 第 8 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\bb4ba01bc0e8404dc41ba20b2496e39d.php 第 12 行.
+NOTIC: [8] Use of undefined constant IMAGES_PATH_ADMIN - assumed 'IMAGES_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\bb4ba01bc0e8404dc41ba20b2496e39d.php 第 19 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\bb4ba01bc0e8404dc41ba20b2496e39d.php 第 26 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\bb4ba01bc0e8404dc41ba20b2496e39d.php 第 28 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\bb4ba01bc0e8404dc41ba20b2496e39d.php 第 29 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\bb4ba01bc0e8404dc41ba20b2496e39d.php 第 30 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\bb4ba01bc0e8404dc41ba20b2496e39d.php 第 31 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\bb4ba01bc0e8404dc41ba20b2496e39d.php 第 32 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\bb4ba01bc0e8404dc41ba20b2496e39d.php 第 33 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\bb4ba01bc0e8404dc41ba20b2496e39d.php 第 34 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\bb4ba01bc0e8404dc41ba20b2496e39d.php 第 35 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\bb4ba01bc0e8404dc41ba20b2496e39d.php 第 36 行.
+NOTIC: [8] Use of undefined constant selected - assumed 'selected' D:\WWW\actor\admin\Runtime\Cache\bb4ba01bc0e8404dc41ba20b2496e39d.php 第 97 行.
+NOTIC: [8] Use of undefined constant checked - assumed 'checked' D:\WWW\actor\admin\Runtime\Cache\bb4ba01bc0e8404dc41ba20b2496e39d.php 第 132 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\bb4ba01bc0e8404dc41ba20b2496e39d.php 第 156 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.108596s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.108756s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.005470s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003967s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.003082s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003542s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.016492s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.004081s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004216s ]
+
+[ 2013-12-03T16:18:40+08:00 ] 127.0.0.1 /actor/admin.php?m=Index&a=ajax_menu&pid=15
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001775s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001908s ]
+SQL: SHOW COLUMNS FROM `act_menus` [ RunTime:0.006628s ]
+SQL: SHOW COLUMNS FROM `act_menus_power` [ RunTime:0.005951s ]
+SQL: SELECT * FROM `act_menus` WHERE ( `menu_pid`=15 AND `menu_rank`=2 AND `menu_state`=1  ) ORDER BY menu_sort  [ RunTime:0.000644s ]
+
+[ 2013-12-03T16:18:41+08:00 ] 127.0.0.1 /actor/admin.php?m=Party&a=party
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000842s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000954s ]
+SQL: SHOW COLUMNS FROM `act_type` [ RunTime:0.005281s ]
+SQL: SELECT * FROM `act_type`  [ RunTime:0.002202s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.023475s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023627s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002499s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002434s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.004532s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002303s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012106s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003181s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003265s ]
+
+[ 2013-12-03T17:06:01+08:00 ] 127.0.0.1 /actor/admin.php?m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001191s ]
+SQL: SHOW COLUMNS FROM `act_users_group` [ RunTime:0.009374s ]
+SQL: SELECT `usgp_name` FROM `act_users_group` WHERE ( `usgp_id` = 1 ) LIMIT 1   [ RunTime:0.000548s ]
+SQL: SHOW COLUMNS FROM `act_menus_power` [ RunTime:0.006775s ]
+SQL: SHOW COLUMNS FROM `act_menus` [ RunTime:0.005423s ]
+SQL: SELECT `menu_id`,`menu_name` FROM `act_menus` WHERE ( `menu_pid`=0 AND `menu_rank`=1 AND `menu_state`=1  ) ORDER BY menu_sort  [ RunTime:0.002257s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\8259e3d0bf36d64289355928982ce624.php 第 5 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\8259e3d0bf36d64289355928982ce624.php 第 23 行.
+NOTIC: [8] Use of undefined constant IMAGES_PATH_ADMIN - assumed 'IMAGES_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\8259e3d0bf36d64289355928982ce624.php 第 30 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\8259e3d0bf36d64289355928982ce624.php 第 35 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\8259e3d0bf36d64289355928982ce624.php 第 36 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\8259e3d0bf36d64289355928982ce624.php 第 469 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.021624s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021726s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002097s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002107s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001770s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001954s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008149s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003341s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003497s ]
+
+[ 2013-12-03T17:06:02+08:00 ] 127.0.0.1 /actor/admin.php?m=Index&a=welcome
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001535s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001652s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\52fef3a85d4cd0cd415aabd330836914.php 第 4 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\52fef3a85d4cd0cd415aabd330836914.php 第 69 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.020939s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021062s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001382s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001255s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001021s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001279s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005153s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001458s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001531s ]
+
+[ 2013-12-03T17:06:02+08:00 ] 127.0.0.1 /actor/admin.php?m=Index&a=ajax_menu&pid=1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000787s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000894s ]
+SQL: SHOW COLUMNS FROM `act_menus` [ RunTime:0.004556s ]
+SQL: SHOW COLUMNS FROM `act_menus_power` [ RunTime:0.006149s ]
+SQL: SELECT * FROM `act_menus` WHERE ( `menu_pid`=1 AND `menu_rank`=2 AND `menu_state`=1  ) ORDER BY menu_sort  [ RunTime:0.009772s ]
+
+[ 2013-12-03T17:06:03+08:00 ] 127.0.0.1 /actor/admin.php?m=Index&a=ajax_menu&pid=15
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000788s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000887s ]
+SQL: SHOW COLUMNS FROM `act_menus` [ RunTime:0.004297s ]
+SQL: SHOW COLUMNS FROM `act_menus_power` [ RunTime:0.005740s ]
+SQL: SELECT * FROM `act_menus` WHERE ( `menu_pid`=15 AND `menu_rank`=2 AND `menu_state`=1  ) ORDER BY menu_sort  [ RunTime:0.009980s ]
+
+[ 2013-12-03T17:06:04+08:00 ] 127.0.0.1 /actor/admin.php?m=Party&a=addactmess
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001076s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001215s ]
+SQL: SHOW COLUMNS FROM `act_type` [ RunTime:0.004128s ]
+SQL: SELECT * FROM `act_type`  [ RunTime:0.001366s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.020616s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020745s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.006683s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002003s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001707s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002113s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012747s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002693s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002784s ]
+
+[ 2013-12-03T17:06:59+08:00 ] 127.0.0.1 /actor/admin.php?m=Party&a=addactmess
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.006275s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006483s ]
+SQL: SHOW COLUMNS FROM `act_type` [ RunTime:0.010435s ]
+SQL: SELECT * FROM `act_type`  [ RunTime:0.016795s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.062844s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.063057s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002732s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002299s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002071s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003479s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011016s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003621s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003768s ]
+
+[ 2013-12-03T17:07:02+08:00 ] 127.0.0.1 /actor/admin.php?m=Party&a=addactmess
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001463s ]
+SQL: SHOW COLUMNS FROM `act_type` [ RunTime:0.008223s ]
+SQL: SELECT * FROM `act_type`  [ RunTime:0.003545s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.023064s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023339s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001037s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001032s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000652s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001132s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004206s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001354s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001476s ]
+
+[ 2013-12-03T17:29:33+08:00 ] 127.0.0.1 /actor/admin.php?m=Party&a=addactmess
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001468s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001582s ]
+SQL: SHOW COLUMNS FROM `act_type` [ RunTime:0.004228s ]
+SQL: SELECT * FROM `act_type`  [ RunTime:0.002302s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.027598s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027722s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001295s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001173s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001053s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002360s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006331s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001546s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001620s ]
+
+[ 2013-12-03T17:31:00+08:00 ] 127.0.0.1 /actor/admin.php?m=Party&a=addactmess
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002214s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002406s ]
+SQL: SHOW COLUMNS FROM `act_type` [ RunTime:0.005519s ]
+SQL: SELECT * FROM `act_type`  [ RunTime:0.003178s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.023102s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023250s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001750s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001474s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001277s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001802s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006562s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002345s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002495s ]
+
+[ 2013-12-03T17:31:01+08:00 ] 127.0.0.1 /actor/admin.php?m=Party&a=addactmess
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000988s ]
+SQL: SHOW COLUMNS FROM `act_type` [ RunTime:0.004394s ]
+SQL: SELECT * FROM `act_type`  [ RunTime:0.002200s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017641s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017782s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000607s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000542s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000372s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000661s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002423s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000887s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000969s ]
+
+[ 2013-12-03T17:31:16+08:00 ] 127.0.0.1 /actor/admin.php?m=Party&a=addactmess
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000876s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000999s ]
+SQL: SHOW COLUMNS FROM `act_type` [ RunTime:0.005499s ]
+SQL: SELECT * FROM `act_type`  [ RunTime:0.003252s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014199s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014349s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000533s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000692s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000340s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000581s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002354s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000774s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000846s ]
+
+[ 2013-12-03T17:32:39+08:00 ] 127.0.0.1 /actor/admin.php?m=Party&a=addactmess
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001525s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001637s ]
+SQL: SHOW COLUMNS FROM `act_type` [ RunTime:0.004473s ]
+SQL: SELECT * FROM `act_type`  [ RunTime:0.001418s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.030959s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031159s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001329s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001282s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001604s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001655s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006127s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003039s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003136s ]
+
+[ 2013-12-03T18:08:34+08:00 ] 127.0.0.1 /actor/admin.php?m=Party&a=addparty
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001831s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001952s ]
+SQL: SHOW COLUMNS FROM `act_party` [ RunTime:0.004975s ]
+NOTIC: [8] Undefined index:  name D:\WWW\actor\admin\Lib\Action\PartyAction.class.php 第 13 行.
+NOTIC: [8] Undefined index:  pwd D:\WWW\actor\admin\Lib\Action\PartyAction.class.php 第 14 行.
+NOTIC: [8] Undefined index:  type D:\WWW\actor\admin\Lib\Action\PartyAction.class.php 第 15 行.
+SQL: INSERT INTO `act_party` (`p_name`,`p_password`,`type`) VALUES (null,null,null) [ RunTime:0.001868s ]
+ERR: 1048:Column 'p_name' cannot be null
+ [ SQL语句 ] : INSERT INTO `act_party` (`p_name`,`p_password`,`type`) VALUES (null,null,null)
+
+[ 2013-12-03T18:09:51+08:00 ] 127.0.0.1 /actor/admin.php?m=Party&a=addactmess
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001482s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001605s ]
+SQL: SHOW COLUMNS FROM `act_type` [ RunTime:0.004142s ]
+SQL: SELECT * FROM `act_type`  [ RunTime:0.001251s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019240s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019377s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001307s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001343s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001293s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001369s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005564s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001609s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001685s ]
+
+[ 2013-12-03T18:11:04+08:00 ] 127.0.0.1 /actor/admin.php?m=Party&a=addactmess
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001825s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001966s ]
+SQL: SHOW COLUMNS FROM `act_type` [ RunTime:0.005034s ]
+SQL: SELECT * FROM `act_type`  [ RunTime:0.003463s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.022593s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022743s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003134s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001598s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001368s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001972s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008402s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002143s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002280s ]
+
+[ 2013-12-03T18:11:14+08:00 ] 127.0.0.1 /actor/admin.php?m=Party&a=addactmess
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000738s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000859s ]
+SQL: SHOW COLUMNS FROM `act_type` [ RunTime:0.006119s ]
+SQL: SELECT * FROM `act_type`  [ RunTime:0.000396s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014901s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015036s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000538s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000476s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000332s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000581s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002133s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000777s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000849s ]
+
+[ 2013-12-03T18:11:23+08:00 ] 127.0.0.1 /actor/admin.php?m=Party&a=addactmess
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000735s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000840s ]
+SQL: SHOW COLUMNS FROM `act_type` [ RunTime:0.004106s ]
+SQL: SELECT * FROM `act_type`  [ RunTime:0.002249s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014395s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014521s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000537s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000480s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000328s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000586s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002138s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000779s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000850s ]
+
+[ 2013-12-03T18:12:10+08:00 ] 127.0.0.1 /actor/admin.php?m=Party&a=addactmess
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002439s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002598s ]
+
+[ 2013-12-03T20:40:39+08:00 ] 127.0.0.1 /actor/admin.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002578s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002749s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.041634s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041834s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002248s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002212s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002451s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002659s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009958s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.022840s ]
+INFO: [ view_end ] --END-- [ RunTime:0.022995s ]
+
+[ 2013-12-03T20:40:42+08:00 ] 127.0.0.1 /actor/admin.php?m=Login&a=login
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001429s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001576s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\3365804034a278792511366f216e0502.php 第 8 行.
+NOTIC: [8] Use of undefined constant BACK_JS - assumed 'BACK_JS' D:\WWW\actor\admin\Runtime\Cache\3365804034a278792511366f216e0502.php 第 60 行.
+NOTIC: [8] Use of undefined constant BACK_JS - assumed 'BACK_JS' D:\WWW\actor\admin\Runtime\Cache\3365804034a278792511366f216e0502.php 第 61 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.032911s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033050s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000670s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000906s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000467s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000769s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003082s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001045s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001146s ]
+
+[ 2013-12-03T20:40:42+08:00 ] 127.0.0.1 /actor/admin.php?m=Login&a=verify
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001198s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001333s ]
+
+[ 2013-12-03T20:40:53+08:00 ] 127.0.0.1 /actor/admin.php?m=Login&a=login
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.004198s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004406s ]
+SQL: SHOW COLUMNS FROM `act_users` [ RunTime:0.008353s ]
+SQL: SELECT `usgp_id`,`user_name` FROM `act_users` WHERE ( `user_name` = 'gbcadmin' ) AND ( `user_password` = '85101222181144812521881824225e121e810487' )  [ RunTime:0.007084s ]
+SQL: SHOW COLUMNS FROM `act_users_group` [ RunTime:0.009212s ]
+SQL: SELECT `usgp_state` FROM `act_users_group` WHERE ( `usgp_state` = 1 ) AND ( `usgp_id` = 1 ) LIMIT 1   [ RunTime:0.006930s ]
+SQL: SHOW COLUMNS FROM `act_login_log` [ RunTime:0.008948s ]
+SQL: INSERT INTO `act_login_log` (`lnlg_username`,`lnlg_time`,`lnlg_ip`,`usgp_id`) VALUES ('gbcadmin',1386074453,'127.0.0.1',1) [ RunTime:0.081256s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.051798s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052004s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.006597s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002221s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001770s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002291s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.013352s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003857s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004002s ]
+
+[ 2013-12-03T20:40:54+08:00 ] 127.0.0.1 /actor/admin.php?m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001254s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001421s ]
+SQL: SHOW COLUMNS FROM `act_users_group` [ RunTime:0.004969s ]
+SQL: SELECT `usgp_name` FROM `act_users_group` WHERE ( `usgp_id` = 1 ) LIMIT 1   [ RunTime:0.002262s ]
+SQL: SHOW COLUMNS FROM `act_menus_power` [ RunTime:0.007225s ]
+SQL: SHOW COLUMNS FROM `act_menus` [ RunTime:0.008527s ]
+SQL: SELECT `menu_id`,`menu_name` FROM `act_menus` WHERE ( `menu_pid`=0 AND `menu_rank`=1 AND `menu_state`=1  ) ORDER BY menu_sort  [ RunTime:0.002246s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\8259e3d0bf36d64289355928982ce624.php 第 5 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\8259e3d0bf36d64289355928982ce624.php 第 23 行.
+NOTIC: [8] Use of undefined constant IMAGES_PATH_ADMIN - assumed 'IMAGES_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\8259e3d0bf36d64289355928982ce624.php 第 30 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\8259e3d0bf36d64289355928982ce624.php 第 35 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\8259e3d0bf36d64289355928982ce624.php 第 36 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\8259e3d0bf36d64289355928982ce624.php 第 469 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.024188s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024338s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001028s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000749s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000506s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000956s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003562s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001712s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001842s ]
+
+[ 2013-12-03T20:40:55+08:00 ] 127.0.0.1 /actor/admin.php?m=Index&a=welcome
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003669s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003839s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\52fef3a85d4cd0cd415aabd330836914.php 第 4 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\52fef3a85d4cd0cd415aabd330836914.php 第 69 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.020228s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020370s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000785s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000734s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000513s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002834s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005203s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001473s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001591s ]
+
+[ 2013-12-03T20:40:55+08:00 ] 127.0.0.1 /actor/admin.php?m=Index&a=ajax_menu&pid=1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003511s ]
+SQL: SHOW COLUMNS FROM `act_menus` [ RunTime:0.004802s ]
+SQL: SHOW COLUMNS FROM `act_menus_power` [ RunTime:0.005721s ]
+SQL: SELECT * FROM `act_menus` WHERE ( `menu_pid`=1 AND `menu_rank`=2 AND `menu_state`=1  ) ORDER BY menu_sort  [ RunTime:0.001076s ]
+
+[ 2013-12-03T20:40:58+08:00 ] 127.0.0.1 /actor/admin.php?m=Index&a=ajax_menu&pid=15
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001580s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001768s ]
+SQL: SHOW COLUMNS FROM `act_menus` [ RunTime:0.006512s ]
+SQL: SHOW COLUMNS FROM `act_menus_power` [ RunTime:0.008684s ]
+SQL: SELECT * FROM `act_menus` WHERE ( `menu_pid`=15 AND `menu_rank`=2 AND `menu_state`=1  ) ORDER BY menu_sort  [ RunTime:0.001535s ]
+
+[ 2013-12-03T20:40:59+08:00 ] 127.0.0.1 /actor/admin.php?m=Party&a=party
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002756s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002999s ]
+SQL: SHOW COLUMNS FROM `act_type` [ RunTime:0.007315s ]
+SQL: SELECT * FROM `act_type`  [ RunTime:0.001376s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.028191s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028426s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000968s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000916s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000644s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001125s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004050s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001646s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001802s ]
+
+[ 2013-12-03T20:45:43+08:00 ] 127.0.0.1 /actor/admin.php?m=Party&a=party
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003100s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003337s ]
+SQL: SHOW COLUMNS FROM `act_type` [ RunTime:0.007993s ]
+SQL: SELECT * FROM `act_type`  [ RunTime:0.000494s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\42604a8e38957dcc26aa8d7f1105d974.php 第 8 行.
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\42604a8e38957dcc26aa8d7f1105d974.php 第 9 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\42604a8e38957dcc26aa8d7f1105d974.php 第 13 行.
+NOTIC: [8] Use of undefined constant IMAGES_PATH_ADMIN - assumed 'IMAGES_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\42604a8e38957dcc26aa8d7f1105d974.php 第 20 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\42604a8e38957dcc26aa8d7f1105d974.php 第 25 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\42604a8e38957dcc26aa8d7f1105d974.php 第 26 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\42604a8e38957dcc26aa8d7f1105d974.php 第 27 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\42604a8e38957dcc26aa8d7f1105d974.php 第 28 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\42604a8e38957dcc26aa8d7f1105d974.php 第 98 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.051838s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052026s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002726s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003116s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002311s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002895s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011586s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003259s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003417s ]
+
+[ 2013-12-03T20:45:44+08:00 ] 127.0.0.1 /actor/admin.php?m=Party&a=party
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001606s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001802s ]
+SQL: SHOW COLUMNS FROM `act_type` [ RunTime:0.009313s ]
+SQL: SELECT * FROM `act_type`  [ RunTime:0.000599s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\42604a8e38957dcc26aa8d7f1105d974.php 第 8 行.
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\42604a8e38957dcc26aa8d7f1105d974.php 第 9 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\42604a8e38957dcc26aa8d7f1105d974.php 第 13 行.
+NOTIC: [8] Use of undefined constant IMAGES_PATH_ADMIN - assumed 'IMAGES_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\42604a8e38957dcc26aa8d7f1105d974.php 第 20 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\42604a8e38957dcc26aa8d7f1105d974.php 第 25 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\42604a8e38957dcc26aa8d7f1105d974.php 第 26 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\42604a8e38957dcc26aa8d7f1105d974.php 第 27 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\42604a8e38957dcc26aa8d7f1105d974.php 第 28 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\42604a8e38957dcc26aa8d7f1105d974.php 第 98 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.026109s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026298s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001153s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001070s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000724s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001294s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004693s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001991s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002179s ]
+
+[ 2013-12-03T20:46:14+08:00 ] 127.0.0.1 /actor/admin.php?m=Party&a=addparty
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003135s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003319s ]
+SQL: SHOW COLUMNS FROM `act_party` [ RunTime:0.081745s ]
+SQL: INSERT INTO `act_party` (`p_name`,`p_password`,`type`) VALUES ('asd','qqqqqqq',1) [ RunTime:0.023273s ]
+
+[ 2013-12-03T20:46:16+08:00 ] 127.0.0.1 /actor/admin.php?m=Party&a=party
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001828s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002038s ]
+SQL: SHOW COLUMNS FROM `act_type` [ RunTime:0.006303s ]
+SQL: SELECT * FROM `act_type`  [ RunTime:0.000871s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\42604a8e38957dcc26aa8d7f1105d974.php 第 8 行.
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\42604a8e38957dcc26aa8d7f1105d974.php 第 9 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\42604a8e38957dcc26aa8d7f1105d974.php 第 13 行.
+NOTIC: [8] Use of undefined constant IMAGES_PATH_ADMIN - assumed 'IMAGES_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\42604a8e38957dcc26aa8d7f1105d974.php 第 20 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\42604a8e38957dcc26aa8d7f1105d974.php 第 25 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\42604a8e38957dcc26aa8d7f1105d974.php 第 26 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\42604a8e38957dcc26aa8d7f1105d974.php 第 27 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\42604a8e38957dcc26aa8d7f1105d974.php 第 28 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\42604a8e38957dcc26aa8d7f1105d974.php 第 98 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.057544s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.057739s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002700s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002781s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002296s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003124s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011399s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.005002s ]
+INFO: [ view_end ] --END-- [ RunTime:0.005184s ]
+
+[ 2013-12-03T20:49:30+08:00 ] 127.0.0.1 /actor/admin.php?m=Party&a=party
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003118s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003380s ]
+SQL: SHOW COLUMNS FROM `act_type` [ RunTime:0.006361s ]
+SQL: SELECT * FROM `act_type`  [ RunTime:0.001790s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\42604a8e38957dcc26aa8d7f1105d974.php 第 8 行.
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\42604a8e38957dcc26aa8d7f1105d974.php 第 9 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\42604a8e38957dcc26aa8d7f1105d974.php 第 13 行.
+NOTIC: [8] Use of undefined constant IMAGES_PATH_ADMIN - assumed 'IMAGES_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\42604a8e38957dcc26aa8d7f1105d974.php 第 20 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\42604a8e38957dcc26aa8d7f1105d974.php 第 25 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\42604a8e38957dcc26aa8d7f1105d974.php 第 26 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\42604a8e38957dcc26aa8d7f1105d974.php 第 27 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\42604a8e38957dcc26aa8d7f1105d974.php 第 28 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\42604a8e38957dcc26aa8d7f1105d974.php 第 98 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.033521s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033713s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002632s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002678s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002172s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002891s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010862s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003646s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003825s ]
+
+[ 2013-12-03T20:49:37+08:00 ] 127.0.0.1 /actor/admin.php?m=Party&a=addparty
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003225s ]
+SQL: SHOW COLUMNS FROM `act_party` [ RunTime:0.006325s ]
+
+[ 2013-12-03T20:49:48+08:00 ] 127.0.0.1 /actor/admin.php?m=Party&a=addactmess
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001571s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001796s ]
+SQL: SHOW COLUMNS FROM `act_type` [ RunTime:0.006239s ]
+SQL: SELECT * FROM `act_type`  [ RunTime:0.001774s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.037720s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037934s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002620s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002484s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002179s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002906s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010639s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003563s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003751s ]
+
+[ 2013-12-03T20:49:48+08:00 ] 127.0.0.1 /actor/admin.php/Public/js/calendar/jscal2.css
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004017s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004227s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003522s ]
+ERR: 无法加载模块:Public
+
+[ 2013-12-03T20:49:48+08:00 ] 127.0.0.1 /actor/admin.php/Public/js/calendar/border-radius.css
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002463s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002669s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001790s ]
+ERR: 无法加载模块:Public
+
+[ 2013-12-03T20:49:48+08:00 ] 127.0.0.1 /actor/admin.php/Public/js/calendar/win2k.css
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004808s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005041s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001601s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001769s ]
+ERR: 无法加载模块:Public
+
+[ 2013-12-03T20:49:48+08:00 ] 127.0.0.1 /actor/admin.php/Public/js/calendar/calendar.js
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003483s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003710s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001821s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001995s ]
+ERR: 无法加载模块:Public
+
+[ 2013-12-03T20:49:48+08:00 ] 127.0.0.1 /actor/admin.php/Public/js/calendar/lang/en.js
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003485s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003711s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001595s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001766s ]
+ERR: 无法加载模块:Public
+
+[ 2013-12-03T22:19:54+08:00 ] 127.0.0.1 /actor/admin.php?m=Party&a=addactmess
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001599s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001810s ]
+SQL: SHOW COLUMNS FROM `act_type` [ RunTime:0.009064s ]
+SQL: SELECT * FROM `act_type`  [ RunTime:0.001022s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 8 行.
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 9 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 13 行.
+NOTIC: [8] Use of undefined constant IMAGES_PATH_ADMIN - assumed 'IMAGES_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 20 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 25 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 26 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 27 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 28 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 67 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 68 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 69 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 70 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 71 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 176 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.044408s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044600s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003166s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003123s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002265s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002838s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011867s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003783s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003964s ]
+
+[ 2013-12-03T22:22:15+08:00 ] 127.0.0.1 /actor/admin.php?m=Party&a=addactmess
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003144s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003367s ]
+SQL: SHOW COLUMNS FROM `act_type` [ RunTime:0.006315s ]
+SQL: SELECT * FROM `act_type`  [ RunTime:0.000925s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 8 行.
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 9 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 13 行.
+NOTIC: [8] Use of undefined constant IMAGES_PATH_ADMIN - assumed 'IMAGES_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 20 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 25 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 26 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 27 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 28 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 67 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 68 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 69 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 70 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 71 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 176 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.063085s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.063278s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.004833s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.004094s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.004170s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.004585s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.018191s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.004597s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004761s ]
+
+[ 2013-12-03T22:22:37+08:00 ] 127.0.0.1 /actor/admin.php?m=Party&a=addactmess
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.004552s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004770s ]
+SQL: SHOW COLUMNS FROM `act_type` [ RunTime:0.009953s ]
+SQL: SELECT * FROM `act_type`  [ RunTime:0.000716s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 8 行.
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 9 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 13 行.
+NOTIC: [8] Use of undefined constant IMAGES_PATH_ADMIN - assumed 'IMAGES_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 20 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 25 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 26 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 27 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 28 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 67 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 68 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 69 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 70 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 71 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 176 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.041596s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041793s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002863s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002706s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002330s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002813s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011171s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003414s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003587s ]
+
+[ 2013-12-03T22:23:19+08:00 ] 127.0.0.1 /actor/admin.php?m=Party&a=addactmess
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001861s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002074s ]
+SQL: SHOW COLUMNS FROM `act_type` [ RunTime:0.008860s ]
+SQL: SELECT * FROM `act_type`  [ RunTime:0.000635s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 8 行.
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 9 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 13 行.
+NOTIC: [8] Use of undefined constant IMAGES_PATH_ADMIN - assumed 'IMAGES_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 20 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 25 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 26 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 27 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 28 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 67 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 68 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 69 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 70 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 71 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 176 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.032444s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032633s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.004770s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.004201s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.003523s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.004202s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.017328s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.004816s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004989s ]
+

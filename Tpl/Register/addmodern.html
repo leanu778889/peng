@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Mobile Devices Support @begin -->
+<meta content="application/xhtml+xml;charset=UTF-8" http-equiv="Content-Type">
+<meta content="no-cache,must-revalidate" http-equiv="Cache-Control">
+<meta content="no-cache" http-equiv="pragma">
+<meta content="0" http-equiv="expires">
+<meta content="telephone=no, address=no" name="format-detection">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta name="apple-mobile-web-app-capable" content="yes" /> <!-- apple devices fullscreen -->
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<!-- Mobile Devices Support @end -->
+<title>话剧信息注册</title>
+
+<link href="__APP__/Public/css/style111(2).css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="__APP__/Public/js/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#btn2").click(function(){
+    $("#hide").prepend("<dl>"+
+                "<dt>"+"性别："+"</dt>"+
+                "<dd>"+"<select name='sex[]'><option value='1'>男</option><option value='2'>女</option></select>"+"</dd>"+
+        		"</dl>"+
+				"<dl>"+
+                "<dt>"+"角色名称："+"</dt>"+
+                "<dd>"+"<input type='text' name='name[]'/>"+"</dd>"+
+        		"</dl>"+
+				"<dl>"+
+                "<dt>"+"角色年龄："+"</dt>"+
+                "<dd>"+"<input type='text' name='age[]'/>"+"</dd>"+
+        		"</dl>"+
+				"<dl>"+
+                "<dt>"+"角色身高："+"</dt>"+
+                "<dd>"+"<input type='text' name='high[]'/>"+"</dd>"+
+        		"</dl>"+
+				"<dl>"+
+                "<dt>"+"人物特征："+"</dt>"+
+                "<dd>"+"<input type='text' name='tezheng[]'/>"+"</dd>"+
+        		"</dl>"+
+				"<dl>"+
+                "<dt>"+"人物小传："+"</dt>"+
+                "<dd>"+"<input type='text' name='xiaozhuan[]'/>"+"</dd>"+
+        		"</dl>"+
+				"<dl>"+
+                "<dt>"+"其他要求："+"</dt>"+
+                "<dd>"+"<input type='text' name='need[]'/>"+"</dd>"+
+        		"</dl>"
+			);
+  });
+  
+});
+</script>
+</head>
+
+<body>
+<div class="bodyer"> 
+	<div class="top">
+    	<img src="__APP__/Public/images/logo.png">
+        <ul>
+        	
+            <li>注册</li>
+            <li>|</li>
+            <li>登录</li>
+        </ul>
+    </div>
+	<div class="login_top">
+    	<span>话剧信息注册</span>
+    </div>
+     <form name="form1" method="post" action="__APP__/Register/addmodern"  enctype="multipart/form-data">
+	<div class="login_btm">
+    <div style=" height:20px;"></div>
+    		<dl>
+                <dt><font color="#FF0000";>*</font>用户名：</dt>
+                <dd><input type="text" name='username' /></dd>
+        	</dl>
+            <dl>
+                <dt><font color="#FF0000";>*</font>密码：</dt>
+                <dd><input type="password" name='password'/></dd>
+            </dl>
+            <dl>
+                <dt><font color="#FF0000";>*</font>确认密码：</dt>
+                <dd><input type='password' name='repassword'/></dd>
+            </dl>
+            <dl>
+                <dt><font color="#FF0000";>*</font>真实姓名：</dt>
+                <dd><input type="text" name='truename' style=" width:40%" />
+                </dd>
+            </dl>
+            <dl>
+                <dt><font color="#FF0000";>*</font>现任职务：</dt>
+                <dd><input type='text' name='job'/></dd>
+            </dl>
+            <dl>
+                <dt><font color="#FF0000";>*</font>建组地点：</dt>
+                <dd><input type="text" name='jz_place'/></dd>
+            </dl>
+            <dl>
+                <dt>出品公司：</dt>
+                <dd><input type="text" name='company'/></dd>
+        	</dl>
+            <dl>
+                <dt><font color="#FF0000";>*</font>联系电话：</dt>
+                <dd><input type="text" name='tel'/></dd>
+        	</dl>
+            <dl>
+                <dt><font color="#FF0000";>*</font>剧名：</dt>
+                <dd><input type="text" name='j_name'/></dd>
+            </dl>
+            <dl>
+                <dt><font color="#FF0000";>*</font>预计排练地点：</dt>
+                <dd><input type='text' name='pl_place'/></dd>
+            </dl>
+            <dl>
+                <dt><font color="#FF0000";>*</font>预计演出地点：</dt>
+                <dd><input type='text' name='show_place'/></dd>
+            </dl>
+            <dl>
+                <dt><font color="#FF0000";>*</font>预计演出场次：</dt>
+                <dd><input type='text' name='show_count'/></dd>
+            </dl>
+            <dl>
+                <dt>剧本简介：</dt>
+                <dd><input type="text" name='jb_introduct'/></dd>
+        	</dl>
+            <dl>
+                <dt><font color="#FF0000";>*</font>预计排练周期：</dt>
+                <dd><input type="text" name='spend_time'/></dd>
+            </dl>
+			 <dl>
+                <dt>广告植入类型：</dt>
+                <dd><input type="text" name='gg_type'/></dd>
+            </dl>
+            <dl>
+        	<dt>性　　别：</dt>
+            <dd><select name="sex[]">
+                	<option value='1'>男</option>
+                    <option value='2'>女</option>
+                </select></dd>
+        </dl>
+           <dl>
+                <dt>角色名称：</dt>
+                <dd><input type="text" name='name[]'/></dd>
+            </dl> 
+            <dl>
+                <dt>角色年龄：</dt>
+                <dd><input type="text" name='age[]'/></dd>
+            </dl> 
+            <dl>
+                <dt>角色身高：</dt>
+                <dd><input type="text" name='high[]'/></dd>
+            </dl> 
+            <dl>
+                <dt>人物特征：</dt>
+                <dd><input type="text" name='tezheng[]'/></dd>
+            </dl> 
+            <dl>
+                <dt>人物小传：</dt>
+                <dd><input type="text" name='xiaozhuan[]'/></dd>
+            </dl>
+            <dl>
+                <dt>其他要求：</dt>
+                <dd><input type="text" name='need[]'/><input type="button" value="添加" style="width:50px; background-image:url(__APP__/Public/images/bt_bj.png);color:#FFF; margin-left:10px;box-shadow:0 0 0 #FFF inset;" id="btn2"/></dd>
+            </dl>
+           
+            <div id="hide"></div>
+            <div>
+            
+        </div>
+        
+        <input type="submit" class="login_btn" value="提交"/>
+        <div style="height:30px;"></div>
+    </div>
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="__APP__/Public/css/style.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+	<div id="content">
+    	<div class="bt_css">
+        	<a href="##">男演员</a>
+            <div class="fh"><a href="__APP__/actmessage.html" class="fh"><img src="__APP__/Public/images/fh.png"></a></div>
+      </div>
+        <div class="jzxx_wz">
+        	<div class="yy">
+            	<table width="484" border="1">
+            	<volist name="res" id="sub">
+					<tr>
+					    <td width="156" height="118" rowspan="2"><a href="__APP__/Actmessage/actshow/{$sub.a_id}"><img src="__APP__/Public/uploads/{$sub.path}" height="100" width="127"></a></td>
+					    <td width="312"><a href="__APP__/Actmessage/actshow/{$sub.a_id}">{$sub.truename}</a></td>
+				    </tr>
+					  <tr>
+					    <td><a href="__APP__/Actmessage/actshow/{$sub.a_id}">{$sub.show_experience}<br/>【联系电话： 胥通达：15321857353】</a></td>
+				    </tr>
+				</volist>
+				</table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,248 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>欢迎进入，捧捧捧捧网站~</title>
+<link href="__APP__/Public/css/style111(1).css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="__APP__/Public/js/jquery.min.js"></script>
+<script type="text/javascript" src="__APP__/Public/js/jQuery.textSlider.js"></script>
+<style> 
+*html{padding:0px} 
+/* Clear Fix */ 
+.clearfix:after { 
+content:"."; 
+display:block; 
+height:0; 
+clear:both; 
+visibility:hidden; 
+} 
+.clearfix { 
+display:inline-block; 
+} 
+/* Hide from IE Mac */ 
+.clearfix {display:block;} 
+/* End hide from IE Mac */ 
+/* end of clearfix */ 
+</style> 
+
+<script type="text/javascript">
+$(function() {
+	var sWidth = $("#focus").width(); //获取焦点图的宽度（显示面积）
+	var len = $("#focus ul li").length; //获取焦点图个数
+	var index = 0; 
+	var picTimer;
+	
+	//以下代码添加数字按钮和按钮后的半透明条，还有上一页、下一页两个按钮
+	var btn = "<div class='btnBg'></div><div class='btn'>";
+	for(var i=0; i < len; i++) {
+		btn += "<span></span>";
+	}
+	btn += "</div><div class='preNext pre'></div><div class='preNext next'></div>";
+	$("#focus").append(btn);
+	$("#focus .btnBg").css("opacity",0.5);
+
+	//为小按钮添加鼠标滑入事件，以显示相应的内容
+	$("#focus .btn span").css("opacity",0.4).mouseenter(function() {
+		index = $("#focus .btn span").index(this);
+		showPics(index);
+	}).eq(0).trigger("mouseenter");
+
+	//上一页、下一页按钮透明度处理
+	$("#focus .preNext").css("opacity",0.2).hover(function() {
+		$(this).stop(true,false).animate({"opacity":"0.5"},300);
+	},function() {
+		$(this).stop(true,false).animate({"opacity":"0.2"},300);
+	});
+
+	//上一页按钮
+	$("#focus .pre").click(function() {
+		index -= 1;
+		if(index == -1) {index = len - 1;}
+		showPics(index);
+	});
+
+	//下一页按钮
+	$("#focus .next").click(function() {
+		index += 1;
+		if(index == len) {index = 0;}
+		showPics(index);
+	});
+
+	//本例为左右滚动，即所有li元素都是在同一排向左浮动，所以这里需要计算出外围ul元素的宽度
+	$("#focus ul").css("width",sWidth * (len));
+	
+	//鼠标滑上焦点图时停止自动播放，滑出时开始自动播放
+	$("#focus").hover(function() {
+		clearInterval(picTimer);
+	},function() {
+		picTimer = setInterval(function() {
+			showPics(index);
+			index++;
+			if(index == len) {index = 0;}
+		},4000); //此4000代表自动播放的间隔，单位：毫秒
+	}).trigger("mouseleave");
+	
+	//显示图片函数，根据接收的index值显示相应的内容
+	function showPics(index) { //普通切换
+		var nowLeft = -index*sWidth; //根据index值计算ul元素的left值
+		$("#focus ul").stop(true,false).animate({"left":nowLeft},300); //通过animate()调整ul元素滚动到计算出的position
+		//$("#focus .btn span").removeClass("on").eq(index).addClass("on"); //为当前的按钮切换到选中的效果
+		$("#focus .btn span").stop(true,false).animate({"opacity":"0.4"},300).eq(index).stop(true,false).animate({"opacity":"1"},300); //为当前的按钮切换到选中的效果
+	}
+});
+
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $("#scrollDiv").textSlider({line:4,speed:500,timer:2000});
+});
+</script>
+<script type="text/javascript"	src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		var lr_systembtn = $("#lr_systembtn");
+		var lr_menu = $("#lr_menu");
+		lr_systembtn.mouseenter(function() {
+			t_delay = setTimeout(function() {
+				lr_menu.fadeIn("slow");
+			}, 200);
+		});
+		lr_systembtn.mouseleave(function() {
+			clearTimeout(t_delay);
+			lr_menu.fadeOut("slow");
+		});
+
+	});
+     </script>
+<style>
+body,td,th {
+	font-family: 新宋体;
+}
+
+</style>
+</head>
+<body id="content">
+
+	 <div class="suo"> 
+	        <div class="lr_systembtn_left_logo"><img  src="__APP__/Public/images/logo.png"/></div>
+		    <div class="lr_systembtn_left">
+			<img src="__APP__/Public/images/peng-03.png" />  </div> 
+			 <div class="lr_systembtn_left">
+			<img src="__APP__/Public/images/peng-02.png" />	 </div>
+			<div class="lr_systembtn_left">
+			<img src="__APP__/Public/images/peng-04.png" />	 </div>
+			<div class="lr_systembtn_left">
+			<img src="__APP__/Public/images/peng-01.png" />	 </div> 
+    <div id="lr_systembtn" class="lr_systembtn">
+    <if condition="$Think.session.p_id neq ''">
+	<table width="180"  height="120" border="0">
+	<tr>
+	<td>
+	<if condition="$Think.session.type eq 2">
+		<a href="__APP__/Actmessage/actshow.html"><img src="__APP__/Public/images/yy4.png" width="125" height="115"></a>
+		<else />
+		<a href="__APP__/Teamself/teamself.html"><img src="__APP__/Public/images/yy4.png" width="125" height="115"></a>
+	</if>
+	</td>
+	</tr>
+	</table>
+				<div id="lr_menu" class="lr_menu" style="background-color:#FF66CC">
+					<dl>
+						<dt>
+							<div><img src="__APP__/Public/images/yy4.png" align="left"/></div>
+						</dt>
+						<dt>
+							用户名：        梨花凉 ° 
+						</dt>
+					</dl>
+					<dl>
+						<dt>
+							演员星级：        5星
+						</dt>
+					</dl>
+					<dl>
+						<dt>
+							演员类型：        影视类型
+						</dt>
+					</dl>
+					<dl>
+						<dt>
+							 爱好：
+						</dt>
+
+					</dl>
+					<dl>
+						<dt>
+							特长：唱歌，跳舞，聊天上网，玩游戏
+						</dt>
+					</dl>
+					</if>
+				</div>
+			</div>
+	    </div>
+  <div class="main_box_boss">
+  <div class="into_right">
+  <div class="intotop_right" ><img src="__APP__/Public/images/suo.png"   align="right"/></div>
+   <div  class="intobottom_right" ><img src="__APP__/Public/images/suo.png"   align="right"/></div>
+   </div>
+  <div class="into_left">
+  <div class="intotop_left"  style="background-image:url(__APP__/Public/images/hengdian.png)"><img src="Public/images/suo.png"   align="right"/></div>
+   <div  class="intobottom_left"><img src="__APP__/Public/images/suo.png"   align="right"/></div>
+  </div>
+  <div class="
+  "></div>
+	<div class="main_box">
+		<div align="left" style="background-color:#3333FF"></div>
+		<div class="mian_left">
+        	<div class="jzxx"><a href="__APP__/teammessage.html"><img src="__APP__/Public/images/aa.png" /></a></div>
+            <div class="yyxx"><a href="__APP__/actmessage/index.html"><img src="__APP__/Public/images/bb.png" /></a></div>	
+            <div class="hyxw">
+            	<div class="yhxw_left">
+                	<img src="__APP__/Public/images/hyxw.png">
+                </div>
+                <div class="hyxw_right">
+                	<img src="__APP__/Public/images/ee.png">
+                </div>
+            </div>
+        </div>
+        <div class="mian_center">
+        	<div id="focus" style="overflow:hidden;">
+		<ul style="overflow:hidden;">
+			<li><a href="###" target="_blank"><img src="__APP__/Public/images/yy1.png" alt="" /></a></li>
+			<li><a href="###" target="_blank"><img src="__APP__/Public/images/yy2.png" alt="" /></a></li>
+			<li><a href="###" target="_blank"><img src="__APP__/Public/images/yy3.png" alt="" /></a></li>
+			<li><a href="###" target="_blank"><img src="__APP__/Public/images/yy4.png" alt="" /></a></li>
+			<li><a href="###" target="_blank"><img src="__APP__/Public/images/yy1.png" alt="" /></a></li>
+		</ul>
+	</div>	
+        </div>
+        <div class="mian_right">
+        	<div class="Mianright_top">
+            	<div id="scrollDiv">
+                    <div class="scrollText">
+                      <ul style="margin-top: 0px; ">
+                          <volist name="res" id="sub">
+                          <li><a href="#">[{$sub.time|date="y-m-d",###}]{$sub.title}</a></li>   
+                      </volist>
+                      </ul>
+                    </div>
+              </div>	
+            </div>
+            <div class="Main_Bottom">
+            	<div class="Mianleft_Bottom">
+                 <a href="__APP__/Login.html">
+                	<div class="Mianlefttop">
+                  <img src="__APP__/Public/images/login.png"/></div></a> 
+                  <a href="__APP__/Register/register">
+					<div class="Mianleftbottom"><img src="__APP__/Public/images/reg.png"/></div></a>
+                </div>
+                <div class="Mianright_Bottom">
+                	<img src="__APP__/Public/images/tel.jpg">
+                </div>
+            </div>
+        </div>
+  </div>
+  </div>
+</div>
+</body>
+</html>

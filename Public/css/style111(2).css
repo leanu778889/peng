@@ -1,0 +1,238 @@
+@charset "utf-8";
+/* CSS Document */
+/*web还原*/
+*{margin:0;padding:0; border:0;}
+a{text-decoration:none; border:0px; color:#000;-webkit-tap-highlight-color:rgba(0,0,0,0); }
+a:hover{text-decoration:none; border:0px; } 
+h1,h2,h3,h4,h5,h6{font-size:12px; font-weight:normal; font-family:"微软雅黑"; }
+body{ font-family:"微软雅黑","SimSun","宋体","Arial Narrow";font-size:12px; font-weight:normal; color:#333; background-color:#FFF;}
+ul li,ol li{list-style-type:none; text-decoration:none; }
+button,input{-webkit-tap-highlight-color:rgba(255,0,0,0);}
+/*主页*/
+.bodyer{ background-size:100% 100%; background-repeat:top conter; background-color:#FFF;}
+.bodyer .top{ min-height:62px; background-color:#e35c24; position:relative; border-bottom:7px solid #f08a01;}
+.bodyer .top img{ float:left; cursor:pointer; margin-top:5px; margin-left:20px;}
+.bodyer .top ul{ float:right; height:60px; margin-right:20px;}
+.bodyer .top ul li{ float:left; line-height:75px; margin-left:5px;cursor:pointer; color:#FFF; font-size:16px; font-weight:bold;}
+.bodyer .banner{ height:163px; background-color:#FFF;}
+.bodyer .banner #banner {position:relative;height:163px;  overflow:hidden; font-size:16px;} 
+.bodyer .banner #banner_bg {position:absolute; bottom:0;background-color:#000;height:30px;filter: Alpha(Opacity=30);opacity:0.3;z-index:1000;cursor:pointer; width:100%;  } 
+.bodyer .banner #banner_info{position:absolute; bottom:4px; left:5px;height:22px;color:#fff;z-index:1001;cursor:pointer} 
+.bodyer .banner #banner_text {position:absolute;width:120px;z-index:1002; right:3px; bottom:3px;} 
+#banner ul {position:absolute;list-style-type:none;filter: Alpha(Opacity=80);opacity:0.8; z-index:1002; 
+margin:0; padding:0; bottom:3px; right:15px; height:20px} 
+.bodyer .banner #banner ul li {float:left; color:#FFF; margin-left:15px; line-height:20px; font-weight:bold; cursor:pointer;} 
+.bodyer .banner #banner_list a{position:absolute; width:100%;height:250px;}
+.bodyer .list{ background-color:#b87b61; background-repeat:no-repeat; background-size:100% 100%; overflow:hidden; height:132px; margin-top:10px; margin-left:10px;margin-right:10px;}
+.bodyer .list li{ margin-top:5px; margin-left:3.2%; font-size:13px;}
+.bodyer .list dl{ overflow:hidden;}
+.bodyer .list dt{ width:16px; height:14; float:left; margin-top:-2px; margin-left:2%;}
+.bodyer .list dd{ float:left; color:#FFF; margin-left:2px; line-height:20px;}
+.bodyer .appbtn{ overflow:hidden;padding:10px;}
+.bodyer .appbtn .APPleft{ float:left; width:48%; height:140px;}
+.bodyer .appbtn .APPleft .top_j{ height:65px; background-color:#f08a01; background-image:url(../images/tag01.png); background-repeat:no-repeat; background-position:90% 8px;}
+.bodyer .appbtn .APPleft .top_j h3{ padding-top:40px; font-size:16px; color:#FFF; text-indent:10px;}
+.bodyer .appbtn .APPleft .btm{ height:65px; background-color:#e35c24; margin-top:10px;background-image:url(../images/tag2.png); background-repeat:no-repeat; background-position:90% 8px;}
+.bodyer .appbtn .APPleft .btm h3{ padding-top:40px; font-size:16px; color:#FFF; text-indent:10px;}
+.bodyer .appbtn .APPright{ float:right; width:48%; height:140px; background-color:#c23019;background-image:url(../images/tag_1.png); background-repeat:no-repeat; background-position:center;}
+.bodyer .appbtn .APPright h3{ padding-top:110px; font-size:16px; color:#FFF; text-indent:10px;}
+.bodyer .bner{ margin-left:10px; margin-right:10px; background-image:url(../images/bg_t.png);height:127px; color:#FFF; background-size:100% 127px;}
+.bodyer .bner dt{ padding-top:100px; font-size:16px; color:#FFF; text-indent:10px;float:left;}
+.bodyer .bner dd{ float:left; width:22px; height:11px; background-image:url(../images/tag_y.png); background-repeat:no-repeat;margin-top:105px; margin-left:10px; }
+.bodyer .appbtn_w{ overflow:hidden;}
+.bodyer .appbtn_w .buttons_1{ width:45%;height:140px; float:left; background-color:#f08a01; margin-top:10px; margin-left:10px; background-image:url(../images/tag4.png); background-repeat:no-repeat; background-position: center;}
+.bodyer .appbtn_w h3{ padding-top:110px; font-size:16px; color:#FFF; text-align:center;}
+.bodyer .appbtn_w .buttons_2{ width:45%;height:140px; float:right; background-color:#f08a01; margin-top:10px; margin-right:10px; background-image:url(../images/tag3.png); background-repeat:no-repeat; background-position:center;}
+.bodyer .Prefecture{ overflow:hidden; margin-top:10px;}
+.bodyer .Prefecture .fecture_1{ width:21.2%; height:54px; float:left; color:#FFF; text-align:center; line-height:54px; background-color:#c23019; margin-left:3.1%; font-size:14px;}
+.bodyer .Prefecture .fecture_2{ width:21.2%; height:54px; float:left; color:#FFF; text-align:center; line-height:54px; background-color:#e35c24; margin-left:3.1%; font-size:14px;}
+.bodyer .peng_body{ overflow:hidden; margin-top:10px; margin-left:10px; margin-right:10px;}
+.bodyer .peng_body .left{ float:left; width:48%;}
+.bodyer .peng_body .left .left_top{ height:66px; background-color:#f08a01; background-image:url(../images/tag_5.png); background-repeat:no-repeat; background-position:10px 10px;}
+.bodyer .peng_body .left .left_top h3{ padding-top:35px; font-size:16px; color:#FFF; text-indent:60px;}
+.bodyer .peng_body .left .left_btm{ height:66px; background-color:#e35c24; margin-top:10px;background-image:url(../images/tag7.png); background-repeat:no-repeat; background-position:10px 10px;}
+.bodyer .peng_body .left .left_btm h3{ padding-top:35px; font-size:16px; color:#FFF; text-indent:75px;}
+.bodyer .peng_body .right{ float:right; width:48%;}
+.bodyer .peng_body .right .right_top{ height:66px; background-color:#e35c24;background-image:url(../images/tag6.png); background-repeat:no-repeat; background-position:10px 10px;}
+.bodyer .peng_body .right .right_top h3{ padding-top:35px; font-size:16px; color:#FFF; text-indent:60px;}
+.bodyer .peng_body .right .right_btm{ height:66px; background-color:#f08a01; margin-top:10px;background-image:url(../images/tag6.png); background-repeat:no-repeat; background-position:10px 10px;}
+.bodyer .peng_body .right .right_btm h3{ padding-top:35px; font-size:16px; color:#FFF; text-indent:55px;}
+.bodyer .appbtn_btm{ width:93%; background-color:#c23019;height:120px; margin:10px auto;background-image:url(../images/tag9.png); background-repeat:no-repeat;background-position:bottom 40px;}
+.bodyer .appbtn_btm h3{ padding-top:16px; font-size:20px; color:#FFF; text-indent:64%;}
+
+
+/*登录页面样式*/
+.bodyer .login_top{ margin-left:3%; margin-right:3%; margin-top:50px; height:50px; line-height:50px; background-image:url(../images/bt_bj.png); font-size:20px; color:#FFF; text-align:center;border-top-left-radius:5px; border-top-right-radius:5px;}
+.bodyer .login_btm{ margin-left:3.1%; margin-right:3.1%; background-color:#FFF; border-bottom-left-radius:5px; border-bottom-right-radius:5px; box-shadow:0 2px 2px #666666; border:1px solid #CCC;}
+.bodyer .login_btm dl{ overflow:hidden;padding-top:15px; margin-left:2%;}
+.bodyer .login_btm dl dd select{ width:120px; height:26px; border:1px solid #ccc;}
+.bodyer .login_btm dl dt{ width:90px;text-align:right; float:left; line-height:28px;}
+.bodyer .login_btm dl dd input{ width:60%; height:28px; border:#CCC 1px solid; border-radius:3px; line-height:28px; color:#999;padding-left:5px; float:left; box-shadow:0px 2px 5px #CCCCCC inset;}
+.bodyer .login_btn{ width:90%; height:40px; background-image:url(../images/bt_bj.png); color:#fff; font-size:16px; font-family:"微软雅黑"; border-radius:3px; margin-left:5%; margin-top:30px; cursor:pointer;}
+/*剧中所需要角色样式*/
+.bodyer .Crew_btm .titler{ height:32px; line-height:32px;  margin-top:30px;text-align:center; color:#FFF; font-size:16px; background-image:url(../images/bt_bj.png);}
+.bodyer .Crew_btm .titler .js_btn{ width:60px; height:24px; float:right; margin-top:4px; margin-right:5px; border-radius:3px;font-family:"微软雅黑"; cursor:pointer;}
+
+/*完善个人信息页*/
+.bodyer .login_btm .hidestyle{ width:95px; height:26px; border-radius:3px; background-color:#e95610; color:#FFF;font-family:"微软雅黑";}
+.bodyer .login_btm dl dd textarea{ width:60%; height:50px; border:#CCC 1px solid; border-radius:3px; line-height:15px; color:#999;padding-left:5px; float:left; box-shadow:0px 2px 5px #CCCCCC inset;}
+.bodyer .login_btm ul li{ float:left;line-height:26px;}
+
+
+
+/*演员信息页*/
+.bodyer .personal{ overflow:hidden;}
+.bodyer .personal .Address{ overflow:hidden; margin-left:5px;}
+.bodyer .personal .Address dt{ float:left;}
+.bodyer .personal .Address dd{ float:left;overflow:hidden; width:248px;}
+.bodyer .personal .left{ overflow:hidden; float:left;}
+.bodyer .personal .img{ border:1px solid #ccc;padding:2px; margin:5px;}
+.bodyer .personal .left_btm{ background-color:#CCC; margin-left:5px; width:96px;padding:5px;}
+.bodyer .personal .left_btm dl{ overflow:hidden; line-height:20px;}
+.bodyer .personal .left_btm dt{ float:left;}
+.bodyer .personal .left_btm dd{ float:left; margin-left:4px;}
+.bodyer .personal .left .bug_btn{ width:105px; height:30px; border-radius:4px; text-align:center; line-height:30px; background-image:url(../images/bt_bj.png);font-family:"微软雅黑"; font-size:15px; color:#FFF; margin-top:4px;margin-left:5px;}
+.bodyer .personal .left .E-btn{ width:105px; height:30px; border-radius:4px; text-align:center; line-height:30px; background-image:url(../images/bt_bj.png);font-family:"微软雅黑"; font-size:15px; color:#FFF;  margin-left:5px;margin-top:4px;}
+.bodyer .personal .right{ float:left; margin:5px; margin-left:0;}
+.bodyer .personal .right .del_btn{ width:70px; height:24px; border-radius:4px; text-align:center; line-height:24px; background-image:url(../images/bt_bj.png);font-family:"微软雅黑"; font-size:13px; color:#FFF; margin-left:17px;}
+.bodyer .personal .right dl{ overflow:hidden; margin-top:1px; width:197px;}
+.bodyer .personal .right dl dt{ width:75px; text-align:right; float:left;}
+.bodyer .personal .right dl dd{ float:left; width:122px; overflow:hidden;}
+.bodyer .Address_1{ border-bottom:1px solid  #e95610; border-top:1px solid  #e95610;overflow:hidden; margin-top:10px;padding-left:6px;padding-right:6px;}
+.bodyer .Address_1 h2{ font-size:16px;font-family:"微软雅黑"; line-height:34px;}
+.bodyer .Address_1 p{ text-indent:20px; margin-bottom:10px;}
+.bodyer .Masterpiece{ border-bottom:1px solid  #e95610; border-top:1px solid  #e95610;overflow:hidden; margin-top:10px;padding:5px;}
+.bodyer .Masterpiece dl{ overflow:hidden;}
+.bodyer .Masterpiece dt{ float:left; width:48px; height:100%;}
+.bodyer .Masterpiece dd{ float:left;width:80%;}
+.bodyer .Masterpiece dd ul li{ float:left; margin-left:10px;}
+.bodyer .Masterpiece .vdio ul{ float:left; margin-left:8%; margin-top:10px;}
+.bodyer .Masterpiece .vdio ul li{ text-align:center;}
+.bodyer .experience{ border-bottom:1px solid  #e95610; border-top:1px solid  #e95610;overflow:hidden; margin-top:10px;padding:5px;}
+.bodyer .experience h2{ font-size:16px;font-family:"微软雅黑"; line-height:34px;}
+.bodyer .experience table{ text-align:center; width:100%;  border-top:1px solid #ccc; border-right:1px solid #ccc;}
+.bodyer .experience table th{ border-bottom:1px solid #ccc; border-left:1px solid #ccc; height:26px; background-image:url(../images/xiaogubtn.png);}
+.bodyer .experience table td{ cursor:pointer; border-bottom:1px solid #ccc; border-left:1px solid #ccc; min-height:24px; height:22px;}
+.bodyer .Album{ border-bottom:1px solid  #e95610; border-top:1px solid  #e95610; overflow:hidden; margin-top:10px;padding:5px;padding-left:0px;}
+.bodyer .Album h2{ font-size:16px;font-family:"微软雅黑"; line-height:34px;padding-left:5px;}
+.bodyer .Album ul{ float:left; margin-left:5px;}
+.bodyer .Awards{ border-bottom:1px solid  #e95610; border-top:1px solid  #e95610; overflow:hidden; margin-top:10px;padding:5px;padding-left:0px;}
+.bodyer .Awards dl dt{ font}
+.Mask1{ width:289px; background-color:#e6e6e6; border-radius:5px; border:2px solid #CCC; position:fixed;top:50%; left:50%; margin-top:-100px; margin-left:-147px; display:none;}
+.Mask1 .Mask1top{color:#534841; border-bottom:1px solid #d1d1d1; background-image:url(../images/tag6.png); background-repeat:no-repeat; background-position:45px 40px;}
+.Mask1 dl{ overflow:hidden; margin-left:35px; margin-top:20px;}
+.Mask1 dl dt{ float:left; line-height:24px; width:60px; text-align:right;}
+.Mask1 dl dd input{ float:left; border:1px solid #ccc; height:24px; line-height:24px; margin-left:10px;padding-left:5px;}
+.Mask1 .Maskbtn1{ width:123px; height:30px; background-image:url(../images/bt_bj.png);margin-top:10px; margin-left:80px;border-radius:3px;font-family:"微软雅黑"; font-size:14px;color:#fff; margin-bottom:10px;}
+
+
+
+/*剧组信息*/
+.bodyer .top span{ font-size:20px; color:#FFF; position:absolute;top:50%; left:50%; margin-top:-15px; margin-left:-35px;}
+.bodyer .navigation .Orders{color:#666;font-family:"微软雅黑"; background-color:#fff;}
+.bodyer .navigation .Orders li{ float:left; text-align:center; height:60px; width:33.2%;border-bottom:1px solid #e1e3e7; line-height:60px; }
+.bodyer .navigation .Orders .Orders1{ border-right:1px solid #e1e3e7; background-color:#eff1f4; cursor:pointer;}
+.bodyer .navigation .Orders .Orders2{height:61px; background-color:#FFF; border:none; color:#cc3046; cursor:pointer;}
+.bodyer .navigation .Orders .Orders3{border-left:1px solid #e1e3e7; background-color:#eff1f4; cursor:pointer;}
+.bodyer .Information { overflow:hidden;}
+.bodyer .Information .left{ float:left; margin-left:5px; width:48%; margin-top:20px;}
+.bodyer .Information .right{ float:right; margin-right:5px;width:48%; margin-top:20px;}
+.bodyer .Information .left dl{ overflow:hidden;  line-height:24px;}
+.bodyer .Information .right dl{  overflow:hidden; line-height:24px;}
+.bodyer .Information .left dl dt{ float:left; width:60px;}
+.bodyer .Information .left dl dd{ float:left;}
+.bodyer .Information .right dl dt{ float:left; width:60px;}
+.bodyer .Information .right dl dd{ float:left;}
+.bodyer .synopsis{ overflow:hidden; margin-top:10px;}
+.bodyer .synopsis .titler{ height:26px; background-color:#ffcc99;text-indent:5px; line-height:26px; font-weight:bold; font-size:14px;}
+.bodyer .synopsis p{padding:10px 6px;}
+.bodyer .synopsis_1{ overflow:hidden;}
+.bodyer .synopsis_1 .titler{ height:26px; background-color:#ffcc99; text-indent:5px; line-height:26px; font-weight:bold; font-size:14px;}
+.bodyer .synopsis_1 p{padding:10px 6px;}
+.bodyer .synopsis_2{ overflow:hidden;}
+.bodyer .synopsis_2 .titler{ height:26px; background-color:#ffcc99; text-indent:5px; line-height:26px; font-weight:bold; font-size:14px;}
+.bodyer .Audit_list .titler{height:26px;text-indent:5px; line-height:26px; font-weight:bold; font-size:14px; padding-top:10px; height:30px; width:100%; clear:both;}
+.bodyer .Audit_list .titler dl dt{ float:left;}
+.bodyer .Audit_list .titler dl dd{ float:left;}
+.bodyer .Audit_list .img_list{ width:310px; border:1px solid #ccc; overflow:hidden; margin:auto;padding-bottom:10px; cursor:pointer;}
+.bodyer .Audit_list .img_list ul{ float:left; margin-left:10px; margin-top:10px;}
+.bodyer .Audit_list .img_list ul li{ background-color:#CCC; overflow:hidden;}
+.bodyer .Audit_list .img_list ul li dt{ float:left; margin-left:10px; cursor:pointer; margin-bottom:3px;}
+.bodyer .Audit_list .img_list ul li dd{ float:right; margin-right:10px;cursor:pointer;margin-bottom:3px;}
+.bodyer .Audit_list .img_list .texter{padding-left:10px;}
+.bodyer .Audit_btn{ width:94%; height:32px; margin-left:3%; border-radius:3px; background-image:url(../images/bt_bj.png); margin-top:30px; margin-bottom:40px; text-align:center; line-height:32px; color:#FFF; font-size:16px; font-family:"微软雅黑"; cursor:pointer;}
+.bodyer .synopsis_2 dl{ overflow:hidden; margin-top:10px;} 
+.bodyer .synopsis_2 dt{ float:left; width:90px; text-align:right;}
+.bodyer .synopsis_2 dd{ float:left; width:69%;}
+
+
+/*演员列表*/
+.bodyer .top_list{ height:79px; line-height:79px; background-image:url(../images/bg.png);font-size:16px; overflow:hidden;}
+.bodyer .top_list dl dt{ float:left; margin-top:5px; margin-right:10px;margin-left:20px;}
+.bodyer .top_list dl dd{ float:left;}
+.bodyer .nan{height:60px; line-height:60px; border-bottom:1px solid #dfdfdf; background-color:#f6f6f6;font-size:14px; cursor:pointer;}
+.bodyer .nan dl dt{ float:left; padding-left:20px;}
+.bodyer .nan .ttag{ width:9px; height:13px; display:block; float:right; background-image:url(../images/tag5.png); margin-top:22px; margin-right:20px;}
+.bodyer .yy_list{ display:none;}
+.bodyer .yy_list ul li{ line-height:34px; padding-left:20px; height:34px; background-color:#e8eaee; border-top:1px solid #ccc;  border-bottom:1px solid #fff; color:#666; overflow:hidden; cursor:pointer;}
+.bodyer .yy_list ul li dt{float:left; margin-right:10px;}
+.bodyer .yy_list ul li dd{float:left; }
+.bodyer .nv{height:60px; line-height:60px; padding-left:10px; border-top:1px solid #fff; background-color:#f6f6f6; border-bottom:1px solid #dfdfdf; font-size:14px;  cursor:pointer;}
+.bodyer .nv dl dt{ float:left; padding-left:10px;}
+.bodyer .nv .ttag{ width:9px; height:13px; display:block; float:right; background-image:url(../images/tag5.png); margin-top:22px; margin-right:20px;}
+.bodyer .Album_btm{ width:310px; margin:20px auto; overflow:hidden; border:1px solid #ccc;padding-bottom:10px;}
+.bodyer .Album_btm ul{ float:left; margin-left:10px; margin-top:10px; background-color:#FFF;}
+.bodyer .Album_btm ul li{ width:90px; overflow:hidden;}
+.bodyer .Album_btm ul dl dt{ float:left;}
+.bodyer .Album_btm ul dl dd{ float:left;}
+.bodyer .Album_top{ width:320px; margin:20px auto; overflow:hidden;}
+.bodyer .Album_top ul{ overflow:hidden;}
+.bodyer .Album_top ul li{float:left; margin-top:10px; margin-left:10px;}
+.bodyer .Album_top ul li input{ width:80px; height:20px; border:1px solid #ccc;}
+.bodyer .Album_top ul li select{ width:90px; height:20px; border:1px solid #ccc;}
+.bodyer .ss_btn{ width:95%; height:34px;border-radius:3px; margin:2.5%; font-family:'微软雅黑'; color:#FFF; font-size:16px; background-image:url(../images/bt_bj.png);}
+
+/*演绎经历下拉*/
+.select_box{border:1px solid #bbb;color:#666;cursor: pointer;background:#fff url(../images/tag_1.png) no-repeat 92% center; width:138px;height:26px;}
+.select_btm_box{border: 1px #999999 solid ; width:62%; margin-top:30px; margin-left:80px; position:absolute; background-color:#FFF;}
+.cur{cursor:pointer; display:block;color:#666;width:100%; height:26px; line-height:26px;}
+.cur:hover{ width:100%; background-color:#096; color:#FFF;}
+
+
+/*剧组列表*/
+.bodyer .list_jz{ border-bottom:1px solid #f08a01; border-top:1px solid #f08a01; margin-top:10px;}
+.bodyer .list_jz .bor_btm{ font-size:14px; border-top:1px solid #f08a01; width:100%; text-indent:20px;}
+.bodyer .list_jz ul{margin-top:10px;}
+.bodyer .list_jz ul li{overflow:hidden; line-height:20px;padding-bottom:7px;}
+.bodyer .list_jz ul li h2{margin-left:20px; }
+.bodyer .list_jz ul li p{ text-indent:20px;margin-left:20px; margin-right:20px;}
+.bodyer .list_jz ul dt{ float:left; font-size:14px;}
+.bodyer .list_jz ul dd{ float:left; line-height:24px;}
+.bodyer .page{ overflow:hidden; margin-top:20px; margin-bottom:30px; width:298px; margin:20px auto;}
+.bodyer .page ul li{ float:left; margin-left:10px;}
+.bodyer .page .input_s{ width:50px; height:20px; background-color:#f08a01; color:#FFF; font-family:"微软雅黑"; cursor:pointer;}
+.bodyer .page .input_r{ width:30px; border:1px solid #ccc; text-align:center;}
+.bodyer .page .input_q{ width:40px; height:20px; background-color:#f08a01; color:#FFF; font-family:"微软雅黑"; cursor:pointer;}
+.bodyer .page .input_x{ width:50px; height:20px; background-color:#f08a01; color:#FFF; font-family:"微软雅黑"; cursor:pointer;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

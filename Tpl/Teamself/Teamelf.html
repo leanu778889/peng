@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/javascript" src="__APP__/Public/js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	show();
+	setInterval(function(){
+	show();
+	},3000);	
+})
+function show(){
+		$('.message').remove();
+		$.get('__APP__/Self/message','',function(data){
+				if(data){
+					var len_ = data.length;
+					//var html = '<dd><a href="#" target="_blank">三等奖撒的空间萨丹哈数据库</a></dd>';
+					var html = '<div class="message"><div class="message-tle">新消息<em onclick="hide()">×</em></div>'+data+'</div>';
+					
+					$('body').append(html);
+				}
+			});	
+	}
+
+function hide(){
+		$('.message').fadeOut(1000);
+	}
+</script>
+
+
+<style>
+.message{width:250px;height:auto; border:1px #CCCCCC solid; position:fixed; z-index:1000; bottom:5px;right:5px;}
+.message-tle{width:250px; height:30px; background:#C96; line-height:30px; padding-left:5px;}
+.message-tle em{ position:absolute; right:5px; color:#000; cursor:pointer;}
+.message-tle em:hove{color:#666;}
+</style>
+<title>个人信息页</title>
+</head>
+<body>
+<table width="507" border="1">
+  <tr>
+    <td height="94" colspan="2"><img src="#" height="70" width="70"></td>
+  </tr>
+  <tr>
+    <td height="63" colspan="2">个人的照片和描述</td>
+  </tr>
+  <tr>
+    <td height="38" colspan="2">详细资料</td>
+  </tr>
+  <tr>
+    <td width="242" height="34">年龄：23岁</td>
+    <td width="249">籍贯：湖北省孝感市</td>
+  </tr>
+  <tr>
+    <td height="33">身高：156厘米</td>
+    <td>体重：53公斤</td>
+  </tr>
+  <tr>
+    <td height="35">爱好：睡觉看书上网</td>
+    <td>常住地：北京市</td>
+  </tr>
+  <tr>
+    <td height="33">现住地：辽宁省葫芦岛市</td>
+    <td>特长：情感戏把握准确</td>
+  </tr>
+  <tr>
+    <td height="33">职业：演员</td>
+    <td>代表作：《我和你》</td>
+  </tr>
+  <tr>
+    <td height="15" colspan="2">毕业学校：河北工院</td>
+  </tr>
+  <tr>
+    <td height="86" colspan="2">演艺经历：98年出道至今，出演过各种角色，丑角，喜角，啥啥的</td>
+  </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="__APP__/Public/css/style2.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="__APP__/Public/js/jquery-1.9.1.min.js"></script>
+</head>
+
+<body>
+	<form id="form1" name="form1" method="post" action="">
+	<div id="content">
+        <div class="dl_main">
+        	<div class="touxiang"><img src="__APP__/Public/images/toux.png"></div>
+        	<div class="dl_mTop">
+                <div class="yhm_zc">
+                    <div class="yhm">
+                        用 户 名：<input type="text" name="username" id="username">
+                    </div>
+                    <div class="yhm">
+                        密<span></span>码：<input type="password" name="password" id="password">
+                    </div>
+                    <div class="yhm">
+                        类<span></span>型:
+                        <select name="type" id="select">
+                        <volist name="ptypes" id="type">
+                            <option value="{$type['pt_id']}">{$type['pt_name']}</option>
+                        </volist>
+                        </select>
+                    </div>
+                </div>
+              <div class="del">
+                	<div class="button">
+                        <input type="submit" class="zcxx" value="登陆">
+                    </div>
+                </div>
+            </div>
+            <div class="dl_mBottom">
+            	请输入用户名进行登录,如果没有用户名密码，请进行<a href="__APP__/Register/register">注册</a>
+            </div>
+        </div>
+	</div>
+	</form>
+</body>
+</html>

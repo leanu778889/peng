@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>演员分类</title>
+<style type="text/css">
+<!--
+body {
+	background-color: #FFCC99;
+}
+-->
+</style>
+<link href="__APP__/Public/css/style1.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="__APP__/Public/js/jquery.min.js"></script>
+<script type="text/javascript" src="__APP__/Public/js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript">
+function sech(obj){
+	$.post('__APP__/Actmessage/search','val='+obj,function(data){
+		if(data){
+			var html = '';
+			var _len = data.length;
+			//alert(_len);
+			for(var i=0;i<_len;i++){
+				html += '<div style="margin-top:0px;"><a href="__APP__/Actmessage/actshow/'+data[i].a_id+'"><div class="Mainstype_tu"><img  width="150" height="150" src="__APP__/Public/uploads/'+data[i].path+'"/>'+data[i].truename+'</div></a></div>';
+			}
+			$('#Mainstype').html(html);
+		}else{
+			$('#Mainstype').html('');
+		}
+	},'json')
+}
+</script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		var searchActor = $("#searchActor");
+		var searchd = $("#searchd");
+		searchActor.mouseenter(function() {
+			t_delay = setTimeout(function(){
+				searchd.fadeIn("slow");
+			}, 10);
+		});
+		searchActor.mouseleave(function() {
+			clearTimeout(t_delay);
+			searchd.fadeOut("slow");
+		},200);
+	});
+     </script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		var lr_systembtn = $("#lr_systembtn");
+		var lr_menu = $("#lr_menu");
+		lr_systembtn.mouseenter(function() {
+			t_delay = setTimeout(function() {
+				lr_menu.fadeIn("slow");
+			}, 200);
+		});
+		lr_systembtn.mouseleave(function() {
+			clearTimeout(t_delay);
+			lr_menu.fadeOut("slow");
+		},200);
+
+	});
+     </script>
+	 <script type="text/javascript">
+	$(document).ready(function() {
+		var lr_systembtn1 = $("#lr_systembtn1");
+		var  lr_menu1 = $("#lr_menu1");
+		lr_systembtn1.mouseenter(function() {
+			t_delay = setTimeout(function() {
+				lr_menu1.fadeIn("slow");
+			}, 300);
+		});
+		lr_systembtn1.mouseleave(function() {
+			clearTimeout(t_delay);
+			lr_menu1.fadeOut("slow");
+		},200);
+
+	});
+     </script>
+</head>
+<body class="background">
+<div class="typetable">
+<table width="1024" border="0">
+<tr  style="height: 10px;">
+<td colspan="2" width="186" height="40"></td>
+<td  id="Actors" class="search">
+    <span><img id="searchActor" src="__APP__/Public/images/search.png" style="width:50px; height:50px;" /></span>
+	<div id="searchd" style=" display:none;">
+    <span class="Mainstype_tue">儿童</span>
+    <span class="Mainstype_tue">青年</span>
+    <span class="Mainstype_tue">青少年</span>
+    <span class="Mainstype_tue">老年</span>
+    <span class="Mainstype_tue">中老年</span>
+    <span class="Mainstype_tue">中青年</span>
+    <span class="Mainstype_tue">中年</span>
+	</div>
+</td>
+<td  colspan="2" width="186"> </td>
+</tr>
+<tr style="height: 10px;"></tr>
+   <tr> 
+    <td width="186"  class="alphaside"  >
+	  <div id="lr_systembtn"  class="nan" >
+	<a href="javascript:void(0)" onclick="sech('1_')">男演员</a></div>
+	  <div id="lr_menu" class="lr_menu1" >
+	  <volist name="typemess" id="tmess">
+			<dl>
+				<dt>
+					<a href="javascript:void(0)" onclick="sech('1_{$tmess.t_id}')">{$tmess.t_name}</a>
+				</dt>
+			</dl>
+		</volist>
+		  </div>
+		</div>
+	</td>
+    <td width="20">&nbsp;</td>
+    <td id ="Mainstype" width="650" height="550" class="alpha">
+	 <volist name="res" id="sub">
+	<div style="margin-top:0px;">
+	  <a href="__APP__/Actmessage/actshow/{$sub.a_id}"><div class="Mainstype_tu"><img  width="150" height="150" src="__APP__/Public/uploads/{$sub.path}"/>{$sub.truename}</div></a>
+	</div>
+	</volist>
+	<div align="center" style="margin-bottom:30px;">
+	<input type="button" id="previous" value="上一页" />
+	<input type="button"  id="next" value="下一页" />
+	</div>
+	</td>
+    <td width="20">&nbsp;</td>
+    <td width="186"  class="alphaside">
+	  <div id="lr_systembtn1"  class="nan" >
+	 <a href="javascript:void(0)" onclick="sech('2_')">女演员</a></div>
+	  <div id="lr_menu1" class="lr_menu1" >
+					<volist name="typemess" id="tmess">
+			<dl>
+				<dt>
+					<a href="javascript:void(0)" onclick="sech('2_{$tmess.t_id}')">{$tmess.t_name}</a>
+				</dt>
+			</dl>
+		</volist>
+		  </div>
+	</td>
+  </tr>
+</table>
+</div>
+</body>
+</html>

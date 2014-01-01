@@ -1,0 +1,1581 @@
+[ 2013-12-04T09:50:39+08:00 ] 127.0.0.1 /actor/admin.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.004269s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004509s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.091690s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.091906s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002705s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002704s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002560s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003100s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011481s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003326s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003468s ]
+
+[ 2013-12-04T09:50:42+08:00 ] 127.0.0.1 /actor/admin.php?m=Login&a=login
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001791s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001996s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\3365804034a278792511366f216e0502.php 第 8 行.
+NOTIC: [8] Use of undefined constant BACK_JS - assumed 'BACK_JS' D:\WWW\actor\admin\Runtime\Cache\3365804034a278792511366f216e0502.php 第 60 行.
+NOTIC: [8] Use of undefined constant BACK_JS - assumed 'BACK_JS' D:\WWW\actor\admin\Runtime\Cache\3365804034a278792511366f216e0502.php 第 61 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.039374s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039577s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001091s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001177s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000831s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001349s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004916s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001793s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001952s ]
+
+[ 2013-12-04T09:50:43+08:00 ] 127.0.0.1 /actor/admin.php?m=Login&a=verify
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001580s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001778s ]
+
+[ 2013-12-04T09:50:56+08:00 ] 127.0.0.1 /actor/admin.php?m=Login&a=login
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003117s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003366s ]
+SQL: SHOW COLUMNS FROM `act_users` [ RunTime:0.009960s ]
+SQL: SELECT `usgp_id`,`user_name` FROM `act_users` WHERE ( `user_name` = 'gbcadmin' ) AND ( `user_password` = '85101222181144812521881824225e121e810487' )  [ RunTime:0.000708s ]
+SQL: SHOW COLUMNS FROM `act_users_group` [ RunTime:0.008800s ]
+SQL: SELECT `usgp_state` FROM `act_users_group` WHERE ( `usgp_state` = 1 ) AND ( `usgp_id` = 1 ) LIMIT 1   [ RunTime:0.001436s ]
+SQL: SHOW COLUMNS FROM `act_login_log` [ RunTime:0.008939s ]
+SQL: INSERT INTO `act_login_log` (`lnlg_username`,`lnlg_time`,`lnlg_ip`,`usgp_id`) VALUES ('gbcadmin',1386121856,'127.0.0.1',1) [ RunTime:0.029077s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.048155s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048380s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002506s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002541s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002439s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002677s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010691s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003124s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003284s ]
+
+[ 2013-12-04T09:50:57+08:00 ] 127.0.0.1 /actor/admin.php?m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001804s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002008s ]
+SQL: SHOW COLUMNS FROM `act_users_group` [ RunTime:0.006638s ]
+SQL: SELECT `usgp_name` FROM `act_users_group` WHERE ( `usgp_id` = 1 ) LIMIT 1   [ RunTime:0.001006s ]
+SQL: SHOW COLUMNS FROM `act_menus_power` [ RunTime:0.010332s ]
+SQL: SHOW COLUMNS FROM `act_menus` [ RunTime:0.010249s ]
+SQL: SELECT `menu_id`,`menu_name` FROM `act_menus` WHERE ( `menu_pid`=0 AND `menu_rank`=1 AND `menu_state`=1  ) ORDER BY menu_sort  [ RunTime:0.042398s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\8259e3d0bf36d64289355928982ce624.php 第 5 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\8259e3d0bf36d64289355928982ce624.php 第 23 行.
+NOTIC: [8] Use of undefined constant IMAGES_PATH_ADMIN - assumed 'IMAGES_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\8259e3d0bf36d64289355928982ce624.php 第 30 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\8259e3d0bf36d64289355928982ce624.php 第 35 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\8259e3d0bf36d64289355928982ce624.php 第 36 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\8259e3d0bf36d64289355928982ce624.php 第 469 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.039043s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039266s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001474s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001065s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000721s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001360s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005067s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.005225s ]
+INFO: [ view_end ] --END-- [ RunTime:0.005427s ]
+
+[ 2013-12-04T09:50:58+08:00 ] 127.0.0.1 /actor/admin.php?m=Index&a=welcome
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001669s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001872s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\52fef3a85d4cd0cd415aabd330836914.php 第 4 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\52fef3a85d4cd0cd415aabd330836914.php 第 69 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.082095s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.082289s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001188s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001208s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000817s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001655s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005534s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002225s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002423s ]
+
+[ 2013-12-04T09:50:58+08:00 ] 127.0.0.1 /actor/admin.php?m=Index&a=ajax_menu&pid=1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002866s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003057s ]
+SQL: SHOW COLUMNS FROM `act_menus` [ RunTime:0.007294s ]
+SQL: SHOW COLUMNS FROM `act_menus_power` [ RunTime:0.007449s ]
+SQL: SELECT * FROM `act_menus` WHERE ( `menu_pid`=1 AND `menu_rank`=2 AND `menu_state`=1  ) ORDER BY menu_sort  [ RunTime:0.000904s ]
+
+[ 2013-12-04T09:51:08+08:00 ] 127.0.0.1 /actor/admin.php?m=Index&a=ajax_menu&pid=15
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001558s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001775s ]
+SQL: SHOW COLUMNS FROM `act_menus` [ RunTime:0.006420s ]
+SQL: SHOW COLUMNS FROM `act_menus_power` [ RunTime:0.007014s ]
+SQL: SELECT * FROM `act_menus` WHERE ( `menu_pid`=15 AND `menu_rank`=2 AND `menu_state`=1  ) ORDER BY menu_sort  [ RunTime:0.001627s ]
+
+[ 2013-12-04T09:51:10+08:00 ] 127.0.0.1 /actor/admin.php?m=Party&a=addactmess
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001598s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001796s ]
+SQL: SHOW COLUMNS FROM `act_type` [ RunTime:0.007758s ]
+SQL: SELECT * FROM `act_type`  [ RunTime:0.002083s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 8 行.
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 9 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 13 行.
+NOTIC: [8] Use of undefined constant IMAGES_PATH_ADMIN - assumed 'IMAGES_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 20 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 25 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 26 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 27 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 28 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 67 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 68 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 69 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 70 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 71 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 176 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.059647s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059836s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002596s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002395s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002119s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002828s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010400s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003220s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003397s ]
+
+[ 2013-12-04T09:59:39+08:00 ] 127.0.0.1 /actor/admin.php?m=Index&a=ajax_menu&pid=3
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.004169s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004398s ]
+SQL: SHOW COLUMNS FROM `act_menus` [ RunTime:0.006738s ]
+SQL: SHOW COLUMNS FROM `act_menus_power` [ RunTime:0.007378s ]
+SQL: SELECT * FROM `act_menus` WHERE ( `menu_pid`=3 AND `menu_rank`=2 AND `menu_state`=1  ) ORDER BY menu_sort  [ RunTime:0.001657s ]
+
+[ 2013-12-04T09:59:41+08:00 ] 127.0.0.1 /actor/admin.php?m=Index&a=ajax_menu&pid=9
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001567s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001754s ]
+SQL: SHOW COLUMNS FROM `act_menus` [ RunTime:0.009500s ]
+SQL: SHOW COLUMNS FROM `act_menus_power` [ RunTime:0.008397s ]
+SQL: SELECT * FROM `act_menus` WHERE ( `menu_pid`=9 AND `menu_rank`=2 AND `menu_state`=1  ) ORDER BY menu_sort  [ RunTime:0.000719s ]
+
+[ 2013-12-04T09:59:42+08:00 ] 127.0.0.1 /actor/admin.php?m=Index&a=ajax_menu&pid=3
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001786s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001977s ]
+SQL: SHOW COLUMNS FROM `act_menus` [ RunTime:0.009386s ]
+SQL: SHOW COLUMNS FROM `act_menus_power` [ RunTime:0.006160s ]
+SQL: SELECT * FROM `act_menus` WHERE ( `menu_pid`=3 AND `menu_rank`=2 AND `menu_state`=1  ) ORDER BY menu_sort  [ RunTime:0.001535s ]
+
+[ 2013-12-04T09:59:43+08:00 ] 127.0.0.1 /actor/admin.php?m=Index&a=ajax_menu&pid=9
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001815s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002063s ]
+SQL: SHOW COLUMNS FROM `act_menus` [ RunTime:0.006753s ]
+SQL: SHOW COLUMNS FROM `act_menus_power` [ RunTime:0.007103s ]
+SQL: SELECT * FROM `act_menus` WHERE ( `menu_pid`=9 AND `menu_rank`=2 AND `menu_state`=1  ) ORDER BY menu_sort  [ RunTime:0.001396s ]
+
+[ 2013-12-04T09:59:44+08:00 ] 127.0.0.1 /actor/admin.php?m=Newsmanager&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001555s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001757s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\736dbe502234b0020ef915a10d175b98.php 第 7 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\736dbe502234b0020ef915a10d175b98.php 第 11 行.
+NOTIC: [8] Use of undefined constant IMAGES_PATH_ADMIN - assumed 'IMAGES_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\736dbe502234b0020ef915a10d175b98.php 第 18 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\736dbe502234b0020ef915a10d175b98.php 第 23 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\736dbe502234b0020ef915a10d175b98.php 第 24 行.
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\736dbe502234b0020ef915a10d175b98.php 第 25 行.
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\736dbe502234b0020ef915a10d175b98.php 第 26 行.
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\736dbe502234b0020ef915a10d175b98.php 第 27 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\736dbe502234b0020ef915a10d175b98.php 第 28 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\736dbe502234b0020ef915a10d175b98.php 第 29 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\736dbe502234b0020ef915a10d175b98.php 第 30 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\736dbe502234b0020ef915a10d175b98.php 第 31 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\736dbe502234b0020ef915a10d175b98.php 第 32 行.
+NOTIC: [8] Undefined variable: result D:\WWW\actor\admin\Runtime\Cache\736dbe502234b0020ef915a10d175b98.php 第 47 行.
+NOTIC: [8] Undefined variable: result D:\WWW\actor\admin\Runtime\Cache\736dbe502234b0020ef915a10d175b98.php 第 49 行.
+NOTIC: [8] Undefined variable: result D:\WWW\actor\admin\Runtime\Cache\736dbe502234b0020ef915a10d175b98.php 第 77 行.
+NOTIC: [8] Undefined variable: result D:\WWW\actor\admin\Runtime\Cache\736dbe502234b0020ef915a10d175b98.php 第 83 行.
+NOTIC: [8] Undefined variable: result D:\WWW\actor\admin\Runtime\Cache\736dbe502234b0020ef915a10d175b98.php 第 89 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\736dbe502234b0020ef915a10d175b98.php 第 101 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\736dbe502234b0020ef915a10d175b98.php 第 103 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.045268s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045465s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002578s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002803s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002205s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002831s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010911s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003301s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003471s ]
+
+[ 2013-12-04T09:59:45+08:00 ] 127.0.0.1 /actor/admin.php?m=Newsmanager&a=newsmanager
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001926s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002142s ]
+NOTIC: [8] Use of undefined constant announ - assumed 'announ' D:\WWW\actor\admin\Lib\Action\NewsmanagerAction.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `act_announ` [ RunTime:0.028569s ]
+SQL: SELECT * FROM `act_announ`  [ RunTime:0.002876s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\09ab91f7c21213794a85f7cc529f77fa.php 第 7 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\09ab91f7c21213794a85f7cc529f77fa.php 第 12 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\09ab91f7c21213794a85f7cc529f77fa.php 第 13 行.
+NOTIC: [8] Undefined index:  p_id D:\WWW\actor\admin\Runtime\Cache\09ab91f7c21213794a85f7cc529f77fa.php 第 46 行.
+NOTIC: [8] Undefined index:  p_id D:\WWW\actor\admin\Runtime\Cache\09ab91f7c21213794a85f7cc529f77fa.php 第 46 行.
+NOTIC: [8] Undefined index:  p_id D:\WWW\actor\admin\Runtime\Cache\09ab91f7c21213794a85f7cc529f77fa.php 第 46 行.
+NOTIC: [8] Undefined index:  p_id D:\WWW\actor\admin\Runtime\Cache\09ab91f7c21213794a85f7cc529f77fa.php 第 46 行.
+NOTIC: [8] Undefined index:  p_id D:\WWW\actor\admin\Runtime\Cache\09ab91f7c21213794a85f7cc529f77fa.php 第 46 行.
+NOTIC: [8] Undefined index:  p_id D:\WWW\actor\admin\Runtime\Cache\09ab91f7c21213794a85f7cc529f77fa.php 第 46 行.
+NOTIC: [8] Undefined index:  p_id D:\WWW\actor\admin\Runtime\Cache\09ab91f7c21213794a85f7cc529f77fa.php 第 46 行.
+NOTIC: [8] Undefined index:  p_id D:\WWW\actor\admin\Runtime\Cache\09ab91f7c21213794a85f7cc529f77fa.php 第 46 行.
+NOTIC: [8] Undefined index:  p_id D:\WWW\actor\admin\Runtime\Cache\09ab91f7c21213794a85f7cc529f77fa.php 第 46 行.
+NOTIC: [8] Undefined index:  p_id D:\WWW\actor\admin\Runtime\Cache\09ab91f7c21213794a85f7cc529f77fa.php 第 46 行.
+NOTIC: [8] Undefined index:  p_id D:\WWW\actor\admin\Runtime\Cache\09ab91f7c21213794a85f7cc529f77fa.php 第 46 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\09ab91f7c21213794a85f7cc529f77fa.php 第 55 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.051174s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051377s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002592s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002484s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002320s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003075s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010940s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003641s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003812s ]
+
+[ 2013-12-04T09:59:51+08:00 ] 127.0.0.1 /actor/admin.php?m=Index&a=ajax_menu&pid=3
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002999s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003187s ]
+SQL: SHOW COLUMNS FROM `act_menus` [ RunTime:0.006914s ]
+SQL: SHOW COLUMNS FROM `act_menus_power` [ RunTime:0.007302s ]
+SQL: SELECT * FROM `act_menus` WHERE ( `menu_pid`=3 AND `menu_rank`=2 AND `menu_state`=1  ) ORDER BY menu_sort  [ RunTime:0.001284s ]
+
+[ 2013-12-04T09:59:51+08:00 ] 127.0.0.1 /actor/admin.php?m=Index&a=ajax_menu&pid=3
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001594s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001775s ]
+SQL: SHOW COLUMNS FROM `act_menus` [ RunTime:0.006779s ]
+SQL: SHOW COLUMNS FROM `act_menus_power` [ RunTime:0.007326s ]
+SQL: SELECT * FROM `act_menus` WHERE ( `menu_pid`=3 AND `menu_rank`=2 AND `menu_state`=1  ) ORDER BY menu_sort  [ RunTime:0.001648s ]
+
+[ 2013-12-04T10:01:33+08:00 ] 127.0.0.1 /actor/admin.php?m=Actormess&a=actormess
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001671s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001944s ]
+SQL: SHOW COLUMNS FROM `act_actor` [ RunTime:0.008979s ]
+SQL: SHOW COLUMNS FROM `act_party` [ RunTime:0.028079s ]
+SQL: SHOW COLUMNS FROM `act_type` [ RunTime:0.007611s ]
+SQL: SELECT * FROM `act_actor`  [ RunTime:0.002125s ]
+SQL: SELECT `p_name` FROM `act_party` WHERE ( `p_id` = 1 ) LIMIT 1   [ RunTime:0.000460s ]
+SQL: SELECT `t_name` FROM `act_type` WHERE ( `t_id` = 2 ) LIMIT 1   [ RunTime:0.000380s ]
+SQL: SELECT `p_name` FROM `act_party` WHERE ( `p_id` = 2 ) LIMIT 1   [ RunTime:0.000391s ]
+SQL: SELECT `t_name` FROM `act_type` WHERE ( `t_id` = 1 ) LIMIT 1   [ RunTime:0.000400s ]
+SQL: SELECT `p_name` FROM `act_party` WHERE ( `p_id` = 9 ) LIMIT 1   [ RunTime:0.000379s ]
+SQL: SELECT `t_name` FROM `act_type` WHERE ( `t_id` = 1 ) LIMIT 1   [ RunTime:0.000383s ]
+SQL: SELECT `p_name` FROM `act_party` WHERE ( `p_id` = 19 ) LIMIT 1   [ RunTime:0.000410s ]
+SQL: SELECT `t_name` FROM `act_type` WHERE ( `t_id` = 1 ) LIMIT 1   [ RunTime:0.000383s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\47c4f616945687867f4d2892f1a2b7a2.php 第 7 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\47c4f616945687867f4d2892f1a2b7a2.php 第 8 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\47c4f616945687867f4d2892f1a2b7a2.php 第 9 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\47c4f616945687867f4d2892f1a2b7a2.php 第 67 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.075725s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.075914s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002829s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.006577s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002363s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003132s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015442s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003120s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003284s ]
+
+[ 2013-12-04T10:01:34+08:00 ] 127.0.0.1 /actor/admin.php?m=Actormess&a=actormess
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002122s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002338s ]
+SQL: SHOW COLUMNS FROM `act_actor` [ RunTime:0.013015s ]
+SQL: SHOW COLUMNS FROM `act_party` [ RunTime:0.006913s ]
+SQL: SHOW COLUMNS FROM `act_type` [ RunTime:0.007715s ]
+SQL: SELECT * FROM `act_actor`  [ RunTime:0.001845s ]
+SQL: SELECT `p_name` FROM `act_party` WHERE ( `p_id` = 1 ) LIMIT 1   [ RunTime:0.000480s ]
+SQL: SELECT `t_name` FROM `act_type` WHERE ( `t_id` = 2 ) LIMIT 1   [ RunTime:0.000386s ]
+SQL: SELECT `p_name` FROM `act_party` WHERE ( `p_id` = 2 ) LIMIT 1   [ RunTime:0.000378s ]
+SQL: SELECT `t_name` FROM `act_type` WHERE ( `t_id` = 1 ) LIMIT 1   [ RunTime:0.000376s ]
+SQL: SELECT `p_name` FROM `act_party` WHERE ( `p_id` = 9 ) LIMIT 1   [ RunTime:0.000371s ]
+SQL: SELECT `t_name` FROM `act_type` WHERE ( `t_id` = 1 ) LIMIT 1   [ RunTime:0.000398s ]
+SQL: SELECT `p_name` FROM `act_party` WHERE ( `p_id` = 19 ) LIMIT 1   [ RunTime:0.000364s ]
+SQL: SELECT `t_name` FROM `act_type` WHERE ( `t_id` = 1 ) LIMIT 1   [ RunTime:0.000376s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\47c4f616945687867f4d2892f1a2b7a2.php 第 7 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\47c4f616945687867f4d2892f1a2b7a2.php 第 8 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\47c4f616945687867f4d2892f1a2b7a2.php 第 9 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\47c4f616945687867f4d2892f1a2b7a2.php 第 67 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.028300s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028491s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001232s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001033s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000763s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001340s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004826s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002149s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002335s ]
+
+[ 2013-12-04T10:01:34+08:00 ] 127.0.0.1 /actor/admin.php?m=Actormess&a=actormess
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001621s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001873s ]
+SQL: SHOW COLUMNS FROM `act_actor` [ RunTime:0.007935s ]
+SQL: SHOW COLUMNS FROM `act_party` [ RunTime:0.010842s ]
+SQL: SHOW COLUMNS FROM `act_type` [ RunTime:0.006797s ]
+SQL: SELECT * FROM `act_actor`  [ RunTime:0.002402s ]
+SQL: SELECT `p_name` FROM `act_party` WHERE ( `p_id` = 1 ) LIMIT 1   [ RunTime:0.000539s ]
+SQL: SELECT `t_name` FROM `act_type` WHERE ( `t_id` = 2 ) LIMIT 1   [ RunTime:0.000403s ]
+SQL: SELECT `p_name` FROM `act_party` WHERE ( `p_id` = 2 ) LIMIT 1   [ RunTime:0.000592s ]
+SQL: SELECT `t_name` FROM `act_type` WHERE ( `t_id` = 1 ) LIMIT 1   [ RunTime:0.000353s ]
+SQL: SELECT `p_name` FROM `act_party` WHERE ( `p_id` = 9 ) LIMIT 1   [ RunTime:0.000326s ]
+SQL: SELECT `t_name` FROM `act_type` WHERE ( `t_id` = 1 ) LIMIT 1   [ RunTime:0.000726s ]
+SQL: SELECT `p_name` FROM `act_party` WHERE ( `p_id` = 19 ) LIMIT 1   [ RunTime:0.000435s ]
+SQL: SELECT `t_name` FROM `act_type` WHERE ( `t_id` = 1 ) LIMIT 1   [ RunTime:0.000388s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\47c4f616945687867f4d2892f1a2b7a2.php 第 7 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\47c4f616945687867f4d2892f1a2b7a2.php 第 8 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\47c4f616945687867f4d2892f1a2b7a2.php 第 9 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\47c4f616945687867f4d2892f1a2b7a2.php 第 67 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.027412s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027601s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001643s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001099s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000773s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001346s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005323s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001708s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001904s ]
+
+[ 2013-12-04T10:01:35+08:00 ] 127.0.0.1 /actor/admin.php?m=Team&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001588s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001793s ]
+SQL: SHOW COLUMNS FROM `act_team` [ RunTime:0.008407s ]
+SQL: SHOW COLUMNS FROM `act_party` [ RunTime:0.007740s ]
+SQL: SHOW COLUMNS FROM `act_team_type` [ RunTime:0.008723s ]
+SQL: SELECT * FROM `act_team`  [ RunTime:0.001715s ]
+NOTIC: [8] Undefined index:  type D:\WWW\actor\admin\Lib\Action\TeamAction.class.php 第 19 行.
+SQL: SELECT `p_name` FROM `act_party` WHERE ( `p_id` = 3 ) LIMIT 1   [ RunTime:0.000435s ]
+SQL: SELECT `t_name` FROM `act_team_type` LIMIT 1   [ RunTime:0.000361s ]
+NOTIC: [8] Undefined index:  type D:\WWW\actor\admin\Lib\Action\TeamAction.class.php 第 19 行.
+SQL: SELECT `p_name` FROM `act_party` WHERE ( `p_id` = 7 ) LIMIT 1   [ RunTime:0.000378s ]
+SQL: SELECT `t_name` FROM `act_team_type` LIMIT 1   [ RunTime:0.000347s ]
+NOTIC: [8] Undefined index:  type D:\WWW\actor\admin\Lib\Action\TeamAction.class.php 第 19 行.
+SQL: SELECT `p_name` FROM `act_party` WHERE ( `p_id` = 17 ) LIMIT 1   [ RunTime:0.000362s ]
+SQL: SELECT `t_name` FROM `act_team_type` LIMIT 1   [ RunTime:0.000349s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.034361s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034589s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001302s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001246s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000735s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001622s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005393s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001734s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001893s ]
+
+[ 2013-12-04T10:01:35+08:00 ] 127.0.0.1 /actor/admin.php?m=Team&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001756s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001961s ]
+SQL: SHOW COLUMNS FROM `act_team` [ RunTime:0.007135s ]
+SQL: SHOW COLUMNS FROM `act_party` [ RunTime:0.008521s ]
+SQL: SHOW COLUMNS FROM `act_team_type` [ RunTime:0.006594s ]
+SQL: SELECT * FROM `act_team`  [ RunTime:0.001931s ]
+NOTIC: [8] Undefined index:  type D:\WWW\actor\admin\Lib\Action\TeamAction.class.php 第 19 行.
+SQL: SELECT `p_name` FROM `act_party` WHERE ( `p_id` = 3 ) LIMIT 1   [ RunTime:0.000441s ]
+SQL: SELECT `t_name` FROM `act_team_type` LIMIT 1   [ RunTime:0.000336s ]
+NOTIC: [8] Undefined index:  type D:\WWW\actor\admin\Lib\Action\TeamAction.class.php 第 19 行.
+SQL: SELECT `p_name` FROM `act_party` WHERE ( `p_id` = 7 ) LIMIT 1   [ RunTime:0.000393s ]
+SQL: SELECT `t_name` FROM `act_team_type` LIMIT 1   [ RunTime:0.000378s ]
+NOTIC: [8] Undefined index:  type D:\WWW\actor\admin\Lib\Action\TeamAction.class.php 第 19 行.
+SQL: SELECT `p_name` FROM `act_party` WHERE ( `p_id` = 17 ) LIMIT 1   [ RunTime:0.000370s ]
+SQL: SELECT `t_name` FROM `act_team_type` LIMIT 1   [ RunTime:0.000348s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.026071s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026294s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001324s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001166s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000738s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001327s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005027s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001735s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001896s ]
+
+[ 2013-12-04T11:20:27+08:00 ] 127.0.0.1 /actor/admin.php?m=Index&a=ajax_menu&pid=15
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003423s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003646s ]
+SQL: SHOW COLUMNS FROM `act_menus` [ RunTime:0.009968s ]
+SQL: SHOW COLUMNS FROM `act_menus_power` [ RunTime:0.011374s ]
+SQL: SELECT * FROM `act_menus` WHERE ( `menu_pid`=15 AND `menu_rank`=2 AND `menu_state`=1  ) ORDER BY menu_sort  [ RunTime:0.002380s ]
+
+[ 2013-12-04T11:20:27+08:00 ] 127.0.0.1 /actor/admin.php?m=Index&a=ajax_menu&pid=15
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001681s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001899s ]
+SQL: SHOW COLUMNS FROM `act_menus` [ RunTime:0.007907s ]
+SQL: SHOW COLUMNS FROM `act_menus_power` [ RunTime:0.009091s ]
+SQL: SELECT * FROM `act_menus` WHERE ( `menu_pid`=15 AND `menu_rank`=2 AND `menu_state`=1  ) ORDER BY menu_sort  [ RunTime:0.003022s ]
+
+[ 2013-12-04T11:37:26+08:00 ] 127.0.0.1 /actor/admin.php?m=Party&a=party
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003761s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004002s ]
+SQL: SHOW COLUMNS FROM `act_type` [ RunTime:0.008559s ]
+SQL: SELECT * FROM `act_type`  [ RunTime:0.002527s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\42604a8e38957dcc26aa8d7f1105d974.php 第 8 行.
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\42604a8e38957dcc26aa8d7f1105d974.php 第 9 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\42604a8e38957dcc26aa8d7f1105d974.php 第 13 行.
+NOTIC: [8] Use of undefined constant IMAGES_PATH_ADMIN - assumed 'IMAGES_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\42604a8e38957dcc26aa8d7f1105d974.php 第 20 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\42604a8e38957dcc26aa8d7f1105d974.php 第 25 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\42604a8e38957dcc26aa8d7f1105d974.php 第 26 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\42604a8e38957dcc26aa8d7f1105d974.php 第 27 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\42604a8e38957dcc26aa8d7f1105d974.php 第 28 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\42604a8e38957dcc26aa8d7f1105d974.php 第 98 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.035949s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036149s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.010447s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003360s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002179s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002854s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.019345s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003910s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004076s ]
+
+[ 2013-12-04T11:41:40+08:00 ] 127.0.0.1 /actor/admin.php?m=Party&a=addactmess
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003420s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003656s ]
+
+[ 2013-12-04T11:48:09+08:00 ] 127.0.0.1 /actor/admin.php?m=Party&a=addactmess
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003270s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003495s ]
+SQL: SHOW COLUMNS FROM `act_type` [ RunTime:0.008241s ]
+SQL: SELECT * FROM `act_type`  [ RunTime:0.002150s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 8 行.
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 9 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 13 行.
+NOTIC: [8] Use of undefined constant IMAGES_PATH_ADMIN - assumed 'IMAGES_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 20 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 25 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 26 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 27 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 28 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 67 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 68 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 69 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 70 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 71 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 178 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.071995s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.072199s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003141s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002972s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002144s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003124s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011921s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003095s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003257s ]
+
+[ 2013-12-04T11:48:44+08:00 ] 127.0.0.1 /actor/admin.php?m=Party&a=addactmess
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.006635s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006876s ]
+SQL: SHOW COLUMNS FROM `act_type` [ RunTime:0.008032s ]
+SQL: SELECT * FROM `act_type`  [ RunTime:0.002573s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 8 行.
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 9 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 13 行.
+NOTIC: [8] Use of undefined constant IMAGES_PATH_ADMIN - assumed 'IMAGES_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 20 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 25 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 26 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 27 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 28 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 67 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 68 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 69 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 70 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 71 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 178 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.071029s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.071220s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.004077s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.004802s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.003508s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.004897s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.017796s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.005630s ]
+INFO: [ view_end ] --END-- [ RunTime:0.005813s ]
+
+[ 2013-12-04T11:49:05+08:00 ] 127.0.0.1 /actor/admin.php?m=Party&a=addactmess
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001608s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001809s ]
+SQL: SHOW COLUMNS FROM `act_type` [ RunTime:0.007821s ]
+SQL: SELECT * FROM `act_type`  [ RunTime:0.002569s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 8 行.
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 9 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 13 行.
+NOTIC: [8] Use of undefined constant IMAGES_PATH_ADMIN - assumed 'IMAGES_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 20 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 25 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 26 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 27 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 28 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 67 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 68 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 69 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 70 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 71 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 178 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.032684s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032870s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001182s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.006826s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000755s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003332s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012634s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001874s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002045s ]
+
+[ 2013-12-04T13:07:50+08:00 ] 127.0.0.1 /actor/admin.php?m=Party&a=addactmess
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003249s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003484s ]
+SQL: SHOW COLUMNS FROM `act_type` [ RunTime:0.008471s ]
+SQL: SELECT * FROM `act_type`  [ RunTime:0.002231s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 8 行.
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 9 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 13 行.
+NOTIC: [8] Use of undefined constant IMAGES_PATH_ADMIN - assumed 'IMAGES_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 20 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 25 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 26 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 27 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 28 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 75 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 76 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 77 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 78 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 79 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 186 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.043537s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043736s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002900s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002559s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002263s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002964s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011166s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003203s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003365s ]
+
+[ 2013-12-04T13:08:02+08:00 ] 127.0.0.1 /actor/admin.php?m=Party&a=addactmess
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003848s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004140s ]
+SQL: SHOW COLUMNS FROM `act_type` [ RunTime:0.014950s ]
+SQL: SELECT * FROM `act_type`  [ RunTime:0.000612s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 8 行.
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 9 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 13 行.
+NOTIC: [8] Use of undefined constant IMAGES_PATH_ADMIN - assumed 'IMAGES_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 20 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 25 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 26 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 27 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 28 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 75 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 76 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 77 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 78 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 79 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 186 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.043494s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043866s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002343s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002223s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001906s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002460s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009338s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003835s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004020s ]
+
+[ 2013-12-04T13:46:35+08:00 ] 127.0.0.1 /actor/admin.php?m=Party&a=addactmess
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003228s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003465s ]
+SQL: SHOW COLUMNS FROM `act_type` [ RunTime:0.008208s ]
+SQL: SELECT * FROM `act_type`  [ RunTime:0.002439s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 8 行.
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 9 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 13 行.
+NOTIC: [8] Use of undefined constant IMAGES_PATH_ADMIN - assumed 'IMAGES_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 20 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 25 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 26 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 27 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 28 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 75 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 76 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 77 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 78 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 79 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 186 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.043141s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043328s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002783s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002494s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002286s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002690s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010725s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003587s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003768s ]
+
+[ 2013-12-04T13:46:40+08:00 ] 127.0.0.1 /actor/admin.php?m=Party&a=addactmess
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001732s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001939s ]
+SQL: SHOW COLUMNS FROM `act_type` [ RunTime:0.008539s ]
+SQL: SELECT * FROM `act_type`  [ RunTime:0.003705s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 8 行.
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 9 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 13 行.
+NOTIC: [8] Use of undefined constant IMAGES_PATH_ADMIN - assumed 'IMAGES_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 20 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 25 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 26 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 27 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 28 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 75 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 76 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 77 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 78 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 79 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 186 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.042640s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042830s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.011867s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.006273s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000988s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.027314s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.046997s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001743s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001891s ]
+
+[ 2013-12-04T13:46:48+08:00 ] 127.0.0.1 /actor/admin.php?m=Party&a=addactmess
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.010256s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010493s ]
+SQL: SHOW COLUMNS FROM `act_type` [ RunTime:0.007954s ]
+SQL: SELECT * FROM `act_type`  [ RunTime:0.002560s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 8 行.
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 9 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 13 行.
+NOTIC: [8] Use of undefined constant IMAGES_PATH_ADMIN - assumed 'IMAGES_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 20 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 25 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 26 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 27 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 28 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 75 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 76 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 77 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 78 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 79 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 186 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.045174s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045371s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.004089s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003948s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002189s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003295s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.014049s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003424s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003604s ]
+
+[ 2013-12-04T13:46:51+08:00 ] 127.0.0.1 /actor/admin.php?m=Party&a=addactmess
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001582s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001788s ]
+SQL: SHOW COLUMNS FROM `act_type` [ RunTime:0.007627s ]
+SQL: SELECT * FROM `act_type`  [ RunTime:0.002506s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 8 行.
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 9 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 13 行.
+NOTIC: [8] Use of undefined constant IMAGES_PATH_ADMIN - assumed 'IMAGES_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 20 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 25 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 26 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 27 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 28 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 75 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 76 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 77 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 78 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 79 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 186 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.041341s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041535s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001234s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001296s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.003770s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001445s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008228s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002193s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002357s ]
+
+[ 2013-12-04T13:55:45+08:00 ] 127.0.0.1 /actor/admin.php?m=Party&a=addactmess
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002982s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003199s ]
+SQL: SHOW COLUMNS FROM `act_type` [ RunTime:0.008076s ]
+SQL: SELECT * FROM `act_type`  [ RunTime:0.002424s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 8 行.
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 9 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 13 行.
+NOTIC: [8] Use of undefined constant IMAGES_PATH_ADMIN - assumed 'IMAGES_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 20 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 25 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 26 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 27 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 28 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 75 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 76 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 77 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 78 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 79 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 186 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.039854s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040044s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002767s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002749s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002198s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002778s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011185s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003117s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003285s ]
+
+[ 2013-12-04T13:55:50+08:00 ] 127.0.0.1 /actor/admin.php?m=Party&a=addactmess
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003066s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003292s ]
+SQL: SHOW COLUMNS FROM `act_type` [ RunTime:0.010869s ]
+SQL: SELECT * FROM `act_type`  [ RunTime:0.000603s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 8 行.
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 9 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 13 行.
+NOTIC: [8] Use of undefined constant IMAGES_PATH_ADMIN - assumed 'IMAGES_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 20 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 25 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 26 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 27 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 28 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 75 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 76 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 77 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 78 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 79 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 186 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.044502s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044702s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003086s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002559s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002111s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002692s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010900s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003117s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003391s ]
+
+[ 2013-12-04T15:29:13+08:00 ] 127.0.0.1 /actor/admin.php?m=Party&a=addactmess
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002947s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003160s ]
+SQL: SHOW COLUMNS FROM `act_type` [ RunTime:0.008074s ]
+SQL: SELECT * FROM `act_type`  [ RunTime:0.002289s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 8 行.
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 9 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 13 行.
+NOTIC: [8] Use of undefined constant IMAGES_PATH_ADMIN - assumed 'IMAGES_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 20 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 25 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 26 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 27 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 28 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 75 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 76 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 77 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 78 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 79 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 186 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.045038s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045235s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002692s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003012s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002796s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002705s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011683s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003142s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003307s ]
+
+[ 2013-12-04T15:29:17+08:00 ] 127.0.0.1 /actor/admin.php?m=Party&a=addteammess
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001570s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001773s ]
+SQL: SHOW COLUMNS FROM `act_teamtype` [ RunTime:0.013044s ]
+ERR: 1146:Table 'filmhr.act_teamtype' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `act_teamtype`
+SQL: SELECT * FROM `act_teamtype`  [ RunTime:0.005327s ]
+ERR: 1146:Table 'filmhr.act_teamtype' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `act_teamtype` 
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 8 行.
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 9 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 13 行.
+NOTIC: [8] Use of undefined constant IMAGES_PATH_ADMIN - assumed 'IMAGES_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 20 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 25 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 26 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 27 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 28 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 74 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 75 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 76 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 77 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 78 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 108 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 152 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.031711s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031931s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001206s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001065s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000696s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001387s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004801s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001874s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002037s ]
+
+[ 2013-12-04T15:33:04+08:00 ] 127.0.0.1 /actor/admin.php?m=Party&a=addteammess
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002943s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003155s ]
+SQL: SHOW COLUMNS FROM `act_teamtype` [ RunTime:0.010289s ]
+ERR: 1146:Table 'filmhr.act_teamtype' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `act_teamtype`
+SQL: SELECT * FROM `act_teamtype`  [ RunTime:0.000599s ]
+ERR: 1146:Table 'filmhr.act_teamtype' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `act_teamtype` 
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 8 行.
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 9 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 13 行.
+NOTIC: [8] Use of undefined constant IMAGES_PATH_ADMIN - assumed 'IMAGES_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 20 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 25 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 26 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 27 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 28 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 74 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 75 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 76 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 77 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 78 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 109 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 155 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.037398s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037596s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002902s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002794s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002101s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002686s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010979s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003201s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003362s ]
+
+[ 2013-12-04T15:33:52+08:00 ] 127.0.0.1 /actor/admin.php?m=Party&a=addteammess
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002970s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003175s ]
+SQL: SHOW COLUMNS FROM `act_teamtype` [ RunTime:0.010350s ]
+ERR: 1146:Table 'filmhr.act_teamtype' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `act_teamtype`
+SQL: SELECT * FROM `act_teamtype`  [ RunTime:0.000599s ]
+ERR: 1146:Table 'filmhr.act_teamtype' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `act_teamtype` 
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 8 行.
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 9 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 13 行.
+NOTIC: [8] Use of undefined constant IMAGES_PATH_ADMIN - assumed 'IMAGES_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 20 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 25 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 26 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 27 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 28 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 74 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 75 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 76 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 77 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 78 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 109 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 156 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.056762s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.057048s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.004642s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003941s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002978s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.005234s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.017535s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.006358s ]
+INFO: [ view_end ] --END-- [ RunTime:0.006713s ]
+
+[ 2013-12-04T15:40:31+08:00 ] 127.0.0.1 /actor/admin.php?m=Party&a=addteammess
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003765s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004005s ]
+SQL: SHOW COLUMNS FROM `act_teamtype` [ RunTime:0.010828s ]
+ERR: 1146:Table 'filmhr.act_teamtype' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `act_teamtype`
+SQL: SELECT * FROM `act_teamtype`  [ RunTime:0.001374s ]
+ERR: 1146:Table 'filmhr.act_teamtype' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `act_teamtype` 
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 8 行.
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 9 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 13 行.
+NOTIC: [8] Use of undefined constant IMAGES_PATH_ADMIN - assumed 'IMAGES_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 20 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 25 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 26 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 27 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 28 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 74 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 75 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 76 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 77 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 78 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 109 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 155 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.037415s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038585s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.014037s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.004910s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002651s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003509s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.025712s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.004456s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004633s ]
+
+[ 2013-12-04T15:41:04+08:00 ] 127.0.0.1 /actor/admin.php?m=Party&a=addteammess
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003214s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003434s ]
+SQL: SHOW COLUMNS FROM `act_team_type` [ RunTime:0.009681s ]
+SQL: SELECT * FROM `act_team_type`  [ RunTime:0.000650s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 8 行.
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 9 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 13 行.
+NOTIC: [8] Use of undefined constant IMAGES_PATH_ADMIN - assumed 'IMAGES_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 20 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 25 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 26 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 27 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 28 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 74 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 75 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 76 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 77 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 78 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 155 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.040168s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040367s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002849s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002460s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002335s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002720s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010855s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003119s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003365s ]
+
+[ 2013-12-04T15:41:25+08:00 ] 127.0.0.1 /actor/admin.php?m=Party&a=addteammess
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001680s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001894s ]
+SQL: SHOW COLUMNS FROM `act_team_type` [ RunTime:0.007750s ]
+SQL: SELECT * FROM `act_team_type`  [ RunTime:0.002461s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 8 行.
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 9 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 13 行.
+NOTIC: [8] Use of undefined constant IMAGES_PATH_ADMIN - assumed 'IMAGES_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 20 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 25 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 26 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 27 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 28 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 74 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 75 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 76 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 77 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 78 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 155 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.029713s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029902s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001143s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001023s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000693s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001289s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004625s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001727s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001889s ]
+
+[ 2013-12-04T15:44:47+08:00 ] 127.0.0.1 /actor/admin.php?m=Party&a=addactmess
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.004135s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004379s ]
+SQL: SHOW COLUMNS FROM `act_type` [ RunTime:0.008568s ]
+SQL: SELECT * FROM `act_type`  [ RunTime:0.002405s ]
+INFO: [ view_parse ] --START--
+
+[ 2013-12-04T15:44:47+08:00 ] 127.0.0.1 /actor/admin.php?m=Party&a=addactmess
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001406s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001614s ]
+SQL: SHOW COLUMNS FROM `act_type` [ RunTime:0.007081s ]
+SQL: SELECT * FROM `act_type`  [ RunTime:0.002185s ]
+INFO: [ view_parse ] --START--
+
+[ 2013-12-04T15:45:21+08:00 ] 127.0.0.1 /actor/admin.php?m=Party&a=addactmess
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002945s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003155s ]
+SQL: SHOW COLUMNS FROM `act_type` [ RunTime:0.007612s ]
+SQL: SELECT * FROM `act_type`  [ RunTime:0.002366s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 8 行.
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 9 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 13 行.
+NOTIC: [8] Use of undefined constant IMAGES_PATH_ADMIN - assumed 'IMAGES_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 20 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 25 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 26 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 27 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 28 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 75 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 76 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 77 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 78 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 79 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 188 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.037948s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038148s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002605s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002500s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002104s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002703s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010362s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003226s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003388s ]
+
+[ 2013-12-04T15:46:28+08:00 ] 127.0.0.1 /actor/admin.php?m=Party&a=addactmess
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001759s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001977s ]
+SQL: SHOW COLUMNS FROM `act_type` [ RunTime:0.012046s ]
+SQL: SELECT * FROM `act_type`  [ RunTime:0.001089s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 8 行.
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 9 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 13 行.
+NOTIC: [8] Use of undefined constant IMAGES_PATH_ADMIN - assumed 'IMAGES_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 20 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 25 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 26 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 27 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 28 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 75 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 76 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 77 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 78 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 79 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 188 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.032509s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032708s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002693s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002443s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002093s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002839s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010616s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003184s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003347s ]
+
+[ 2013-12-04T15:46:44+08:00 ] 127.0.0.1 /actor/admin.php?m=Party&a=addactmess
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001569s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001770s ]
+SQL: SHOW COLUMNS FROM `act_type` [ RunTime:0.009849s ]
+SQL: SELECT * FROM `act_type`  [ RunTime:0.001276s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 8 行.
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 9 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 13 行.
+NOTIC: [8] Use of undefined constant IMAGES_PATH_ADMIN - assumed 'IMAGES_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 20 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 25 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 26 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 27 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 28 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 75 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 76 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 77 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 78 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 79 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\203d3a3655a7c08997a3313ba34ed566.php 第 188 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.031578s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031769s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001251s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001061s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000833s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001298s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004894s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001698s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001858s ]
+
+[ 2013-12-04T15:49:21+08:00 ] 127.0.0.1 /actor/admin.php?m=Party&a=addteammess
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003461s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003801s ]
+SQL: SHOW COLUMNS FROM `act_team_type` [ RunTime:0.008431s ]
+SQL: SELECT * FROM `act_team_type`  [ RunTime:0.003101s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 8 行.
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 9 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 13 行.
+NOTIC: [8] Use of undefined constant IMAGES_PATH_ADMIN - assumed 'IMAGES_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 20 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 25 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 26 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 27 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 28 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 74 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 75 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 76 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 77 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 78 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 155 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.036240s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036435s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002931s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002490s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002187s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002798s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010880s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003177s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003341s ]
+
+[ 2013-12-04T15:49:46+08:00 ] 127.0.0.1 /actor/admin.php?m=Party&a=addteammess
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002987s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003201s ]
+SQL: SHOW COLUMNS FROM `act_team_type` [ RunTime:0.007711s ]
+SQL: SELECT * FROM `act_team_type`  [ RunTime:0.002277s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 8 行.
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 9 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 13 行.
+NOTIC: [8] Use of undefined constant IMAGES_PATH_ADMIN - assumed 'IMAGES_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 20 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 25 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 26 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 27 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 28 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 74 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 75 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 76 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 77 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 78 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 155 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.037387s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037586s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002568s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002815s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002098s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002662s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010610s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003103s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003263s ]
+
+[ 2013-12-04T15:50:25+08:00 ] 127.0.0.1 /actor/admin.php?m=Party&a=addteammess
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001665s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001881s ]
+SQL: SHOW COLUMNS FROM `act_team_type` [ RunTime:0.011285s ]
+SQL: SELECT * FROM `act_team_type`  [ RunTime:0.000706s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 8 行.
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 9 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 13 行.
+NOTIC: [8] Use of undefined constant IMAGES_PATH_ADMIN - assumed 'IMAGES_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 20 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 25 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 26 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 27 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 28 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 74 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 75 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 76 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 77 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 78 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 155 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.029836s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030026s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001140s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001018s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000698s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001263s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004565s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001699s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001864s ]
+
+[ 2013-12-04T15:50:40+08:00 ] 127.0.0.1 /actor/admin.php?m=Party&a=addteammess
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001659s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001867s ]
+SQL: SHOW COLUMNS FROM `act_team_type` [ RunTime:0.008426s ]
+SQL: SELECT * FROM `act_team_type`  [ RunTime:0.002896s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 8 行.
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 9 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 13 行.
+NOTIC: [8] Use of undefined constant IMAGES_PATH_ADMIN - assumed 'IMAGES_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 20 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 25 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 26 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 27 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 28 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 74 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 75 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 76 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 77 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 78 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 155 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.031207s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031485s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001143s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001036s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000694s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001271s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004594s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001723s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001885s ]
+
+[ 2013-12-04T15:51:44+08:00 ] 127.0.0.1 /actor/admin.php?m=Party&a=addteammess
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001557s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001764s ]
+SQL: SHOW COLUMNS FROM `act_team_type` [ RunTime:0.007808s ]
+SQL: SELECT * FROM `act_team_type`  [ RunTime:0.002055s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 8 行.
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 9 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 13 行.
+NOTIC: [8] Use of undefined constant IMAGES_PATH_ADMIN - assumed 'IMAGES_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 20 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 25 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 26 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 27 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 28 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 74 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 75 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 76 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 77 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 78 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 150 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.031349s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031539s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001190s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001027s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000710s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001329s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004711s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001721s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001881s ]
+
+[ 2013-12-04T15:52:31+08:00 ] 127.0.0.1 /actor/admin.php?m=Party&a=addteammess
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003191s ]
+SQL: SHOW COLUMNS FROM `act_team_type` [ RunTime:0.008019s ]
+SQL: SELECT * FROM `act_team_type`  [ RunTime:0.002048s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 8 行.
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 9 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 13 行.
+NOTIC: [8] Use of undefined constant IMAGES_PATH_ADMIN - assumed 'IMAGES_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 20 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 25 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 26 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 27 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 28 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 74 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 75 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 76 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 77 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 78 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 150 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.035994s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036184s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002702s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002621s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002117s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002667s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010581s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003188s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003348s ]
+
+[ 2013-12-04T15:53:31+08:00 ] 127.0.0.1 /actor/admin.php?m=Party&a=addteammess
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003070s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003278s ]
+SQL: SHOW COLUMNS FROM `act_team_type` [ RunTime:0.007908s ]
+SQL: SELECT * FROM `act_team_type`  [ RunTime:0.002450s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 8 行.
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 9 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 13 行.
+NOTIC: [8] Use of undefined constant IMAGES_PATH_ADMIN - assumed 'IMAGES_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 20 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 25 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 26 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 27 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 28 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 74 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 75 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 76 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 77 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 78 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 150 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.037425s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037617s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002623s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002459s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002177s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002687s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010405s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003110s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003269s ]
+
+[ 2013-12-04T16:15:45+08:00 ] 127.0.0.1 /actor/admin.php?m=Party&a=addteammess
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003569s ]
+SQL: SHOW COLUMNS FROM `act_team_type` [ RunTime:0.008874s ]
+SQL: SELECT * FROM `act_team_type`  [ RunTime:0.002677s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 8 行.
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 9 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 13 行.
+NOTIC: [8] Use of undefined constant IMAGES_PATH_ADMIN - assumed 'IMAGES_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 20 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 25 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 26 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 27 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 28 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 78 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 79 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 80 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 81 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 82 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 154 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.039905s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040103s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.006457s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002791s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002323s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003082s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015261s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003224s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003395s ]
+
+[ 2013-12-04T16:16:36+08:00 ] 127.0.0.1 /actor/admin.php?m=Party&a=addteammess
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003092s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003313s ]
+SQL: SHOW COLUMNS FROM `act_team_type` [ RunTime:0.007765s ]
+SQL: SELECT * FROM `act_team_type`  [ RunTime:0.002541s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 8 行.
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 9 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 13 行.
+NOTIC: [8] Use of undefined constant IMAGES_PATH_ADMIN - assumed 'IMAGES_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 20 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 25 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 26 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 27 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 28 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 78 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 79 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 80 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 81 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 82 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 154 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.039240s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039665s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002624s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002546s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002106s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002748s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010561s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003140s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003299s ]
+
+[ 2013-12-04T16:17:43+08:00 ] 127.0.0.1 /actor/admin.php?m=Party&a=addteammess
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001562s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001771s ]
+SQL: SHOW COLUMNS FROM `act_team_type` [ RunTime:0.011099s ]
+SQL: SELECT * FROM `act_team_type`  [ RunTime:0.000856s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 8 行.
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 9 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 13 行.
+NOTIC: [8] Use of undefined constant IMAGES_PATH_ADMIN - assumed 'IMAGES_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 20 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 25 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 26 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 27 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 28 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 78 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 79 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 80 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 81 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 82 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 154 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.031630s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031819s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001169s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001070s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000706s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001281s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004686s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001708s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001867s ]
+
+[ 2013-12-04T16:18:53+08:00 ] 127.0.0.1 /actor/admin.php?m=Party&a=addteammess
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003188s ]
+SQL: SHOW COLUMNS FROM `act_team_type` [ RunTime:0.008675s ]
+SQL: SELECT * FROM `act_team_type`  [ RunTime:0.002668s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 8 行.
+NOTIC: [8] Use of undefined constant CSS_PATH_ADMIN - assumed 'CSS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 9 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 13 行.
+NOTIC: [8] Use of undefined constant IMAGES_PATH_ADMIN - assumed 'IMAGES_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 20 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 25 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 26 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 27 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 28 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 78 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 79 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 80 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 81 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 82 行.
+NOTIC: [8] Use of undefined constant JS_PATH_ADMIN - assumed 'JS_PATH_ADMIN' D:\WWW\actor\admin\Runtime\Cache\96179a74981399358ce24bf7033ffd03.php 第 154 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.039131s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039330s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003039s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003090s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002221s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003076s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011937s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003204s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003365s ]
+

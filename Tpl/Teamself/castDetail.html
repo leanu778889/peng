@@ -1,0 +1,331 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>剧组中心</title>
+<link href="__APP__/Public/css/style111(1).css" type="text/css" rel="stylesheet" />
+<link href="__APP__/Public/css/stype.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="__APP__/Public/js/jquery.min.js"></script>
+<link href="__APP__/Public/css/common.css" rel="stylesheet" type="text/css" />
+<link href="__APP__/Public/css/header_footer.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+.menu1 {
+     font-size: 14px;
+     color: #FFFFFF;
+     text-decoration: none;
+     background-color: skyblue;
+     cursor:hand;
+}
+.menu2 {
+     font-size: 14px;
+     color: #990000;
+     text-decoration: none;
+     background-color: #FFFFFF;
+     cursor:hand;
+}
+.menu3 {
+     font-size: 14px;
+     color: #990000;
+     text-decoration: none;
+     background-color: #FFFFFF;
+     cursor:hand;
+}-->
+</style>
+<script language="JavaScript">
+function tabit(id,cid) {
+tab1.className="menu2";
+tab2.className="menu2";
+tab3.className="menu3";
+id.className="menu1";
+ctab1.style.display="none";
+ctab2.style.display="none";
+ctab3.style.display="none";
+cid.style.display="block";
+}
+</script>
+</head>
+<body onload="tabit(tab1,ctab1)" class="background">
+ <div class="jzbt_css">
+        	<h3>剧组个人中心</h3></a>
+            <div class="fh"><a href="__APP__/index.html" class="fh"><img src="__APP__/Public/images/fh.png"></a></div>
+  </div>
+<div style="width:800px; margin-left:275px;">
+<table width="800" height="40" border="0" cellpadding="3" cellspacing="1" bgcolor="#990000">
+   <tr>
+     <td width="275" height="20" class="menu1" id="tab1" onclick="tabit(tab1,ctab1)" align="center">剧组基本信息</td>   
+     <td width="275" height="20" class="menu2" id="tab2" onclick="tabit(tab2,ctab2)" align="center">剧组审核人员名单</td> 
+	 <td width="250" height="20" class="menu3" id="tab3" onclick="tabit(tab3,ctab3)" align="center">审核通过人员名单</td>
+   </tr>
+  </table>
+
+  
+  <table id="ctab1"  class="ctab1" >
+     <tr >
+     <td>剧组名称:小爸爸剧组</td>
+	 <td>导&nbsp;&nbsp;&nbsp;演:胥通达</td>
+	 </tr >
+	 <tr>  
+     <td>建组地点:北京某某某酒店</td>
+	 <td>编&nbsp;&nbsp;&nbsp;剧:龚超超</td>
+    </tr>
+	<tr  >
+     <td>京审剧号：kj2312345</td>
+	 <td>剧组类型：古装</td>
+    </tr>
+	<tr>
+     <td>拍摄地点:横店</td>
+	 <td>所属公司:&nbsp;&nbsp;&nbsp;北京影彩众宽传媒有限公司</td>
+    </tr>
+	<tr  >
+     <td>角色</td>
+	 <td>剧组联系电话7845487878</td>
+	 </tr>
+	 <tr >
+	 <td>建组时间: 1990年</td>
+	 <td>拍摄地点: 北京</td>
+	 </tr>
+ 
+	 <tr >
+	 <td colspan="2" style="background-color:#FFCC99;">剧本简介</td>
+	 </tr>
+	 <tr>
+	 <td   style="width:800px;"  colspan="2"> 
+	  <p style="margin-left:80px;">这个剧本讲述的一个农民工的故事，话说这个农民工中了500W，于是在经历了人生的重大喜事之后彻底改变了性格，花钱大手大脚，终于由于赌博，钱都花光了，那些有钱时候的朋友都离他而去了....</p>
+	 </td>
+	 </tr>
+
+	 <tr  >
+	  <td   colspan="2"  style="background-color:#FFCC99;">剧组简介</td>
+	  </tr>
+	  <tr>
+	  <td style="width:800px;"  colspan="2">
+	  <p style="margin-left:80px;">
+	剧组拥有强大的工作团队，曾经执导过很多有名的剧或戏，副导演拥有20年的执导经验，剧组跟组人员阵容强大
+	</p>
+	 </td>
+    </tr>		
+ </table>
+  <table id="ctab2" class="ctab2" border="1">
+   <tr>
+    <td height="54" colspan="8">角色：令狐冲</td>
+    </tr>
+  	  <tr >
+  		 <td width="100" >
+		 <p><img src="__APP__/Public/images/yy4.png"  height="100" width="100"/></p>
+         <p>{$name.truename}</p>
+		 <p>[通过][驳回]</p>
+		 </td>
+		<td width="100" >
+		 <p><img src="__APP__/Public/images/yy4.png"  height="100" width="100"/></p>
+         <p>{$name.truename}</p>
+		 <p>[通过][驳回]</p>
+		 </td>
+		 <td width="100" >
+		 <p><img src="__APP__/Public/images/yy4.png"  height="100" width="100"/></p>
+         <p>{$name.truename}</p>
+		 <p>[通过][驳回]</p>
+		 </td>
+		 <td width="100" >
+		 <p><img src="__APP__/Public/images/yy4.png"  height="100" width="100"/></p>
+         <p>{$name.truename}</p>
+		 <p>[通过][驳回]</p>
+		 </td>
+		 <td width="100" >
+		 <p><img src="__APP__/Public/images/yy4.png"  height="100" width="100"/></p>
+         <p>{$name.truename}</p>
+		 <p>[通过][驳回]</p>
+		 </td>
+		 <td width="100" >
+		 <p><img src="__APP__/Public/images/yy4.png"  height="100" width="100"/></p>
+         <p>{$name.truename}</p>
+		 <p>[通过][驳回]</p>
+		 </td>
+  	 </tr>
+   <tr>
+    <td height="54" colspan="8">角色：令狐冲</td>
+    </tr>
+  	  <tr >
+  		 <td width="100" >
+		 <p><img src="__APP__/Public/images/yy4.png"  height="100" width="100"/></p>
+         <p>{$name.truename}</p>
+		 <p>[通过][驳回]</p>
+		 </td>
+		<td width="100" >
+		 <p><img src="__APP__/Public/images/yy4.png"  height="100" width="100"/></p>
+         <p>{$name.truename}</p>
+		 <p>[通过][驳回]</p>
+		 </td>
+		 <td width="100" >
+		 <p><img src="__APP__/Public/images/yy4.png"  height="100" width="100"/></p>
+         <p>{$name.truename}</p>
+		 <p>[通过][驳回]</p>
+		 </td>
+		 <td width="100" >
+		 <p><img src="__APP__/Public/images/yy4.png"  height="100" width="100"/></p>
+         <p>{$name.truename}</p>
+		 <p>[通过][驳回]</p>
+		 </td>
+		 <td width="100" >
+		 <p><img src="__APP__/Public/images/yy4.png"  height="100" width="100"/></p>
+         <p>{$name.truename}</p>
+		 <p>[通过][驳回]</p>
+		 </td>
+		 <td width="100" >
+		 <p><img src="__APP__/Public/images/yy4.png"  height="100" width="100"/></p>
+         <p>{$name.truename}</p>
+		 <p>[通过][驳回]</p>
+		 </td>
+  	 </tr>
+    <tr>
+    <td height="54" colspan="8">角色：令狐冲</td>
+    </tr>
+  	  <tr >
+  		 <td width="100" >
+		 <p><img src="__APP__/Public/images/yy4.png"  height="100" width="100"/></p>
+         <p>{$name.truename}</p>
+		 <p>[通过][驳回]</p>
+		 </td>
+		<td width="100" >
+		 <p><img src="__APP__/Public/images/yy4.png"  height="100" width="100"/></p>
+         <p>{$name.truename}</p>
+		 <p>[通过][驳回]</p>
+		 </td>
+		 <td width="100" >
+		 <p><img src="__APP__/Public/images/yy4.png"  height="100" width="100"/></p>
+         <p>{$name.truename}</p>
+		 <p>[通过][驳回]</p>
+		 </td>
+		 <td width="100" >
+		 <p><img src="__APP__/Public/images/yy4.png"  height="100" width="100"/></p>
+         <p>{$name.truename}</p>
+		 <p>[通过][驳回]</p>
+		 </td>
+		 <td width="100" >
+		 <p><img src="__APP__/Public/images/yy4.png"  height="100" width="100"/></p>
+         <p>{$name.truename}</p>
+		 <p>[通过][驳回]</p>
+		 </td>
+		 <td width="100" >
+		 <p><img src="__APP__/Public/images/yy4.png"  height="100" width="100"/></p>
+         <p>{$name.truename}</p>
+		 <p>[通过][驳回]</p>
+		 </td>
+  	 </tr>
+	 </div>
+	 <tr>
+    <td height="54" colspan="8">角色：令狐冲</td>
+    </tr>
+  	  <tr >
+  		 <td width="100" >
+		 <p><img src="__APP__/Public/images/yy4.png"  height="100" width="100"/></p>
+         <p>{$name.truename}</p>
+		 <p>[通过][驳回]</p>
+		 </td>
+		<td width="100" >
+		 <p><img src="__APP__/Public/images/yy4.png"  height="100" width="100"/></p>
+         <p>{$name.truename}</p>
+		 <p>[通过][驳回]</p>
+		 </td>
+		 <td width="100" >
+		 <p><img src="__APP__/Public/images/yy4.png"  height="100" width="100"/></p>
+         <p>{$name.truename}</p>
+		 <p>[通过][驳回]</p>
+		 </td>
+		 <td width="100" >
+		 <p><img src="__APP__/Public/images/yy4.png"  height="100" width="100"/></p>
+         <p>{$name.truename}</p>
+		 <p>[通过][驳回]</p>
+		 </td>
+		 <td width="100" >
+		 <p><img src="__APP__/Public/images/yy4.png"  height="100" width="100"/></p>
+         <p>{$name.truename}</p>
+		 <p>[通过][驳回]</p>
+		 </td>
+		 <td width="100" >
+		 <p><img src="__APP__/Public/images/yy4.png"  height="100" width="100"/></p>
+         <p>{$name.truename}</p>
+		 <p>[通过][驳回]</p>
+		 </td>
+  	 </tr>
+  	 <tr>
+    <td height="54" colspan="8">角色：令狐冲</td>
+    </tr>
+  	  <tr >
+  		 <td width="100" >
+		 <p><img src="__APP__/Public/images/yy4.png"  height="100" width="100"/></p>
+         <p>{$name.truename}</p>
+		 <p>[通过][驳回]</p>
+		 </td>
+		<td width="100" >
+		 <p><img src="__APP__/Public/images/yy4.png"  height="100" width="100"/></p>
+         <p>{$name.truename}</p>
+		 <p>[通过][驳回]</p>
+		 </td>
+		 <td width="100" >
+		 <p><img src="__APP__/Public/images/yy4.png"  height="100" width="100"/></p>
+         <p>{$name.truename}</p>
+		 <p>[通过][驳回]</p>
+		 </td>
+		 <td width="100" >
+		 <p><img src="__APP__/Public/images/yy4.png"  height="100" width="100"/></p>
+         <p>{$name.truename}</p>
+		 <p>[通过][驳回]</p>
+		 </td>
+		 <td width="100" >
+		 <p><img src="__APP__/Public/images/yy4.png"  height="100" width="100"/></p>
+         <p>{$name.truename}</p>
+		 <p>[通过][驳回]</p>
+		 </td>
+		 <td width="100" >
+		 <p><img src="__APP__/Public/images/yy4.png"  height="100" width="100"/></p>
+         <p>{$name.truename}</p>
+		 <p>[通过][驳回]</p>
+		 </td>
+  	 </tr>
+    <tr>
+    <td height="54" colspan="8">角色：令狐冲</td>
+    </tr>
+  	  <tr >
+  		 <td width="100" >
+		 <p><img src="__APP__/Public/images/yy4.png"  height="100" width="100"/></p>
+         <p>{$name.truename}</p>
+		 <p>[通过][驳回]</p>
+		 </td>
+		<td width="100" >
+		 <p><img src="__APP__/Public/images/yy4.png"  height="100" width="100"/></p>
+         <p>{$name.truename}</p>
+		 <p>[通过][驳回]</p>
+		 </td>
+		 <td width="100" >
+		 <p><img src="__APP__/Public/images/yy4.png"  height="100" width="100"/></p>
+         <p>{$name.truename}</p>
+		 <p>[通过][驳回]</p>
+		 </td>
+		 <td width="100" >
+		 <p><img src="__APP__/Public/images/yy4.png"  height="100" width="100"/></p>
+         <p>{$name.truename}</p>
+		 <p>[通过][驳回]</p>
+		 </td>
+		 <td width="100" >
+		 <p><img src="__APP__/Public/images/yy4.png"  height="100" width="100"/></p>
+         <p>{$name.truename}</p>
+		 <p>[通过][驳回]</p>
+		 </td>
+		 <td width="100" >
+		 <p><img src="__APP__/Public/images/yy4.png"  height="100" width="100"/></p>
+         <p>{$name.truename}</p>
+		 <p>[通过][驳回]</p>
+		 </td>
+  	 </tr>
+	 </div>
+	<tr>
+	 <td width="500" colspan="6">
+	 <div style="float:right; margin-right:50px; margin-bottom:50px; background-color:#FFCCCC">
+     <p>审核完毕，查看详情请<a href="juesedetail.html"><font size="+2">点击这里</a></font></p>
+	 </td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

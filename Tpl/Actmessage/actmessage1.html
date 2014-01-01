@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>演员分类</title>
+<style type="text/css">
+<!--
+body {
+	background-color: #FFCC99;
+}
+-->
+</style>
+<link href="__APP__/Public/css/style111(1).css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="__APP__/Public/js/jquery.min.js"></script>
+<script type="text/javascript">
+	function sech(obj){
+		$.post('__APP__/Actmessage/search','val='+obj,function(data){
+			if(data){
+				var html = '';
+				var _len = data.length;
+				//alert(_len);
+				for(var i=0;i<_len;i++){
+					html += '<div style="margin-top:0px;"><a href="__APP__/Actmessage/actshow/'+data[i].a_id+'"><div class="Mainstype_tu"><img  width="150" height="150" src="__APP__/Public/uploads/'+data[i].path+'"/>'+data[i].truename+'</div></a></div>';
+				}
+				$('#Mainstype').html(html);
+			}
+		},'json')
+	}
+</script>
+<script type="text/javascript">
+	  var acters = [{msg:影视演员},{msg:话剧演员},{msg:戏曲演员},{msg:主持人},{msg:舞蹈演员},{msg:相声小品},{msg:平面模特},{msg:T台模特},{msg:魔术杂技},{msg:歌手},{msg:配音演员},{msg:其他演员}];
+	$(function(){
+		$("#showactor").click(function(){
+			for(var i=0;i<acters.length;i++){
+				var $tr = $("<tr><td>"+acters[i].msg+"</td></tr>");
+				$("#user_tb").append($tr);
+			}
+		});
+	});
+	
+</script>
+</head>
+<body class="background">
+<div class="typetable">
+<table width="992" border="0">
+<tr  height="10">
+<td  colspan="2" width="156" height="40"></td>
+<td  class="search"><img src="__APP__/Public/images/search.png" /></td>
+<td  colspan="2" width="116"> </td>
+</tr>
+<tr height="10px"></tr>
+  <tr> 
+    <td width="156"  class="alphaside" bordercolor="#000000" >
+	<div style=" border:1px; margin-top:0px; margin-left:50px;" >
+	  <div id="showactor" class="white" width="134" height="50">
+	  <a href="javascript:void(0)" onclick="sech(1)">男演员</a>
+	  </div>
+	  <table id="user_tb">
+  		<tr></tr>
+  	</table>
+	</div>
+	</td>
+    <td width="20">&nbsp;</td>
+    <td id ="Mainstype" width="650" height="550" class="alpha">
+    <volist name="res" id="sub">
+	<div style="margin-top:0px;">
+	  <a href="__APP__/Actmessage/actshow/{$sub.a_id}"><div class="Mainstype_tu"><img  width="150" height="150" src="__APP__/Public/uploads/{$sub.path}"/>{$sub.truename}</div></a>
+	</div>
+	</volist>
+	
+	<div align="center">
+	<input type="button" id="previous" value="上一页" />
+	<input type="button"  id="next" value="下一页" />
+	</div>
+	</td>
+    <td width="20">&nbsp;</td>
+    <td width="156"  class="alphaside">
+	<div style=" border:1px; margin-top:0px; margin-left:50px;" >
+	  <div id="showactor"  class="white" width="134" height="50" ><a href="javascript:void(0)" onclick="sech(2)">女演员</a></div>
+	  <table id="user_tb">
+  		<tr></tr>
+  	</table>
+	</div>
+	</td>
+  </tr>
+</table>
+</div>
+</body>
+</html>

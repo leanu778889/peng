@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Mobile Devices Support @begin -->
+<meta content="application/xhtml+xml;charset=UTF-8" http-equiv="Content-Type">
+<meta content="no-cache,must-revalidate" http-equiv="Cache-Control">
+<meta content="no-cache" http-equiv="pragma">
+<meta content="0" http-equiv="expires">
+<meta content="telephone=no, address=no" name="format-detection">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta name="apple-mobile-web-app-capable" content="yes" /> <!-- apple devices fullscreen -->
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<!-- Mobile Devices Support @end -->
+<title>导演信息注册</title>
+
+<link href="__APP__/Public/css/style111(2).css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="__APP__/Public/js/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#btn2").click(function(){
+    $("#hide").prepend("<dl>"+
+                "<dt>"+"导演作品："+"</dt>"+
+                "<dd>"+"<input type='text' name='works[]'/>"+"</dd>"+
+        		"</dl>"+
+				"<dl>"+
+                "<dt>"+"时间："+"</dt>"+
+                "<dd>"+"<input type='text' name='time[]'/>"+"</dd>"+
+        		"</dl>"+
+				"<dl>"+
+                "<dt>"+"剧名："+"</dt>"+
+                "<dd>"+"<input type='text' name='j_name[]'/>"+"</dd>"+
+        		"</dl>"+
+				"<dl>"+
+                "<dt>"+"主演："+"</dt>"+
+                "<dd>"+"<input type='text' name='mainrole[]'/>"+"</dd>"+
+        		"</dl>"+
+				"<dl>"+
+                "<dt>"+"服装："+"</dt>"+
+                "<dd>"+"<input type='text' name='clother[]'/>"+"</dd>"+
+        		"</dl>"+
+				"<dl>"+
+                "<dt>"+"化妆："+"</dt>"+
+                "<dd>"+"<input type='text' name='dresser[]'/>"+"</dd>"+
+        		"</dl>"+
+				"<dl>"+
+                "<dt>"+"道具："+"</dt>"+
+                "<dd>"+"<input type='text' name='items[]'/>"+"</dd>"+
+        		"</dl>"+
+				"<dl>"+
+                "<dt>"+"摄影："+"</dt>"+
+                "<dd>"+"<input type='text' name='cameraman[]'/>"+"</dd>"+
+        		"</dl>"+
+				"<dl>"+
+                "<dt>"+"录音："+"</dt>"+
+                "<dd>"+"<input type='text' name='sound_engineer[]'/>"+"</dd>"+
+        		"</dl>"+
+				"<dl>"+
+                "<dt>"+"美术："+"</dt>"+
+                "<dd>"+"<input type='text' name='arts[]'/>"+"</dd>"+
+        		"</dl>"+
+				"<dl>"+
+                "<dt>"+"灯光："+"</dt>"+
+                "<dd>"+"<input type='text' name='lighting_engineer[]'/>"+"</dd>"+
+        		"</dl>"
+				
+			);
+  });
+  
+});
+</script>
+</head>
+
+<body>
+<div class="bodyer"> 
+	<div class="top">
+    	<img src="__APP__/Public/images/logo.png">
+        <ul>
+        	
+            <li>注册</li>
+            <li>|</li>
+            <li>登录</li>
+        </ul>
+    </div>
+	<div class="login_top">
+    	<span>导演信息注册</span>
+    </div>
+     <form name="form1" method="post" action="__APP__/Register/adddirector"  enctype="multipart/form-data">
+	<div class="login_btm">
+    <div style=" height:20px;"></div>
+    		<dl>
+                <dt><font color="#FF0000";>*</font>用户名：</dt>
+                <dd><input type="text" name='username' /></dd>
+        	</dl>
+            <dl>
+                <dt><font color="#FF0000";>*</font>密码：</dt>
+                <dd><input type="password" name='password'/></dd>
+            </dl>
+            <dl>
+                <dt><font color="#FF0000";>*</font>确认密码：</dt>
+                <dd><input type='password' name='repassword'/></dd>
+            </dl>
+            <dl>
+                <dt>工作室配置：</dt>
+                <dd><input type="text" name='work_config'/>
+               </dd>
+            </dl>
+            <dl>
+                <dt>导演姓名：</dt>
+                <dd><input type='text' name='name' style=" width:40%" />
+				 <input type="button" value="添加" style="width:50px; background-image:url(__APP__/Public/images/bt_bj.png);color:#FFF; margin-left:10px;box-shadow:0 0 0 #FFF inset;" id="btn2"/></dd>
+            </dl>
+            <dl>
+                <dt>导演作品：</dt>
+                <dd><input type="text" name='works[]'/></dd>
+            </dl>
+            <dl>
+                <dt>时间：</dt>
+                <dd><input type="text" name='time[]'/></dd>
+        	</dl>
+            <dl>
+                <dt>剧名：</dt>
+                <dd><input type="text" name='j_name[]'/></dd>
+        	</dl>
+            <dl>
+                <dt>主演：</dt>
+                <dd><input type='text' name='mainrole[]'/></dd>
+            </dl>
+            <dl>
+                <dt>服装：</dt>
+                <dd><input type='text' name='clother[]'/></dd>
+            </dl>
+            <dl>
+                <dt>化妆：</dt>
+                <dd><input type='text' name='dresser[]'/></dd>
+            </dl>
+            <dl>
+                <dt>道具：</dt>
+                <dd><input type='text' name='items[]'/></dd>
+            </dl>
+            <dl>
+                <dt>摄影：</dt>
+                <dd><input type="text" name='cameraman[]'/></dd>
+        	</dl>
+            <dl>
+                <dt>录音：</dt>
+                <dd><input type="text" name='sound_engineer[]'/></dd>
+            </dl>
+            <dl>
+        	<dt>美术：</dt>
+            <dd><input type="text" name='arts[]'/></dd>
+        </dl>
+            
+            <dl>
+                <dt>灯光：</dt>
+                <dd><input type="text" name='lighting_engineer[]'/></dd>
+            </dl> 
+           	<div id="hide"></div>
+            <div>
+            
+        </div>
+        
+        <button class="login_btn" type="submit">提交</button>
+        <div style="height:30px;"></div>
+    </div>
+    
+</div>
+</body>
+</html>

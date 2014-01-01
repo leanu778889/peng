@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/javascript" src="__APP__/Public/js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript">
+	function sent(){
+		var content = $('#content').val();
+		var title = $('#title').val();
+		$.post('__APP__/Actmessage/sendmessage','p_id='+"{$arr['p_id']}"+'&content='+content+'&title='+title,function(data){
+			if(data==1){
+				alert('添加成功');
+			}else{
+				alert('发送失败');
+			}
+		})
+	}
+</script>
+<title>演员信息</title>
+</head>
+<body>
+<table width="630" border="1">
+	  <tr>
+	    <td width="219" height="155"><img src="__APP__/Public/uploads/{$arr['path']}" height="150" width="180" /></td>
+	    <td width="395">{$arr['truename']}</td>
+  </tr>
+	  <tr>
+	    <td>代表作：</td>
+	    <td>《赌神系列》《狄仁杰之通天帝国》《天下无贼》{$arr['representative']}</td>
+  </tr>
+	  <tr>
+	    <td height="260">演艺经历：</td>
+	    <td><DIV>{$arr['show_experience']}</DIV></td>
+	  </tr>
+	  {$typename}
+	  <if condition="$typename eq 2">
+	  <tr>
+	  <td>标题<input type="text" id="title" name="title"></td>
+	    <td>内容<textarea id="content" name="content"></textarea></td>
+	    <td><input type="submit" value="发送面试邀请" onClick="sent()"></td>
+  	</tr>
+  	</if>
+</table>
+</body>
+</html>

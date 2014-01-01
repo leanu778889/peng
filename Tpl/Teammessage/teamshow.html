@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<link href="__APP__/Public/css/style111(1).css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="__APP__/Public/js/jquery.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$.post('__APP__/Teamself/test','ro_id={$ro_id}&t_id={$t_id}',function(data){
+				if(data){
+					var _len = data.length;
+					for(var i=0;i<_len;i++){
+						$('#'+data[i]).attr('disabled','disabled');
+					}		
+				}
+			},'json');
+	})
+</script>
+</head>
+
+<body class="background">
+	<div >
+    	<div class="bt_css">
+        	<a href="###">{$res['j_name']}</a>
+            <div class="fh"><a href="__APP__/Teammessage/teleplay" class="fh"><img src="__APP__/Public/images/fh.png"/></a></div>
+        </div>
+        <div  style="width:541px; margin-left:405px;" >
+        	
+				
+     <table class="jzxx_wz1" >
+	   <hr  class="greenline"/>
+	   <h1> 剧组讯息</h1>
+     <tr >
+     <td>剧组：{$res['j_name']}</td>
+	 <td>建组时间：{$res['j_time']}</td>
+	 </tr >
+	 <tr>  
+     <td>建组地点：{$res['j_address']}</td>
+	 <td>剧组信息：{$res['j_message']}</td>
+    </tr>
+	<tr  >
+     <td>拍摄地点：{$res['j_address']}</td>
+	 <td>导演：{$res['direct']}</td>
+    </tr>
+	<tr >
+     <td>编剧：{$res['writer']}</td>
+	 <td>剧本介绍：{$res['j_play_intro']}</td>
+    </tr>
+	<tr >
+	 <td>角色：</td>
+    </tr>
+	 </table>
+	 <volist name="ro_mess" id="sub">
+	 <table class="jzxx_wz2" >
+	  <hr  class="greenline"/>
+	 <tr >
+     <td width="200">类型：</td>
+     
+	 <td >角色名：{$sub.ro_name} <input style="color:#FF0099" id="{$sub.t_id}_{$sub.ro_id}" type="button" onclick="send('{$sub.t_id}_{$sub.ro_id}')" value="发送简历"/></td>
+     </tr>
+	  <tr>
+	 <td  colspan="4">角色候选人：</td>
+	 </tr>
+	  <tr  >
+	   <td style="border:solid;"  colspan="4">
+	     <span><img src="__APP__/Public/images/yy1.png"  width="90px"/> 周迅</span>
+	    <span><img src="__APP__/Public/images/yy1.png"   width="90px"/>周迅</span>
+		  <span><img src="__APP__/Public/images/yy1.png"  width="90px"/>周迅</span>
+		  <span><img src="__APP__/Public/images/yy1.png"   width="90px"/>周迅</span>
+	  </td>
+	  </tr>
+	  <tr >
+     <td width="200">性别：</td>
+	 <td co colspan="3">角色年龄：</td>
+     </tr>
+	  <tr >
+     <td width="200" colspan="4">身高：</td>
+     </tr>
+       <tr >
+     <td  colspan="2">人物标签:
+	                <span  >纯洁</span>
+					<span>可爱</span>
+					<span >滑稽</span>
+					<span >古灵精怪</span>
+	 </td> 
+     </tr>
+	   <tr >
+     <td width="60" colspan="2">人物介绍:{$sub.ro_introduce}</td> 
+     </tr>
+	 </table>
+	 </volist>
+	 <hr  class="greenline"/>
+	<!--<div class="webox" style="width: 580px; height: 400px; display: block; left: 215px; top: 23px;"></div>
+	<div id="inside" style="height:400px;">
+	<h1 id="locked" onselectstart="return false;">
+	"角色要求"
+	<a class="span"></a>
+	</h1>
+	</div>-->
+            </div>	
+</div>
+</body>
+</html>
+<script type="text/javascript">
+		function send(obj){
+			$.post('__APP__/Teamself/index','obj='+obj,function(data){
+				if(data == 1){
+					alert('投递成功');
+					$('#'+obj).attr('disabled','disabled');
+				}else{
+					alert('投递失败');
+				}
+			});
+		}	
+</script>

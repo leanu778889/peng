@@ -1,0 +1,239 @@
+[ 2013-12-16T16:16:30+08:00 ] 127.0.0.1 /actor/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002591s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002823s ]
+SQL: SHOW COLUMNS FROM `act_announ` [ RunTime:0.007653s ]
+SQL: SELECT * FROM `act_announ`  [ RunTime:0.002607s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.050360s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050577s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002929s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001808s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001499s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002009s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008652s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002539s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002685s ]
+
+[ 2013-12-16T16:16:32+08:00 ] 127.0.0.1 /actor/Register/register.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003659s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003875s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001543s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001748s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.025798s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026099s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002850s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001118s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000658s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001269s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006368s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001744s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002151s ]
+
+[ 2013-12-16T16:16:40+08:00 ] 127.0.0.1 /actor/Register/addactivities
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004593s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004809s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002652s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002828s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.034415s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034647s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003346s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003049s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.003144s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003270s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.013271s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003780s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003941s ]
+
+[ 2013-12-16T16:17:06+08:00 ] 127.0.0.1 /actor/Register/addactivities
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002480s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002688s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001557s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001718s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.027736s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027963s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003254s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001026s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000676s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001256s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006673s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001761s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001922s ]
+
+[ 2013-12-16T16:17:20+08:00 ] 127.0.0.1 /actor/Register/addactivities
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004713s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004933s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001714s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001879s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.032098s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032338s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003238s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003081s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002778s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003513s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.013076s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003917s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004099s ]
+
+[ 2013-12-16T16:20:40+08:00 ] 127.0.0.1 /actor/Register/addactivities
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003558s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003776s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002644s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002875s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.033512s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033841s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003310s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002147s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001717s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002382s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010035s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003199s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003367s ]
+
+[ 2013-12-16T16:20:45+08:00 ] 127.0.0.1 /actor/Register/addactivities
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003549s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003775s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002704s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002871s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.035111s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035347s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003442s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003557s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002721s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003313s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.013571s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003857s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004019s ]
+
+[ 2013-12-16T16:21:20+08:00 ] 127.0.0.1 /actor/Register/addactivities
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004019s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004244s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002716s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002895s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.037613s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037844s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003906s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003183s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.005010s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003655s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.016302s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.004647s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004818s ]
+
+[ 2013-12-16T16:21:26+08:00 ] 127.0.0.1 /actor/Register/addactivities
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002579s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002800s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001564s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001726s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.029430s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029715s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003091s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001068s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000671s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001300s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006674s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001755s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001916s ]
+
+[ 2013-12-16T16:21:49+08:00 ] 127.0.0.1 /actor/Register/addactivities
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003505s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003729s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002596s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002761s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.035004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035242s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003564s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003064s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002678s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003463s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.013420s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.004034s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004196s ]
+
+[ 2013-12-16T16:22:05+08:00 ] 127.0.0.1 /actor/Register/addactivities
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.005282s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005556s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003675s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003928s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.036209s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036435s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003157s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003075s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.003122s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003387s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.013316s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003980s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004140s ]
+
+[ 2013-12-16T16:22:39+08:00 ] 127.0.0.1 /actor/Register/addactivities
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002365s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002575s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001924s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002094s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.039184s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039426s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003499s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003212s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002744s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.004376s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.014361s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003880s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004045s ]
+
